@@ -2,13 +2,13 @@
 
 ## What I reviewed
 - LOVABLE.md handoff (screens, tokens, components, rules, data shape)
-- Six desktop designs: Welcome, Onboarding, Galaxy, Question, Results, Leaderboard
+- Six desktop and six phone designs: Welcome, Onboarding, Galaxy, Question, Results, Leaderboard
 - questions.json: 48 questions, 12 topics x 4, easy/medium/hard, with explanation and source fields
 - Project: fresh template, nothing built yet, so nothing to preserve
 
 ## Missing assets / gaps
 1. **Prototype source code (`src/screens`, `src/components`, `tokens.css`, `planets.ts`)** is referenced as the source of truth but was not attached. I will rebuild from the screenshots and the tokens table.
-2. **Phone (390px) designs and overview images** were not attached. I will derive mobile layouts from desktop + handoff rules (48px touch targets).
+2. **Phone (390px) designs** are supplied and will be matched (stacked layouts, full-width Start bar on Galaxy). Only the overview images are missing; not needed.
 3. **Planet list/colours (`planets.ts`)**: I will use the 12 topicIds from questions.json in their file order, with names (e.g. "Build Planning", "MVP Specification") and hues matched to the screenshots.
 4. **Question count per planet**: designs show 2 per planet (24 total, ~5 min); the bank has 4. Default: pick 2 per planet per run (random), keeping the 15s timer.
 5. **Onboarding steps 1–2** (nickname, experience) only exist as described; step 3 is shown. I'll build steps 1–2 in the same style.
