@@ -10,33 +10,90 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as GalaxyRouteImport } from './routes/galaxy'
+import { Route as JoinRouteImport } from './routes/join'
+import { Route as LeaderboardRouteImport } from './routes/leaderboard'
+import { Route as PlayRouteImport } from './routes/play'
+import { Route as ResultsRouteImport } from './routes/results'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const GalaxyRoute = GalaxyRouteImport.update({
+  id: '/galaxy',
+  path: '/galaxy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const JoinRoute = JoinRouteImport.update({
+  id: '/join',
+  path: '/join',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LeaderboardRoute = LeaderboardRouteImport.update({
+  id: '/leaderboard',
+  path: '/leaderboard',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PlayRoute = PlayRouteImport.update({
+  id: '/play',
+  path: '/play',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ResultsRoute = ResultsRouteImport.update({
+  id: '/results',
+  path: '/results',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/galaxy': typeof GalaxyRoute
+  '/join': typeof JoinRoute
+  '/leaderboard': typeof LeaderboardRoute
+  '/play': typeof PlayRoute
+  '/results': typeof ResultsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/galaxy': typeof GalaxyRoute
+  '/join': typeof JoinRoute
+  '/leaderboard': typeof LeaderboardRoute
+  '/play': typeof PlayRoute
+  '/results': typeof ResultsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/galaxy': typeof GalaxyRoute
+  '/join': typeof JoinRoute
+  '/leaderboard': typeof LeaderboardRoute
+  '/play': typeof PlayRoute
+  '/results': typeof ResultsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/galaxy' | '/join' | '/leaderboard' | '/play' | '/results'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/galaxy' | '/join' | '/leaderboard' | '/play' | '/results'
+  id:
+    | '__root__'
+    | '/'
+    | '/galaxy'
+    | '/join'
+    | '/leaderboard'
+    | '/play'
+    | '/results'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  GalaxyRoute: typeof GalaxyRoute
+  JoinRoute: typeof JoinRoute
+  LeaderboardRoute: typeof LeaderboardRoute
+  PlayRoute: typeof PlayRoute
+  ResultsRoute: typeof ResultsRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +105,51 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/galaxy': {
+      id: '/galaxy'
+      path: '/galaxy'
+      fullPath: '/galaxy'
+      preLoaderRoute: typeof GalaxyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/join': {
+      id: '/join'
+      path: '/join'
+      fullPath: '/join'
+      preLoaderRoute: typeof JoinRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/leaderboard': {
+      id: '/leaderboard'
+      path: '/leaderboard'
+      fullPath: '/leaderboard'
+      preLoaderRoute: typeof LeaderboardRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/play': {
+      id: '/play'
+      path: '/play'
+      fullPath: '/play'
+      preLoaderRoute: typeof PlayRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/results': {
+      id: '/results'
+      path: '/results'
+      fullPath: '/results'
+      preLoaderRoute: typeof ResultsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  GalaxyRoute: GalaxyRoute,
+  JoinRoute: JoinRoute,
+  LeaderboardRoute: LeaderboardRoute,
+  PlayRoute: PlayRoute,
+  ResultsRoute: ResultsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

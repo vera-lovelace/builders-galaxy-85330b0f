@@ -28,3 +28,8 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- Questions load only through `src/data/questionBank.ts` (adapter over `src/data/questions.json`); never inline or generate questions — keeps one swappable source.
+- Game rules live in `src/game/rules.ts`, run state in `src/game/runStore.ts` (sessionStorage) and room data in `src/game/leaderboard.ts` (mock); screens never touch storage directly so a backend can replace these adapters later.
+- Planet hues are per-planet data in `src/data/planets.ts`, not theme tokens; all other colours are tokens in `src/styles.css`.
