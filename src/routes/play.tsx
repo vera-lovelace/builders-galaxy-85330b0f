@@ -1,5 +1,5 @@
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
-import { ArrowRight, CheckCircle2, XCircle, Clock } from "lucide-react";
+import { ArrowRight, CheckCircle2, XCircle, Clock, Pause, Play } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Button } from "@/components/Button";
 import { AnswerOption, RouteProgress, TimerBar, XpReward, XpTotal, type OptionState } from "@/components/game";
@@ -14,7 +14,7 @@ import { meta } from "@/lib/meta";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/play")({
-  head: () => meta("Question — Builder's Galaxy", "Answer within 15 seconds to earn XP and keep the rocket flying."),
+  head: () => meta("Question — Builder's Galaxy", "Answer within 30 seconds to earn XP and keep the rocket flying."),
   component: QuestionScreen,
 });
 
@@ -26,6 +26,19 @@ function QuestionScreen() {
   const [activeId, setActiveId] = useState<string | null>(null);
   const [left, setLeft] = useState(SECONDS_PER_QUESTION);
   const startRef = useRef(0);
+  const [paused, setPaused] = useState(false);
+  const pauseRef = useRef<number | null>(null);
+  const elapsedMs = () => (pauseRef.current ?? Date.now()) - startRef.current;
+  const togglePause = () => {
+    if (pauseRef.current !== null) {
+      startRef.current += Date.now() - pauseRef.current;
+      pauseRef.current = null;
+      setPaused(false);
+    } else {
+      pauseRef.current = Date.now();
+      setPaused(true);
+    }
+  };
 
   useEffect(() => {
     if (run === null) navigate({ to: "/join" });
@@ -42,7 +55,7 @@ function QuestionScreen() {
   const record = useCallback(
     (choice: number | null) => {
       if (!q) return;
-      const ms = Math.min(SECONDS_PER_QUESTION * 1000, Date.now() - startRef.current);
+      const ms = Math.min(SECONDS_PER_QUESTION * 1000, elapsedMs());
       const correct = choice === q.answerIndex;
       const xp = xpFor(correct, SECONDS_PER_QUESTION - ms / 1000);
       runStore.update((r) => (r.answers[q.id] ? r : { ...r, answers: { ...r.answers, [q.id]: { choice, correct, xp, ms } } }));
@@ -54,9 +67,12 @@ function QuestionScreen() {
   useEffect(() => {
     if (!q || answer) return;
     startRef.current = Date.now();
+    pauseRef.current = null;
+    setPaused(false);
     setLeft(SECONDS_PER_QUESTION);
     const t = setInterval(() => {
-      const l = SECONDS_PER_QUESTION - (Date.now() - startRef.current) / 1000;
+      if (pauseRef.current !== null) return;
+      const l = SECONDS_PER_QUESTION - elapsedMs() / 1000;
       setLeft(Math.max(0, l));
       if (l <= 0) record(null);
     }, 100);
@@ -93,7 +109,15 @@ function QuestionScreen() {
         </span>
         <span className="text-sm text-muted-foreground">Question {qi + 1} of {ids.length}</span>
       </div>
-      <div className="mt-4"><TimerBar seconds={answer ? SECONDS_PER_QUESTION - answer.ms / 1000 : left} /></div>
+      <div className="mt-4 flex items-center gap-3">
+        <div className="flex-1"><TimerBar seconds={answer ? SECONDS_PER_QUESTION - answer.ms / 1000 : left} /></div>
+        {!answer && (
+          <Button variant="secondary" size="md" onClick={togglePause} aria-pressed={paused} className="shrink-0">
+            {paused ? <><Play /> Resume</> : <><Pause /> Pause</>}
+          </Button>
+        )}
+      </div>
+      {paused && !answer && <p className="mt-2 text-sm text-muted-foreground">Timer paused — take your time to read.</p>}
 
       <h1 className="mt-8 font-display text-2xl font-bold leading-snug sm:text-3xl">{q.prompt}</h1>
       <div className="mt-6 grid gap-3">

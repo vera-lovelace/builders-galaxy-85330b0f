@@ -1,4 +1,4 @@
-export const SECONDS_PER_QUESTION = 15;
+export const SECONDS_PER_QUESTION = 30;
 export const QUESTIONS_PER_PLANET = 2;
 export const BASE_XP = 100;
 export const MAX_SPEED_BONUS = 50;

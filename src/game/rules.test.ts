@@ -6,10 +6,10 @@ import { PLANETS } from "@/data/planets";
 
 describe("game rules", () => {
   it("gives 100 XP plus up to 50 for speed, 0 when wrong", () => {
-    expect(xpFor(true, 15)).toBe(150);
+    expect(xpFor(true, 30)).toBe(150);
     expect(xpFor(true, 0)).toBe(100);
-    expect(xpFor(true, 7.5)).toBe(125);
-    expect(xpFor(false, 15)).toBe(0);
+    expect(xpFor(true, 15)).toBe(125);
+    expect(xpFor(false, 30)).toBe(0);
   });
   it("assigns levels at 85/65/40% accuracy", () => {
     expect(levelFor(0.85)).toBe("Pro");
