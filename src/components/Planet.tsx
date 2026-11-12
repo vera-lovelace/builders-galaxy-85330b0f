@@ -9,7 +9,7 @@ interface Props {
   size?: number;
   ring?: boolean | undefined;
   state?: PlanetState;
-  className?: string;
+  className?: string | undefined;
 }
 
 /** Shaded sphere with an atmosphere rim and optional ring. */
