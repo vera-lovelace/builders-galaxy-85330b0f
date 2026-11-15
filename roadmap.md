@@ -30,4 +30,4 @@
 - [x] Share the builder card on social (share sheet, LinkedIn, X)
 - [x] Trivia disclaimers: call it trivia everywhere, a fun game and motivation for aspiring PMs, not a skills assessment
 - [x] Data-secure note: nothing is stored
-- [ ] Promo video, max 30 s (waiting on style choice)
+- [ ] Promo video, max 30 s, generated scenes, standalone file outside the app (waiting on video type choice)
