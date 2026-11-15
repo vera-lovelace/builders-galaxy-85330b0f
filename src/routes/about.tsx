@@ -59,7 +59,7 @@ function About() {
     <Shell>
       <div className="mx-auto w-full max-w-xl">
         <Button variant="ghost" size="md" className="-ml-3" onClick={back}><ArrowLeft /> Back</Button>
-        <h1 ref={h1} tabIndex={-1} className="mt-4 font-display text-4xl font-extrabold outline-none sm:text-5xl">About Builder's Galaxy</h1>
+        <h1 ref={h1} tabIndex={-1} className="mt-4 font-display text-4xl font-extrabold sm:text-5xl">About Builder's Galaxy</h1>
         <p className="mt-3 text-lg text-muted-foreground">A free, open-source game for learning product management, made for SheBuilds workshops.</p>
 
         <Section title="What it is">
