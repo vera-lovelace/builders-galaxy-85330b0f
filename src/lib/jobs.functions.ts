@@ -53,3 +53,5 @@ export const searchJobs = createServerFn({ method: "POST" })
     cache.set(ck, { at: Date.now(), value });
     return value;
   });
+
+export const jobSearchStatus = createServerFn({ method: "GET" }).handler(async () => ({ rapidApiKey: Boolean(process.env["RAPIDAPI_KEY"]) }));

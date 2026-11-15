@@ -1,4 +1,4 @@
-import { ClientOnly, createFileRoute } from "@tanstack/react-router";
+import { ClientOnly, createFileRoute, Link } from "@tanstack/react-router";
 import { useServerFn } from "@tanstack/react-start";
 import { ExternalLink, Search, TrendingUp } from "lucide-react";
 import { lazy, Suspense, useEffect, useRef, useState } from "react";
@@ -67,7 +67,7 @@ function Jobs() {
     <Shell wide className="max-w-5xl" right={<ClientOnly fallback={null}><Suspense fallback={null}><JobsVoiceAgent handlers={voice} context={context} /></Suspense></ClientOnly>}>
       <p className="text-sm font-semibold uppercase tracking-wide text-primary">Beta</p>
       <h1 className="font-display text-3xl font-extrabold sm:text-4xl">Find your next mission</h1>
-      <p className="mt-2 max-w-2xl text-muted-foreground">Live listings from job boards via JSearch. Pick a keyword or type your own; keywords that return the most listings rise to the top. The voice guide runs up to 10 minutes per session.</p>
+      <p className="mt-2 max-w-2xl text-muted-foreground">Live listings from job boards via JSearch. Pick a keyword or type your own; keywords that return the most listings rise to the top. The voice guide runs up to 10 minutes per session. <Link to="/jobs-setup" className="font-semibold text-primary underline underline-offset-4">Setup guide</Link></p>
       <p className="sr-only" aria-live="polite">{status}</p>
 
       <form className="mt-6 grid gap-3 rounded-2xl bg-surface p-4 sm:grid-cols-[1fr_200px_auto]" onSubmit={(e) => { e.preventDefault(); go(); }}>
