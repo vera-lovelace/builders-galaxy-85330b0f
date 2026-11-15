@@ -5,7 +5,7 @@ This file travels with the project source; profile-to-profile memory transfer is
 
 ## Start here in the new profile
 
-1. Read this file, `AGENTS.md`, and `roadmap.md` before changing anything.
+1. Read this file, `DESIGN.md`, `AGENTS.md`, and `roadmap.md` before changing anything.
 2. Preserve the working prototype and supplied visual direction; work in small, verifiable steps.
 3. Keep Lovable Cloud disabled. Do not reconnect services or build voting/voice without a fresh request.
 4. Confirm what files and original uploads are available after transfer. Do not assume credentials, connections, credits, published-domain ownership, browser sessions, or chat history transfer.
@@ -110,7 +110,8 @@ Open items:
 - Feature voting blocked by the deliberate Cloud-disabled decision.
 - Narrator and interactive voice blocked by postponed ElevenLabs setup.
 - Human NVDA, missing-source/content and spoken explanation accuracy review before release.
-- Some earlier visual-review proposals (e.g. Welcome 12-planet orbit arc and further Galaxy route styling) should be compared with the supplied designs before assuming they were completed. Do not automatically expand scope.
+- Remaining non-service design updates were implemented after the handover: Welcome orbit, dashed Galaxy route and mission strip, laptop spacing, ring clearance, desktop Question split, timer chip, visible orbit scores, segmented skill scores, dialog/tip styling, focus outlines and post-answer focus/live feedback. Voice and Cloud are explicitly left for the next profile, without permission to connect automatically.
+- Reverification: 18 tests passed and a full 24-answer browser run confirmed focus on the next action after every answer with no runtime errors. Human screen-reader verification remains pending.
 - Welcome duration now says '12 planets · 24 questions · up to 24 minutes of answering'; earlier 'about 5 minutes' is obsolete. Final landing/voyage wording can still be reviewed with the user.
 
 Project URLs at handover: published/primary `https://builders-galaxy.lovable.app`; preview `https://id-preview--eb1b10bb-8e9d-4ce1-8b3f-deb21bf5fa55.lovable.app`. Their availability/ownership after transfer is unverified. Saving code does not publish it.

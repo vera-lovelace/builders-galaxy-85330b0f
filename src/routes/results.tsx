@@ -30,11 +30,11 @@ function Results() {
   const visited = Math.min(run.current, 12);
 
   return (
-    <Shell wide>
+    <Shell wide className="max-w-4xl">
       <div className="flex items-center gap-4">
         <PlayerAvatar nickname={run.player.nickname} size={56} />
         <div>
-          <h1 className="font-display text-3xl font-extrabold leading-tight sm:text-5xl">Voyage complete, {run.player.nickname}</h1>
+          <h1 className="font-display text-3xl font-extrabold leading-tight sm:text-4xl">Voyage complete, {run.player.nickname}</h1>
           <p className="text-muted-foreground">{visited === 12 ? "All 12 planets visited." : `${visited} of 12 planets visited.`}</p>
         </div>
       </div>
@@ -48,7 +48,7 @@ function Results() {
             <Stat label="Time" value={formatTime(s.ms)} />
             <div>
               <dt className="text-sm text-muted-foreground">Assessed level</dt>
-              <dd className="font-display text-3xl font-bold">{s.level}</dd>
+              <dd className="font-display text-3xl font-bold tabular-nums">{s.level}</dd>
               <dd className="text-sm text-muted-foreground">You picked {run.player.experience}</dd>
             </div>
           </dl>
@@ -58,7 +58,7 @@ function Results() {
           <ul className="mt-4 grid gap-3">
             {weak.map((w) => (
               <li key={w.planetId} className="flex items-center gap-3 rounded-lg bg-surface px-3 py-2">
-                <Planet color={w.planet.color} size={38} ring={w.planet.ring} />
+                <span className="flex size-10 shrink-0 items-center justify-center"><Planet color={w.planet.color} size={w.planet.ring ? 16 : 22} ring={w.planet.ring} /></span>
                 <span className="min-w-0 flex-1 font-display text-lg font-semibold">{w.planet.name}</span>
                 <span className="shrink-0 text-sm text-muted-foreground">{w.correct} of {w.total}</span>
                 <LennyTips planet={w.planet} iconOnly />
@@ -70,10 +70,12 @@ function Results() {
 
       <section className="mt-8">
         <h2 className="font-display text-2xl font-bold">Your skill map</h2>
-        <ul className="mt-3 divide-y divide-border">
-          {s.scores.map(p => <li key={p.planetId} className="flex items-center gap-3 py-3">
-            <span className="size-3 shrink-0 rounded-full" style={{ backgroundColor: p.planet.color }} aria-hidden />
-            <span className="min-w-0 flex-1">{p.planet.name}</span>
+        <ul className="mt-3 grid rounded-2xl bg-surface px-3 sm:grid-cols-2 sm:gap-x-6">
+          {s.scores.map((p, index) => <li key={p.planetId} className="flex items-center gap-2 border-b border-border py-2">
+            <span className="w-4 shrink-0 text-center text-xs text-muted-foreground">{index + 1}</span>
+            <span className="flex size-8 shrink-0 items-center justify-center"><Planet color={p.planet.color} size={p.planet.ring ? 16 : 22} ring={p.planet.ring} /></span>
+            <span className="min-w-0 flex-1 text-sm">{p.planet.name}</span>
+            <span className="flex shrink-0 gap-1" aria-hidden>{Array.from({ length: p.total }, (_, i) => <span key={i} className="h-2 w-3 rounded-full bg-muted" style={i < p.correct ? { backgroundColor: p.planet.color } : undefined} />)}</span>
             <span className="shrink-0 text-sm text-muted-foreground">{p.correct} of {p.total}<span className="sr-only"> correct</span></span>
             <LennyTips planet={p.planet} iconOnly />
           </li>)}
@@ -94,15 +96,15 @@ function Stat({ label, value, accent }: { label: string; value: string; accent?:
   return (
     <div>
       <dt className="text-sm text-muted-foreground">{label}</dt>
-      <dd className={accent ? "font-display text-3xl font-bold text-primary" : "font-display text-3xl font-bold"}>{value}</dd>
+      <dd className={accent ? "font-display text-3xl font-bold tabular-nums text-primary" : "font-display text-3xl font-bold tabular-nums"}>{value}</dd>
     </div>
   );
 }
 
 function SkillOrbit({ pct, scores }: { pct: number; scores: ReturnType<typeof summary>["scores"] }) {
-  const S = 340, c = S / 2, R = 140, r = 62, circ = 2 * Math.PI * r;
+  const S = 400, c = S / 2, R = 151, r = 54, circ = 2 * Math.PI * r;
   return (
-    <div className="relative mx-auto aspect-square w-full max-w-[340px]">
+    <div className="relative mx-auto aspect-square w-full max-w-[400px]">
       <svg viewBox={`0 0 ${S} ${S}`} className="absolute inset-0 h-full w-full" aria-hidden>
         <circle cx={c} cy={c} r={R} fill="none" className="stroke-muted-foreground/30" strokeDasharray="2 6" />
         <circle cx={c} cy={c} r={r + 22} fill="none" className="stroke-border" />
@@ -111,18 +113,19 @@ function SkillOrbit({ pct, scores }: { pct: number; scores: ReturnType<typeof su
           strokeDasharray={`${(pct / 100) * circ} ${circ}`} transform={`rotate(-90 ${c} ${c})`} />
       </svg>
       <div className="absolute inset-0 flex flex-col items-center justify-center">
-        <span className="font-display text-5xl font-extrabold">{pct}%</span>
+        <span className="font-display text-3xl sm:text-4xl font-extrabold tabular-nums">{pct}%</span>
         <span className="text-sm text-muted-foreground">correct</span>
       </div>
       {scores.map((p, i) => {
         const a = (i / scores.length) * 2 * Math.PI - Math.PI / 2;
         const ratio = p.total ? p.correct / p.total : 0;
-        const size = 16 + ratio * 22;
+        const size = (p.planet.ring ? 10 : 16) + ratio * (p.planet.ring ? 8 : 12);
         return (
-          <div key={p.planetId} className="absolute -translate-x-1/2 -translate-y-1/2"
+          <div key={p.planetId} className="absolute flex size-10 flex-col items-center justify-center -translate-x-1/2 -translate-y-1/2"
             style={{ left: `${((c + R * Math.cos(a)) / S) * 100}%`, top: `${((c + R * Math.sin(a)) / S) * 100}%` }}
             title={`${p.planet.name}: ${p.correct} of ${p.total}`}>
             <Planet color={p.planet.color} size={size} ring={p.planet.ring} state="done" className={p.correct ? undefined : "opacity-50 grayscale"} />
+            <span className="absolute top-[85%] whitespace-nowrap font-display text-xs font-semibold tabular-nums">{p.correct} of {p.total}<span className="sr-only"> correct on {p.planet.name}</span></span>
             {ratio === 1 && (
               <span className="absolute right-1 top-1 flex size-4 items-center justify-center rounded-full bg-success text-primary-foreground">
                 <Check className="size-3" strokeWidth={3} />

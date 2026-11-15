@@ -2,6 +2,7 @@ import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { Flag, Play, Trophy } from "lucide-react";
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { Button } from "@/components/Button";
+import { RouteProgress } from "@/components/game";
 import { Earth } from "@/components/Earth";
 import { Planet, type PlanetState } from "@/components/Planet";
 import { Rocket } from "@/components/Rocket";
@@ -16,7 +17,7 @@ export const Route = createFileRoute("/galaxy")({
   component: Galaxy,
 });
 
-const GAP = 240;
+const DESKTOP_GAP = 185;
 const BOTTOM = 300;
 const SIZE = 76;
 
@@ -38,6 +39,7 @@ function Galaxy() {
   const run = useRun();
   const navigate = useNavigate();
   const [ref, w] = useWidth();
+  const GAP = w >= 768 ? DESKTOP_GAP : 240;
   const H = BOTTOM + GAP * (PLANETS.length - 1) + 160;
   const amp = Math.min(w * 0.26, 200);
   const pts = useMemo(
@@ -65,8 +67,10 @@ function Galaxy() {
       requestAnimationFrame(() => {
         const el = ref.current;
         if (!el) return;
-        const top = el.getBoundingClientRect().top + window.scrollY + pts[i]!.y - window.innerHeight / 2;
-        window.scrollTo({ top, behavior: smooth ? "smooth" : "auto" });
+        const point = pts[i];
+        if (!point) return;
+        const top = el.getBoundingClientRect().top + window.scrollY + point.y - window.innerHeight / 2;
+        window.scrollTo({ top, behavior: smooth && !window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "smooth" : "auto" });
       });
     scrollTo(from, false);
     if (from === to) return;
@@ -85,14 +89,16 @@ function Galaxy() {
   const done = run.current >= PLANETS.length;
   const landed = rocketAt ?? current;
   const focus = selected ?? Math.min(current, PLANETS.length - 1);
-  const fp = PLANETS[focus]!;
-  const fs = scores[focus]!;
+  const fp = PLANETS[focus];
+  const fs = scores[focus];
+  if (!fp || !fs) return null;
 
   const pathD = (upto: number) => {
     let d = `M ${w / 2} ${H - 90}`;
     let prev = { x: w / 2, y: H - 90 };
     for (let i = 0; i <= upto; i++) {
-      const p = pts[i]!;
+      const p = pts[i];
+      if (!p) continue;
       const dy = (prev.y - p.y) / 2;
       d += ` C ${prev.x} ${prev.y - dy}, ${p.x} ${p.y + dy}, ${p.x} ${p.y}`;
       prev = p;
@@ -108,42 +114,45 @@ function Galaxy() {
     setSelected(i);
   };
 
-  const rp = pts[landed]!;
-  const prevPt = pts[Math.max(0, landed - 1)]!;
+  const rp = pts[landed];
+  const prevPt = pts[Math.max(0, landed - 1)];
+  if (!rp || !prevPt) return null;
   const angle = landed === 0 ? 0 : (Math.atan2(rp.x - prevPt.x, prevPt.y - rp.y) * 180) / Math.PI * 0.6;
 
   return (
-    <main className="relative min-h-dvh bg-space pb-40">
-      <div ref={ref} className="relative mx-auto w-full max-w-3xl" style={{ height: H }}>
+    <main className="relative min-h-dvh overflow-x-clip bg-space pb-40">
+      <div ref={ref} className="relative mx-auto w-full max-w-6xl" style={{ height: H }}>
         <Earth className="h-[220px]" />
         <svg className="absolute inset-0" width={w} height={H} aria-hidden>
-          <path d={pathD(PLANETS.length - 1)} fill="none" className="stroke-muted-foreground/30" strokeWidth="1.5" />
+          <path d={pathD(PLANETS.length - 1)} fill="none" className="stroke-foreground/28" strokeWidth="2" strokeDasharray="4 8" strokeLinecap="round" />
           <path d={pathD(Math.min(landed, PLANETS.length - 1))} fill="none" className="stroke-info transition-all" strokeWidth="2" />
         </svg>
 
         {PLANETS.map((p, i) => {
           const state: PlanetState = i < current ? "done" : i === current && landed === current ? "current" : "locked";
-          const s = scores[i]!;
-          const left = pts[i]!.x > w / 2 - 1;
+          const s = scores[i];
+          const point = pts[i];
+          if (!s || !point) return null;
+          const left = point.x > w / 2 - 1;
           return (
-            <div key={p.id} className="absolute" style={{ left: pts[i]!.x, top: pts[i]!.y }}>
-              <button
+            <div key={p.id} className="absolute" style={{ left: point.x, top: point.y }}>
+              <Button variant="ghost"
                 type="button"
                 onClick={() => tap(i)}
                 aria-label={`Stop ${i + 1}: ${p.name}${state === "locked" ? " (locked)" : state === "done" ? ` (${s.correct} of ${s.total} correct)` : " (current)"}`}
-                className={cn("absolute -translate-x-1/2 -translate-y-1/2 rounded-full", shake === i && "animate-shake")}
+                className={cn("absolute h-auto w-auto p-0 -translate-x-1/2 -translate-y-1/2 rounded-full", shake === i && "animate-shake")}
               >
                 <Planet color={p.color} ring={p.ring} size={state === "current" ? SIZE * 1.4 : SIZE} state={state} />
-              </button>
+              </Button>
               {state === "done" && (
                 <Flag className="absolute -top-14 left-0 size-6 animate-plant fill-primary text-primary" aria-hidden />
               )}
               <div
-                className={cn("pointer-events-none absolute top-0 -translate-y-1/2 whitespace-nowrap", left ? "right-16 text-right" : "left-16")}
-                style={state === "current" ? { [left ? "right" : "left"]: 80 } : undefined}
+                className={cn("pointer-events-none absolute top-0 -translate-y-1/2", left ? "right-16 text-right" : "left-16")}
+                style={{ [left ? "right" : "left"]: (state === "current" ? SIZE * 1.4 : SIZE) * (p.ring ? 1.1 : 0.82) + 12, width: Math.max(70, (left ? point.x : w - point.x) - (state === "current" ? SIZE * 1.4 : SIZE) * (p.ring ? 1.1 : 0.82) - 28) }}
               >
                 <p className="text-xs text-muted-foreground">Stop {i + 1}{state === "done" && ` · ${s.correct}/${s.total}`}</p>
-                <p className={cn("font-display transition-all", state === "current" ? "text-xl font-bold text-foreground" : "text-base", state === "locked" && "text-muted-foreground/80")}>{p.name}</p>
+                <p className={cn("font-display transition-all", state === "current" ? "text-xl font-bold text-foreground" : "text-base", state === "locked" && "text-muted-foreground")}>{p.name}</p>
               </div>
             </div>
           );
@@ -160,8 +169,10 @@ function Galaxy() {
         )}
       </div>
 
-      <div className="fixed inset-x-0 bottom-0 z-20 border-t border-border bg-surface/95 backdrop-blur sm:bottom-4 sm:mx-auto sm:max-w-3xl sm:rounded-2xl sm:border">
-        <div className="flex flex-col gap-3 p-4 sm:flex-row sm:items-center">
+      <div className="fixed inset-x-0 bottom-0 z-20 border-t border-border bg-surface sm:bottom-4 sm:mx-auto sm:max-w-6xl sm:rounded-2xl sm:border">
+        <div className="mission-dock px-4 pt-3 sm:px-5">
+          <RouteProgress current={Math.min(current, PLANETS.length - 1)} />
+        <div className="flex flex-col gap-3 pt-2 sm:flex-row sm:items-center">
           {done ? (
             <>
               <div className="flex-1">
@@ -191,6 +202,7 @@ function Galaxy() {
               )}
             </>
           )}
+        </div>
         </div>
       </div>
     </main>

@@ -37,3 +37,5 @@ use the editor.
 - Lenny tip data is separate from the question adapter and never enters run plans, so tips cannot disclose a playable answer.
 - QuestionClock owns active-time accounting; screens use its pause/resume API so elapsed results exclude pauses.
 - Native dialogs share Modal for focus containment and opener restoration; exports are generated only in the browser to avoid uploading results.
+
+- WelcomeOrbit renders a decorative preview from the shared planet list; RouteProgress renders semantic voyage progress on Questions and the Galaxy mission bar so stop identities stay consistent.

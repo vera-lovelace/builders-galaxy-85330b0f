@@ -37,23 +37,23 @@ function Leaderboard() {
   return (
     <main className="relative min-h-dvh overflow-hidden bg-space">
       <Earth className="top-[45%]" />
-      <div className="relative z-10 mx-auto w-full max-w-xl px-4 pb-10 pt-5">
+      <div className="relative z-10 mx-auto w-full max-w-lg px-4 pb-10 pt-5">
         <header className="flex items-center justify-between">
-          <Button asChild variant="ghost" size="icon" aria-label="Back to results">
-            <Link to="/results"><ArrowLeft /></Link>
+          <Button asChild variant="ghost" size="icon" >
+            <Link to="/results"><ArrowLeft aria-hidden /><span className="sr-only">Back to results</span></Link>
           </Button>
           <div className="text-center">
             <h1 className="font-display text-3xl font-extrabold">Leaderboard</h1>
             <p className="text-sm text-muted-foreground">Room <b className="text-foreground">{room}</b></p>
           </div>
-          <Link to="/" aria-label="Home" className="flex size-12 items-center justify-center"><Rocket size={12} flame={false} /></Link>
+          <Link to="/"  className="flex size-12 items-center justify-center"><Rocket size={12} flame={false} /><span className="sr-only">Home</span></Link>
         </header>
 
         <div className="mt-8 grid grid-cols-3 items-end gap-2">
           {([top[1], top[0], top[2]] as (LeaderboardEntry | undefined)[]).map((e, i) => e && <Podium key={e.id} entry={e} rank={[2, 1, 3][i] ?? 3} />)}
         </div>
 
-        <div className="rounded-b-2xl bg-background">
+        <div className="rounded-2xl bg-surface">
           {you && yourRank > 3 && (
             <div className="flex items-center justify-between border-y border-border px-1 py-3 font-display text-lg font-bold">
               <span>Your rank is <span className="text-primary">{yourRank}</span></span>
@@ -85,7 +85,7 @@ function Podium({ entry, rank }: { entry: LeaderboardEntry; rank: number }) {
         className={cn("flex w-full flex-col items-center rounded-t-2xl bg-podium px-1 pt-3 text-center",
           rank === 1 ? "h-44" : rank === 2 ? "h-32" : "h-28", entry.isYou && "ring-2 ring-primary")}
       >
-        <span className="font-display text-4xl font-extrabold">{rank}</span>
+        <span className="font-display text-4xl font-extrabold tabular-nums">{rank}</span>
         <span className="w-full truncate text-sm">{entry.nickname}{entry.isYou && " (you)"}</span>
         <span className="text-sm text-muted-foreground">{entry.xp.toLocaleString("en-US")}</span>
       </div>

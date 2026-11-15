@@ -18,11 +18,11 @@ export function Modal({ title, onClose, children }: { title: string; onClose: ()
     };
   }, []);
   return <dialog ref={dialog} aria-labelledby={id} onCancel={onClose} onClose={() => { if (!dialog.current?.open) onClose(); }}
-    className="modal m-auto w-[calc(100%-2rem)] max-w-2xl max-h-[88dvh] overflow-y-auto rounded-lg border border-border bg-surface p-4 text-foreground sm:p-6">
-    <div className="mb-5 flex items-start justify-between gap-3">
-      <h2 ref={heading} id={id} tabIndex={-1} className="min-w-0 font-display text-2xl font-bold outline-none">{title}</h2>
-      <Button variant="secondary" size="md" onClick={onClose} className="shrink-0"><X aria-hidden /> Close</Button>
+    className="modal m-auto w-[calc(100%-2rem)] max-w-xl max-h-[88dvh] overflow-y-auto rounded-2xl shadow-raised border border-border bg-surface p-0 text-foreground">
+    <div className="sticky top-0 z-10 flex items-start justify-between gap-3 border-b border-border bg-surface px-5 py-4">
+      <h2 ref={heading} id={id} tabIndex={-1} className="min-w-0 font-display text-2xl font-bold focus:outline-3 focus:outline-primary focus:outline-offset-3">{title}</h2>
+      <Button variant="ghost" size="md" onClick={onClose} className="shrink-0"><X aria-hidden /> Close</Button>
     </div>
-    {children}
+    <div className="p-5">{children}</div>
   </dialog>;
 }

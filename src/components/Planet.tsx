@@ -16,7 +16,7 @@ interface Props {
 export function Planet({ color, size = 80, ring, state = "done", className }: Props) {
   const id = useId().replace(/:/g, "");
   const locked = state === "locked";
-  const pad = ring ? size * 0.45 : size * 0.25;
+  const pad = ring ? size * 0.6 : size * 0.25;
   const w = size + pad * 2;
   const c = w / 2;
   const r = size / 2;
@@ -24,11 +24,11 @@ export function Planet({ color, size = 80, ring, state = "done", className }: Pr
     <div className={cn("relative", className)} style={{ width: w, height: w }}>
       {state === "current" && (
         <div
-          className="absolute rounded-full border-2 border-dashed border-muted-foreground/60 animate-spin-slow"
+          className="absolute rounded-full border-2 border-dashed border-foreground/45 animate-spin-slow"
           style={{ inset: pad - size * 0.16 }}
         />
       )}
-      <svg width={w} height={w} viewBox={`0 0 ${w} ${w}`} className={cn("relative transition-[filter] duration-700", locked && "grayscale opacity-70")}>
+      <svg width={w} height={w} viewBox={`0 0 ${w} ${w}`} className={cn("relative !h-full !w-full transition-[filter] duration-700", locked && "planet-locked")}>
         <defs>
           <radialGradient id={`g${id}`} cx="35%" cy="30%" r="75%">
             <stop offset="0%" stopColor="white" stopOpacity="0.55" />

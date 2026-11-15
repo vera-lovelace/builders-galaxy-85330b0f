@@ -37,14 +37,14 @@ export function WhatsNext({ run }: { run: Run }) {
           <Button variant="secondary" size="md" onClick={() => downloadResults(results.markdown, 'md')}><Download aria-hidden /> Download (Markdown)</Button>
           <Button variant="secondary" size="md" onClick={() => downloadResults(JSON.stringify(results.data, null, 2), 'json')}><Download aria-hidden /> Download (JSON)</Button>
         </div>
-        <p role="status" className="mt-3 text-sm text-info">{status}</p>
+        <p role="status" className="mt-3 text-sm text-success">{status}</p>
       </section>
       <section className="mt-8 border-t border-border pt-6">
         <h3 className="font-display text-xl font-bold">What should we build next?</h3>
         <fieldset className="mt-3">
           <legend className="text-sm text-muted-foreground">None of these exist yet. Pick any you would use.</legend>
           <div className="mt-3 grid gap-3">
-            {IDEAS.map(([title, hint]) => <label key={title} className="flex cursor-pointer items-start gap-3 rounded-lg border border-border p-4">
+            {IDEAS.map(([title, hint]) => <label key={title} className="flex cursor-pointer items-start gap-3 rounded-lg border-2 border-border p-4 has-[:checked]:border-primary has-[:checked]:bg-primary/10">
               <input type="checkbox" value={title} className="mt-1 size-5 shrink-0 accent-primary" />
               <span><span className="block font-semibold">{title}</span><span className="block text-sm text-muted-foreground">{hint}</span></span>
             </label>)}

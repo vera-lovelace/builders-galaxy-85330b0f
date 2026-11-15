@@ -16,3 +16,5 @@
 - [x] Prompt 5: flight/podium tokens, 48px back controls and leaderboard radii
 - [x] Release content: show all options in tip details, cite titles without inventing missing URLs, correct voyage duration
 - [ ] Human release review: NVDA behaviour and source/content accuracy need user review
+- [x] Remaining design review: Welcome orbit, Galaxy route/spacing, Question layout/feedback, Results labels, controls/dialog styling and accurate portable docs; exclude voice and Cloud
+- [x] Compare newly supplied desktop and mobile round-2 screenshots; refine Question, Results and dialogs without enabling voice or voting

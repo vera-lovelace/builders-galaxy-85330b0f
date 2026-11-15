@@ -9,14 +9,14 @@ import { Source } from './Source';
 export function LennyTips({ planet, iconOnly = false }: { planet: PlanetInfo; iconOnly?: boolean }) {
   const [open, setOpen] = useState(false);
   return <>
-    <Button variant="secondary" size={iconOnly ? 'icon' : 'md'} onClick={() => setOpen(true)} className="shrink-0">
-      <Lightbulb aria-hidden />
+    <Button variant={iconOnly ? "ghost" : "secondary"} size={iconOnly ? 'icon' : 'md'} onClick={() => setOpen(true)} className="shrink-0">
+      <Lightbulb className="text-primary" aria-hidden />
       {iconOnly ? <span className="sr-only">Lenny's tips for {planet.name}</span> : "Lenny's tips"}
     </Button>
     {open && <Modal title={`Lenny's tips: ${planet.name}`} onClose={() => setOpen(false)}>
       <ul className="space-y-6">
-        {tipsForPlanet(planet.id).map(tip => <li key={tip.id} className="border-b border-border pb-6 last:border-0">
-          <p className="text-sm font-semibold text-primary">{tipLevelName[tip.level]}</p>
+        {tipsForPlanet(planet.id).map(tip => <li key={tip.id} className="rounded-lg border border-border p-4">
+          <p className="text-sm font-semibold text-muted-foreground">{tipLevelName[tip.level]}</p>
           <h3 className="mt-2 font-semibold">{tip.question}</h3>
           <p className="mt-2 leading-relaxed">{tip.options[tip.correctIndex]}</p>
           <details className="mt-3">

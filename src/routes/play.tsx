@@ -28,6 +28,7 @@ function QuestionScreen() {
   const [activeId, setActiveId] = useState<string | null>(null);
   const [left, setLeft] = useState(SECONDS_PER_QUESTION);
   const clock = useRef(new QuestionClock());
+  const nextRef = useRef<HTMLButtonElement>(null);
   const headingRef = useRef<HTMLHeadingElement>(null);
   const warnedRef = useRef(false);
   const [paused, setPaused] = useState(false);
@@ -95,6 +96,8 @@ function QuestionScreen() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [q?.id, !!answer]);
 
+  useEffect(() => { if (answer) nextRef.current?.focus(); }, [answer]);
+
   if (!run || !planet || !q) return <div className="min-h-dvh bg-space" />;
 
   const qi = ids.indexOf(q.id);
@@ -116,17 +119,17 @@ function QuestionScreen() {
   const isLast = ids.every((id) => run.answers[id]);
 
   return (
-    <Shell right={<XpTotal xp={summary(run).xp} />}>
+    <Shell wide className="max-w-4xl" right={<XpTotal xp={summary(run).xp} />}>
       <RouteProgress current={run.current} />
       <p className="sr-only" aria-live="polite" aria-atomic="true">{announcement}</p>
-      <div className="mt-3 flex items-center justify-between gap-3">
-        <span className="font-display font-semibold">{planet.name}</span>
-        <span className="text-sm text-muted-foreground">Question {qi + 1} of {ids.length}</span>
-      </div>
-      <div className="mt-5 grid gap-6 sm:grid-cols-[208px_minmax(0,1fr)]">
-        <div className="flex flex-col items-center gap-3">
+      <div className="mt-6 grid gap-6 lg:grid-cols-[240px_minmax(0,1fr)] lg:gap-x-14">
+        <div className="flex items-center gap-2 lg:gap-3 lg:flex-col lg:text-center lg:row-span-2">
           <OrbitTimer seconds={answer ? SECONDS_PER_QUESTION - answer.ms / 1000 : left} paused={paused} color={planet.color} ring={planet.ring} />
-          {!answer && <Button variant="secondary" size="md" onClick={togglePause}>
+          <div className="min-w-0 flex-1 lg:flex-none">
+            <p className="font-display text-xl font-bold">{planet.name}</p>
+            <p className="mt-1 text-sm text-muted-foreground">Stop {run.current + 1} · Question {qi + 1} of {ids.length}</p>
+          </div>
+          {!answer && <Button variant="secondary" size="md" className="shrink-0 px-2 lg:px-5" onClick={togglePause}>
             {paused ? <><Play aria-hidden /> Resume</> : <><Pause aria-hidden /> Pause</>}
           </Button>}
         </div>
@@ -138,19 +141,19 @@ function QuestionScreen() {
           event.preventDefault();
           record(choice);
         }}>
-          <h1 ref={headingRef} id="question-heading" tabIndex={-1} className="font-display text-2xl font-bold leading-snug outline-none">{q.prompt}</h1>
+          <h1 ref={headingRef} id="question-heading" tabIndex={-1} className="font-display text-2xl font-bold leading-snug focus:outline-3 focus:outline-primary focus:outline-offset-3">{q.prompt}</h1>
           <p className="mt-3 hidden text-sm text-muted-foreground sm:block">Press 1–4 or A–D to answer.</p>
           <div className="mt-5 grid gap-3">
             {q.options.map((o, i) => <AnswerOption key={i} index={i} text={o} state={stateFor(i)} disabled={!!answer} onClick={() => record(i)} />)}
           </div>
         </div>
-      </div>
 
       {answer && (
         <section
-          className={cn("mt-6 rounded-lg border-2 bg-surface p-5", answer.correct ? "border-success/70" : "border-danger/70")}
+          role="status" aria-live="polite" aria-atomic="true"
+          className={cn("lg:col-start-2 rounded-2xl border-2 bg-surface p-5 shadow-raised", answer.correct ? "border-success/70" : "border-danger/70")}
         >
-          <div className="flex flex-col gap-4 sm:flex-row sm:items-start">
+          <div className="flex flex-col gap-4">
             <div className="flex-1">
               <p className={cn("flex items-center gap-2 font-display text-2xl font-bold", answer.correct ? "text-success" : "text-danger")}>
                 {answer.correct ? <CheckCircle2 className="size-6" /> : timedOut ? <Clock className="size-6" /> : <XCircle className="size-6" />}
@@ -159,14 +162,18 @@ function QuestionScreen() {
               </p>
               {q.explanation && <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{q.explanation}</p>}
               <Source title={q.sourceTitle} url={q.sourceUrl} />
-              <div className="mt-4"><LennyTips planet={planet} /></div>
+
             </div>
-            <Button onClick={next} className="w-full shrink-0 sm:w-auto">
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+            <LennyTips planet={planet} />
+            <Button ref={nextRef} onClick={next} className="w-full shrink-0 sm:w-auto">
               {isLast ? (run.current + 1 >= PLANETS.length ? "See results" : "Back to galaxy") : "Next question"} <ArrowRight />
             </Button>
+            </div>
           </div>
         </section>
       )}
+      </div>
     </Shell>
   );
 }
