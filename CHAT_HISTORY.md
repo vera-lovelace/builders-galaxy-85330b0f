@@ -26,8 +26,11 @@ Chronological record of requests and outcomes in this project (as of 15 Nov 2026
 21. **About page** — voice guide now described as available for up to 10 minutes per session (Accessibility and Privacy).
 22. **Job search beta built (/jobs)** — JSearch via RapidAPI (key kept on the server, 15-min cache), suggested keywords, "Best performing this session" ranked by real result counts, location/remote/date filters, details, Apply links, paging. "Job search beta" button on Results. "Voice search guide" with searchJobs, selectKeyword, describeJob, filterResults, nextPage; ends after 10 minutes. RapidAPI key form was closed, so live search is not on yet.
 23. **Job search setup page (/jobs-setup)** — five steps: JSearch key (shows live connected status), public agent, the five actions table, agent instructions, try it. Linked from /jobs.
+24. **Journey check Results → job search** — added Back to results on /jobs and a setup-guide link in the missing-key message; verified desktop and phone.
+25. **Secured database prep (shared leaderboard)** — user chose anonymous sign-in, leaderboard only. Added setup script `supabase/setup/001_shared_leaderboard.sql` (anyone reads; players write only their own score per room; XP/time/nickname checks) and a dormant connection adapter that turns on once the database is connected. Mock leaderboard stays the fallback. Not run against a real database yet.
 
 ## Open items
+- After transfer: connect your own database, enable Anonymous sign-ins, run the setup script, then ask to switch Results/Leaderboard to shared scores.
 - Feature voting: disabled (Cloud stays off).
 - Human review: real NVDA/VoiceOver testing and content/source accuracy.
 - Test the voice guide live; update About page voice/privacy wording once confirmed.
