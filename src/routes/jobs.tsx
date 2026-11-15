@@ -70,7 +70,7 @@ function Jobs() {
       {hasRun && <Button asChild variant="ghost" size="md" className="mb-4 self-start"><Link to="/results"><ArrowLeft aria-hidden /> Back to results</Link></Button>}
       <p className="text-sm font-semibold uppercase tracking-wide text-primary">Beta</p>
       <h1 className="font-display text-3xl font-extrabold sm:text-4xl">Find your next mission</h1>
-      <p className="mt-2 max-w-2xl text-muted-foreground">Live listings from job boards via JSearch. Pick a keyword or type your own; keywords that return the most listings rise to the top. The voice guide runs up to 10 minutes per session. <Link to="/jobs-setup" className="font-semibold text-primary underline underline-offset-4">Setup guide</Link></p>
+      <p className="mt-2 max-w-2xl text-muted-foreground">Live listings from job boards via JSearch. Pick a keyword or type your own; keywords that return the most listings rise to the top. The voice guide runs up to 10 minutes per session.</p>
       <p className="sr-only" aria-live="polite">{status}</p>
 
       <form className="mt-6 grid gap-3 rounded-2xl bg-surface p-4 sm:grid-cols-[1fr_200px_auto]" onSubmit={(e) => { e.preventDefault(); go(); }}>
@@ -101,7 +101,7 @@ function Jobs() {
 
       <section className="mt-8" aria-labelledby="results-h">
         <h2 id="results-h" className="font-display text-2xl font-bold">{searched ? `Results for “${searched}”` : "Results"}</h2>
-        {error && <p role="alert" className="mt-3 rounded-lg border border-danger/70 bg-surface p-3 text-danger">{error}{error.includes("not set up") && <> <Link to="/jobs-setup" className="font-semibold underline underline-offset-4">Open the setup guide</Link></>}</p>}
+        {error && <p role="alert" className="mt-3 rounded-lg border border-danger/70 bg-surface p-3 text-danger">{error}</p>}
         {!searched && !error && <p className="mt-2 text-muted-foreground">Pick a keyword to start.</p>}
         {searched && !error && !loading && jobs.length === 0 && <p className="mt-2 text-muted-foreground">No jobs found. Try a broader keyword.</p>}
         <ol className="mt-4 grid gap-3">
