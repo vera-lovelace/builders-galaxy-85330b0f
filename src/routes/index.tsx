@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Briefcase, Info, Play } from "lucide-react";
+import { BookOpen, Briefcase, Info, Mic, Play, ShieldCheck, Sparkles } from "lucide-react";
 import { Button } from "@/components/Button";
 import { Earth } from "@/components/Earth";
 import { WelcomeOrbit } from "@/components/WelcomeOrbit";
@@ -7,7 +7,7 @@ import { BrandMark } from "@/components/Rocket";
 import { meta } from "@/lib/meta";
 
 export const Route = createFileRoute("/")({
-  head: () => meta("Builder's Galaxy — PM trivia voyage", "Discover where you shine across 12 product skills, learn from people who've built it, and chart your next step."),
+  head: () => meta("The Builder's Galaxy — find your builder type in 10 minutes", "A 12-planet product trivia voyage that reveals your builder type, writes your mission statement and turns it into job pitches. Free, no sign-up."),
   component: Welcome,
 });
 
@@ -18,26 +18,71 @@ function Welcome() {
         <BrandMark />
         <Button asChild variant="ghost" size="md"><Link to="/about"><Info /> About</Link></Button>
       </header>
-      <section className="relative z-10 mx-auto flex w-full max-w-3xl flex-1 flex-col items-center px-5 pt-12 pb-6 text-center sm:pt-20">
+      <section className="relative z-10 mx-auto flex w-full max-w-3xl flex-col items-center px-5 pt-12 pb-6 text-center sm:pt-20">
         <p className="mb-4 font-display text-lg font-semibold text-foreground sm:text-xl">Every great product starts with a builder.</p>
-        <h1 className="font-display text-6xl font-extrabold leading-[0.95] tracking-tight sm:text-8xl">
-          Builder's <span className="text-primary">Galaxy</span>
+        <h1 className="font-display text-5xl font-extrabold leading-[0.95] tracking-tight sm:text-8xl">
+          The Builder's <span className="text-primary">Galaxy</span>
         </h1>
-        <p className="mt-6 text-lg text-muted-foreground">
-          Discover where you shine across 12 product skills, learn from people who've built it, and chart your next step.
-        </p>
-        <Button asChild className="mt-8 max-sm:mt-auto w-full max-w-xs">
+        <p className="mt-6 text-xl text-foreground sm:text-2xl">Find out what kind of builder you are, then turn it into your next role.</p>
+        <p className="mt-3 text-lg text-muted-foreground">Fly through 12 product skills in about 25 minutes. Leave with your builder type, a mission statement in your own voice, and job pitches ready to paste.</p>
+        <Button asChild className="mt-8 w-full max-w-xs">
           <Link to="/join"><Play className="fill-current" /> Start your voyage</Link>
         </Button>
-        <p className="mt-4 text-sm text-muted-foreground">12 planets · 24 questions · free, no sign-up</p>
-        <p className="mt-3 text-sm text-muted-foreground">
-          After your voyage, try the <Link to="/jobs" className="inline-flex items-center gap-1 text-foreground underline underline-offset-4 hover:text-info"><Briefcase className="size-3.5" aria-hidden />job search beta</Link>: live product roles, by keyword or by voice.
-        </p>
+        <p className="mt-4 text-sm text-muted-foreground">12 planets · 24 questions · free, no sign-up, nothing stored</p>
       </section>
       <div className="relative h-96 shrink-0">
         <Earth className="top-[90%]" />
         <WelcomeOrbit />
       </div>
+
+      <section aria-labelledby="get-h" className="relative z-10 mx-auto w-full max-w-6xl px-5 py-16">
+        <h2 id="get-h" className="text-center font-display text-3xl font-extrabold sm:text-5xl">One voyage. Everything you need for the next step.</h2>
+        <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {FEATURES.map(({ icon: Icon, title, body }) => (
+            <li key={title} className="rounded-2xl border border-border bg-surface p-6">
+              <Icon aria-hidden className="size-7 text-primary" />
+              <h3 className="mt-3 font-display text-xl font-bold">{title}</h3>
+              <p className="mt-2 text-muted-foreground">{body}</p>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section aria-labelledby="how-h" className="relative z-10 mx-auto w-full max-w-4xl px-5 py-12">
+        <h2 id="how-h" className="text-center font-display text-3xl font-extrabold sm:text-4xl">How it works</h2>
+        <ol className="mt-8 grid gap-4 sm:grid-cols-3">
+          {STEPS.map((st, i) => (
+            <li key={st.title} className="rounded-2xl bg-surface p-6">
+              <span className="font-display text-4xl font-extrabold text-primary">{i + 1}</span>
+              <h3 className="mt-2 font-display text-lg font-bold">{st.title}</h3>
+              <p className="mt-1 text-sm text-muted-foreground">{st.body}</p>
+            </li>
+          ))}
+        </ol>
+      </section>
+
+      <section className="relative z-10 mx-auto w-full max-w-3xl px-5 pt-12 pb-20 text-center">
+        <h2 className="font-display text-3xl font-extrabold sm:text-5xl">Your launch window is open.</h2>
+        <p className="mt-4 text-lg text-muted-foreground">No account. No tracking of who you are. Just you, 12 planets and a clearer next move.</p>
+        <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <Button asChild className="w-full max-w-xs"><Link to="/join"><Play className="fill-current" /> Start your voyage</Link></Button>
+          <Button asChild variant="secondary" className="w-full max-w-xs"><Link to="/jobs"><Briefcase /> Explore jobs</Link></Button>
+        </div>
+      </section>
     </main>
   );
 }
+
+const FEATURES = [
+  { icon: Play, title: "A 12-planet voyage", body: "24 scenario questions at your level, from problem framing to the pitch. A 60-second timer you can pause any time." },
+  { icon: Sparkles, title: "Your builder type", body: "Discovery Navigator, Product Strategist, Growth Commander or Pitch Pilot, with a mission statement and a card to share on LinkedIn or X." },
+  { icon: Briefcase, title: "Jobs that fit you", body: "Live product, engineering and design roles, matched to your builder type, with a tailored pitch for each job, ready to copy." },
+  { icon: BookOpen, title: "Lenny's tips drill", body: "93 tips from Lenny's Newsletter and Podcast as flashcards, starting with your three weakest planets." },
+  { icon: Mic, title: "Play by voice", body: "An optional voice guide reads questions, answers for you and runs job searches. Built for NVDA, VoiceOver and keyboards." },
+  { icon: ShieldCheck, title: "Your data, your space", body: "No sign-up and nothing stored. Your results stay in this browser, and exports are made on your device." },
+];
+const STEPS = [
+  { title: "Launch", body: "Pick a nickname and your experience level. That's it." },
+  { title: "Explore", body: "Visit 12 planets and answer two questions on each." },
+  { title: "Take off", body: "Get your builder type, share your card and find roles that fit." },
+];
