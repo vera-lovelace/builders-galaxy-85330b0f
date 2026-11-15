@@ -7,7 +7,7 @@ import { BrandMark } from "@/components/Rocket";
 import { meta } from "@/lib/meta";
 
 export const Route = createFileRoute("/")({
-  head: () => meta("The Builder's Galaxy — find your builder type in 10 minutes", "A 12-planet product trivia voyage that reveals your builder type, writes your mission statement and turns it into job pitches. Free, no sign-up."),
+  head: () => meta("The Builder's Galaxy", "A 12-planet product trivia voyage that reveals your builder type, writes your mission statement and turns it into job pitches. Free, no sign-up."),
   component: Welcome,
 });
 
@@ -24,7 +24,7 @@ function Welcome() {
           The Builder's <span className="text-primary">Galaxy</span>
         </h1>
         <p className="mt-6 text-xl text-foreground sm:text-2xl">Find out what kind of builder you are, then turn it into your next role.</p>
-        <p className="mt-3 text-lg text-muted-foreground">Fly through 12 product skills in about 25 minutes. Leave with your builder type, a mission statement in your own voice, and job pitches ready to paste.</p>
+        <p className="mt-3 text-lg text-muted-foreground">Fly through 12 product skills. Leave with your builder type, a mission statement in your own voice, and job pitches ready to paste.</p>
         <Button asChild className="mt-8 w-full max-w-xs">
           <Link to="/join"><Play className="fill-current" /> Start your voyage</Link>
         </Button>
