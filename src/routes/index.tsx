@@ -35,7 +35,6 @@ function Welcome() {
         <Earth size={200} className="bottom-2" />
         <WelcomeOrbit />
       </div>
-      <div className="relative z-10 mx-auto w-full max-w-xl px-5 pt-6"><TriviaNote /></div>
 
       <section aria-labelledby="get-h" className="relative z-10 mx-auto w-full max-w-6xl px-5 py-16">
         <h2 id="get-h" className="text-center font-display text-3xl font-extrabold sm:text-5xl">One voyage. Everything you need for the next step.</h2>
@@ -63,14 +62,7 @@ function Welcome() {
         </ol>
       </section>
 
-      <section className="relative z-10 mx-auto w-full max-w-3xl px-5 pt-12 pb-20 text-center">
-        <h2 className="font-display text-3xl font-extrabold sm:text-5xl">Your launch window is open.</h2>
-        <p className="mt-4 text-lg text-muted-foreground">No account. No tracking of who you are. Just you, 12 planets and a clearer next move.</p>
-        <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-          <Button asChild className="w-full max-w-xs"><Link to="/join"><Play className="fill-current" /> Start your voyage</Link></Button>
-          <Button asChild variant="secondary" className="w-full max-w-xs"><Link to="/jobs"><Briefcase /> Explore jobs</Link></Button>
-        </div>
-      </section>
+      <div className="relative z-10 mx-auto w-full max-w-xl px-5 pt-6 pb-20"><TriviaNote /></div>
     </main>
   );
 }
