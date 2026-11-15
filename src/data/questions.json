@@ -4,7 +4,7 @@
     "topicId": "problem-framing",
     "domain": "discovery-insight",
     "level": "newbie",
-    "question": "In the Pragmatic Framework, what are market problems?",
+    "question": "What are market problems?",
     "options": [
       "The feature gaps a product shows against its strongest competitor, ranked by how often the sales team hears about them.",
       "The pains, needs and desired outcomes that lead people to buy or use a product; they are measurable and observable.",
@@ -22,7 +22,7 @@
     "topicId": "problem-framing",
     "domain": "discovery-insight",
     "level": "beginner",
-    "question": "You want to learn why people buy in your category. According to the Pragmatic guide, whom should you talk with?",
+    "question": "You want to learn why people buy in your category. Whom should you talk with?",
     "options": [
       "Nobody; product usage analytics on their own reveal why people chose to buy the product in the first place.",
       "Evaluators, including both the people who decided to buy and the people who decided not to buy.",
@@ -58,7 +58,7 @@
     "topicId": "problem-framing",
     "domain": "discovery-insight",
     "level": "professional",
-    "question": "Your organisation does several things well, but competitors can match most of them. According to the Pragmatic guide, what should determine which market problems you choose to solve?",
+    "question": "Your organisation does several things well, but competitors can match most of them. What should determine which market problems you choose to solve?",
     "options": [
       "Your distinctive competencies: strengths that reflect excellence, are unmatched in your market and resist replication.",
       "Your core competencies, since they describe what the organisation does well and are therefore its safest foundation.",
@@ -76,7 +76,7 @@
     "topicId": "user-discovery",
     "domain": "discovery-insight",
     "level": "newbie",
-    "question": "What is the difference between buyer personas and user personas in the Pragmatic Framework?",
+    "question": "What is the difference between buyer personas and user personas?",
     "options": [
       "User personas matter only for consumer products, where the person who buys and the person who uses are identical.",
       "Buyer personas serve the marketing team and user personas serve the sales team, though both describe the same people.",
@@ -94,7 +94,7 @@
     "topicId": "user-discovery",
     "domain": "discovery-insight",
     "level": "beginner",
-    "question": "Which set-up for win/loss analysis does the Pragmatic guide recommend?",
+    "question": "Which set-up for win/loss analysis works best?",
     "options": [
       "An independent interviewer studies the two or three largest lost deals in depth, since they carry the most revenue.",
       "Someone outside sales interviews evaluators two to four weeks after their decision, repeated across at least 10 deals.",
@@ -130,7 +130,7 @@
     "topicId": "user-discovery",
     "domain": "discovery-insight",
     "level": "professional",
-    "question": "Customer success keeps approving the same custom workaround for different accounts. What does the Pragmatic guide say this pattern signals?",
+    "question": "Customer success keeps approving the same custom workaround for different accounts. What does this pattern most likely signal?",
     "options": [
       "A sign that the approval criteria for exceptions are too loose, so the team should tighten them and refuse more requests.",
       "A customer success matter to be handled account by account, so long as each workaround keeps that customer satisfied.",
@@ -148,7 +148,7 @@
     "topicId": "product-promise",
     "domain": "strategy-positioning",
     "level": "newbie",
-    "question": "How does the Pragmatic guide distinguish positioning from messaging?",
+    "question": "How do positioning and messaging differ?",
     "options": [
       "Positioning is what you want to communicate; messaging is how you will communicate it.",
       "Messaging comes first, and positioning is later distilled from the messages that performed best in market.",
@@ -202,7 +202,7 @@
     "topicId": "product-promise",
     "domain": "strategy-positioning",
     "level": "professional",
-    "question": "You are drafting a positioning document for a product sold to companies. According to the Pragmatic guide, what should a strong one contain?",
+    "question": "You are drafting a positioning document for a product sold to companies. What should a strong one contain?",
     "options": [
       "The problem and the solution, with messaging tuned to the executive sponsor, who signs the purchase order.",
       "A full feature list and release history, since detail persuades buyers more than any statement of value.",
@@ -220,7 +220,7 @@
     "topicId": "prototype-testing",
     "domain": "execution-validation",
     "level": "newbie",
-    "question": "In the Pragmatic Framework, what does Ideation produce?",
+    "question": "What does the Ideation stage produce?",
     "options": [
       "A long list of brainstormed ideas, ranked by how enthusiastic the team felt about each one in the session.",
       "Concepts, prototypes and experiments, drawn from market problems and user insight, to test before full delivery.",
@@ -238,7 +238,7 @@
     "topicId": "prototype-testing",
     "domain": "execution-validation",
     "level": "beginner",
-    "question": "After testing several concepts with real users, which should the team keep, according to the Pragmatic guide?",
+    "question": "After testing several concepts with real users, which should the team keep?",
     "options": [
       "The ideas that earn evidence, dropping the ones that do not.",
       "Every idea that at least one tester responded to positively, so that nothing promising is lost.",
@@ -274,11 +274,11 @@
     "topicId": "prototype-testing",
     "domain": "execution-validation",
     "level": "professional",
-    "question": "A team uses AI to synthesise interview transcripts and generate prototype variants. What does the Pragmatic guide require of it?",
+    "question": "A team uses AI to synthesise interview transcripts and generate prototype variants. What must the team still do with the output?",
     "options": [
       "Verify the outputs, protect sensitive information and remain accountable for the decisions taken.",
       "Let the AI make prioritisation calls, since an automated system removes human bias from the decision.",
-      "Treat AI as a separate category of the Framework, with its own owner responsible for every AI-assisted task.",
+      "Treat AI as its own discipline, with a separate owner responsible for every AI-assisted task.",
       "Rely on AI outputs whenever they agree with the team's own findings, and check only those that disagree."
     ],
     "correctIndex": 0,
@@ -292,7 +292,7 @@
     "topicId": "mvp-specification",
     "domain": "execution-validation",
     "level": "newbie",
-    "question": "According to the Pragmatic guide, what should a good requirement describe?",
+    "question": "What should a good requirement describe?",
     "options": [
       "Only the release date and budget, leaving the problem itself for the team to discover during the build.",
       "Who has the problem, together with the user interface the product manager prefers for solving it.",
@@ -328,7 +328,7 @@
     "topicId": "mvp-specification",
     "domain": "execution-validation",
     "level": "advanced",
-    "question": "Your team builds with AI coding tools. How specific does the Pragmatic guide say requirements should be?",
+    "question": "Your team builds with AI coding tools. How specific should requirements be?",
     "options": [
       "As short as possible, because the AI tools can infer missing context from the existing codebase.",
       "Requirements become unnecessary once AI tools generate the code directly from conversation.",
@@ -364,7 +364,7 @@
     "topicId": "build-planning",
     "domain": "prioritization-delivery",
     "level": "newbie",
-    "question": "What is a product roadmap in the Pragmatic Framework?",
+    "question": "What is a product roadmap?",
     "options": [
       "A visual plan of the product's direction and priorities over time that communicates strategy and guides execution.",
       "A release schedule owned by engineering that records when each finished component will ship to production.",
@@ -400,7 +400,7 @@
     "topicId": "build-planning",
     "domain": "prioritization-delivery",
     "level": "advanced",
-    "question": "You must share the build plan with employees, executives and customers. How does the Pragmatic guide suggest tailoring it?",
+    "question": "You must share the build plan with employees, executives and customers. How should you tailor it?",
     "options": [
       "Send every group the same detailed update, because identical information is the surest route to transparency.",
       "Communicate only when the plan changes, since stable plans need no further communication with anyone.",
@@ -418,7 +418,7 @@
     "topicId": "build-planning",
     "domain": "prioritization-delivery",
     "level": "professional",
-    "question": "Demand for your product is rising quickly. What does the Pragmatic guide's Scaling focus area advise?",
+    "question": "Demand for your product is rising quickly. What should the team do about scaling?",
     "options": [
       "Find manual processes, standardise, remove recurring work through product changes and plan capacity ahead of demand.",
       "Add people to the manual processes as volume grows, so that capacity always keeps pace with incoming demand.",
@@ -436,7 +436,7 @@
     "topicId": "business-model",
     "domain": "strategy-positioning",
     "level": "newbie",
-    "question": "The Pragmatic guide warns against three pricing mistakes. Which set is it?",
+    "question": "Three pricing mistakes are commonly warned against. Which set are they?",
     "options": [
       "Overly complex models, cost-plus pricing and testing prices too often.",
       "Charging for the product before it has reached maturity in the market.",
@@ -454,7 +454,7 @@
     "topicId": "business-model",
     "domain": "strategy-positioning",
     "level": "beginner",
-    "question": "Which summary of the buy, build or partner trade-offs matches the Pragmatic guide?",
+    "question": "Which summary of the buy, build or partner trade-offs is the most accurate?",
     "options": [
       "The choice belongs to the finance team alone and should not be shaped by market needs.",
       "Partnering is fastest and safest, because it avoids both acquisition costs and the time needed to build.",
@@ -490,7 +490,7 @@
     "topicId": "business-model",
     "domain": "strategy-positioning",
     "level": "professional",
-    "question": "A product launched three months ago is not yet profitable, and leadership asks whether it is failing. What does the Pragmatic guide suggest?",
+    "question": "A product launched three months ago is not yet profitable, and leadership asks whether it is failing. What should you look at before answering?",
     "options": [
       "Stop tracking outcomes altogether until the product is mature, because early figures are only noise.",
       "Judge it on outcomes that fit its stage; early products may be judged on validation and adoption before profit.",
@@ -508,7 +508,7 @@
     "topicId": "go-to-market",
     "domain": "growth-measurement",
     "level": "newbie",
-    "question": "What is a distribution strategy in the Pragmatic Framework?",
+    "question": "What is a distribution strategy?",
     "options": [
       "The logistics plan for shipping physical goods, which digital and internal products do not need.",
       "The internal process for distributing roadmap updates to the company's stakeholders.",
@@ -526,7 +526,7 @@
     "topicId": "go-to-market",
     "domain": "growth-measurement",
     "level": "beginner",
-    "question": "Before a launch date, what does the Pragmatic guide say must be in place?",
+    "question": "Before a launch date is set, what must be in place?",
     "options": [
       "Engineering's sign-off that the build is complete; readiness in other teams is helpful but optional.",
       "The marketing campaign and press coverage; other teams can catch up during the weeks after launch.",
@@ -562,7 +562,7 @@
     "topicId": "go-to-market",
     "domain": "growth-measurement",
     "level": "professional",
-    "question": "You must choose between selling direct and selling through partners. Where does the Pragmatic guide say to start?",
+    "question": "You must choose between selling direct and selling through partners. Where should you start?",
     "options": [
       "Start from the channels the organisation already supports, since existing capability lowers the risk of execution.",
       "Copy the largest competitor's channel mix, because the market has already validated it.",
@@ -580,7 +580,7 @@
     "topicId": "metrics-adoption",
     "domain": "growth-measurement",
     "level": "newbie",
-    "question": "In the Pragmatic guide, how do leading and lagging indicators differ?",
+    "question": "How do leading and lagging indicators differ?",
     "options": [
       "Leading indicators, such as incoming leads, predict results; lagging indicators, such as product sales, confirm them.",
       "They are the same metrics, labelled differently depending on whether results are good or bad.",
@@ -616,7 +616,7 @@
     "topicId": "metrics-adoption",
     "domain": "growth-measurement",
     "level": "advanced",
-    "question": "When should adoption be planned, and what does the Pragmatic guide include in that plan?",
+    "question": "When should adoption be planned, and what belongs in that plan?",
     "options": [
       "Before launch, focused on the first sign-in, since activation is the moment that determines adoption.",
       "Before launch: define meaningful use, decide who needs onboarding and training, and track whether use continues.",
@@ -670,7 +670,7 @@
     "topicId": "demo-prioritization",
     "domain": "communication-influence",
     "level": "beginner",
-    "question": "In the Pragmatic guide, demos sit with case studies and ROI calculators as 'assets'. Who should build them?",
+    "question": "Demos sit alongside case studies and ROI calculators as sales assets. Who should build them?",
     "options": [
       "Product alone, because it knows the product best and can show every capability accurately.",
       "Sales alone, because sales delivers the demos and knows exactly what persuades buyers in the room.",
@@ -688,7 +688,7 @@
     "topicId": "demo-prioritization",
     "domain": "prioritization-delivery",
     "level": "advanced",
-    "question": "A stakeholder asks for a feature that does not serve the product's direction. What does the Pragmatic guide say product strategy should help you do?",
+    "question": "A stakeholder asks for a feature that does not serve the product's direction. What should product strategy help you do?",
     "options": [
       "Accept the request and log it, since the strategy should flex to keep important stakeholders supportive.",
       "Say no to work that does not serve the strategy, which is grounded in market problems and distinctive competencies.",
@@ -706,7 +706,7 @@
     "topicId": "demo-prioritization",
     "domain": "prioritization-delivery",
     "level": "professional",
-    "question": "You manage several products and must decide where to invest. Which approach does the Pragmatic guide describe?",
+    "question": "You manage several products and must decide where to invest. Which approach is the soundest?",
     "options": [
       "Map each offer by lifecycle stage and problem solved, allocate by strategy, and balance horizons from today to the future.",
       "Manage each product independently, since portfolio-level planning adds bureaucracy without benefit.",
@@ -742,7 +742,7 @@
     "topicId": "commercial-case",
     "domain": "strategy-positioning",
     "level": "beginner",
-    "question": "Formats for a product business plan vary. What does the Pragmatic guide say every plan should document?",
+    "question": "Formats for a product business plan vary. What should every plan document?",
     "options": [
       "The revenue forecast and the cost estimate, since leadership funds plans on financial projections.",
       "The market problems the product addresses and why your organisation is well suited to solve them.",
@@ -760,7 +760,7 @@
     "topicId": "commercial-case",
     "domain": "strategy-positioning",
     "level": "advanced",
-    "question": "What should be the first step in building a product business plan, according to the Pragmatic guide?",
+    "question": "What should be the first step in building a product business plan?",
     "options": [
       "Confirm that the idea supports company strategy.",
       "Estimate costs and revenue, so that the plan opens with the numbers leadership will ask about first.",
@@ -814,7 +814,7 @@
     "topicId": "pitch-build",
     "domain": "communication-influence",
     "level": "beginner",
-    "question": "Which two pitfalls does the Pragmatic guide name when shaping positioning and the messages built on it?",
+    "question": "Which two pitfalls are most common when shaping positioning and the messages built on it?",
     "options": [
       "Trying to appeal to everyone and quoting prices too early.",
       "Being too specific about the buyer and the problem.",
