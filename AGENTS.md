@@ -42,3 +42,4 @@ use the editor.
 - WelcomeOrbit renders a decorative preview from the shared planet list; RouteProgress renders semantic voyage progress on Questions and the Galaxy mission bar so stop identities stay consistent.
 - About page lists sources via src/data/sources.ts, grouped from the data files; never hand-type source lists.
 - ElevenLabs voice guide lives in src/components/VoiceAgent.tsx, lazy-loaded client-only on Question; game actions go through a handlers ref so tools always see current state.
+- Job search beta calls JSearch (RapidAPI) only from `src/lib/jobs.functions.ts` with the server-side RAPIDAPI_KEY; keyword ranking is live session result counts, never invented demand stats.

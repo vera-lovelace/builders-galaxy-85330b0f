@@ -1,5 +1,5 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
-import { Check, Info, RotateCcw, Trophy } from "lucide-react";
+import { Check, Info, Search, RotateCcw, Trophy } from "lucide-react";
 import { useEffect } from "react";
 import { LennyTips } from "@/components/LennyTips";
 import { WhatsNext } from "@/components/WhatsNext";
@@ -90,6 +90,7 @@ function Results() {
           <RotateCcw /> Play again
         </Button>
         <Button asChild variant="ghost" size="md" className="self-start sm:self-center"><Link to="/about"><Info /> About and sources</Link></Button>
+        <Button asChild variant="ghost" size="md" className="self-start sm:self-center"><Link to="/jobs"><Search /> Job search beta</Link></Button>
       </div>
     </Shell>
   );

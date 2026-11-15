@@ -22,3 +22,4 @@
 - [x] Show What's next buttons on Leaderboard and Results, including an unfinished voyage
 
 - [x] ElevenLabs voice agent wired (public agent, client tools)
+- [ ] Job search beta (/jobs, JSearch via RapidAPI, voice guide tools): waiting on RAPIDAPI_KEY and ElevenLabs tool setup
