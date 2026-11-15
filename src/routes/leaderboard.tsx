@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowLeft } from "lucide-react";
+import { WhatsNext } from "@/components/WhatsNext";
 import { Button } from "@/components/Button";
 import { Earth } from "@/components/Earth";
 import { RankRow } from "@/components/game";
@@ -49,10 +50,10 @@ function Leaderboard() {
         </header>
 
         <div className="mt-8 grid grid-cols-3 items-end gap-2">
-          {([top[1], top[0], top[2]] as (LeaderboardEntry | undefined)[]).map((e, i) => e && <Podium key={e.id} entry={e} rank={[2, 1, 3][i]!} />)}
+          {([top[1], top[0], top[2]] as (LeaderboardEntry | undefined)[]).map((e, i) => e && <Podium key={e.id} entry={e} rank={[2, 1, 3][i] ?? 3} />)}
         </div>
 
-        <div className="rounded-b-2xl bg-background/80 backdrop-blur">
+        <div className="rounded-b-2xl bg-background">
           {you && yourRank > 3 && (
             <div className="flex items-center justify-between border-y border-border px-1 py-3 font-display text-lg font-bold">
               <span>Your rank is <span className="text-primary">{yourRank}</span></span>
@@ -66,7 +67,8 @@ function Leaderboard() {
           </ol>
         </div>
 
-        <Button asChild variant="secondary" className="mt-6 w-full sm:w-auto">
+        {run && run.current >= 12 && <WhatsNext run={run} />}
+        <Button asChild variant="secondary" className="mt-3 w-full">
           <Link to="/results"><ArrowLeft /> Back to my results</Link>
         </Button>
         <p className="mt-6 text-center text-xs text-muted-foreground">Sample players shown until the live room is connected.</p>
@@ -80,7 +82,7 @@ function Podium({ entry, rank }: { entry: LeaderboardEntry; rank: number }) {
     <div className="flex flex-col items-center">
       <PlayerAvatar nickname={entry.nickname} size={rank === 1 ? 84 : 64} full cheer={rank === 1} className="-mb-3" />
       <div
-        className={cn("flex w-full flex-col items-center rounded-t-xl bg-gradient-to-b from-earth-deep to-background/40 px-1 pt-3 text-center",
+        className={cn("flex w-full flex-col items-center rounded-t-2xl bg-podium px-1 pt-3 text-center",
           rank === 1 ? "h-44" : rank === 2 ? "h-32" : "h-28", entry.isYou && "ring-2 ring-primary")}
       >
         <span className="font-display text-4xl font-extrabold">{rank}</span>

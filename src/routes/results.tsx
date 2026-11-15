@@ -1,13 +1,14 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
-import { Check, ChevronDown, RotateCcw, Trophy } from "lucide-react";
+import { Check, RotateCcw, Trophy } from "lucide-react";
 import { useEffect } from "react";
+import { LennyTips } from "@/components/LennyTips";
 import { Button } from "@/components/Button";
 import { Planet } from "@/components/Planet";
 import { PlayerAvatar } from "@/components/PlayerAvatar";
 import { Shell } from "@/components/Shell";
 import { summary } from "@/game/run";
 import { runStore, useRun } from "@/game/runStore";
-import { formatTime, weakestPlanets } from "@/game/rules";
+import { formatTime, weakestPlanets, hasExtraLowestTies } from "@/game/rules";
 import { meta } from "@/lib/meta";
 
 export const Route = createFileRoute("/results")({
@@ -43,7 +44,7 @@ function Results() {
         <div>
           <dl className="grid grid-cols-2 gap-x-6 gap-y-5">
             <Stat label="XP earned" value={s.xp.toLocaleString("en-US")} accent />
-            <Stat label="Score" value={`${s.correct}/${s.total}`} />
+            <Stat label="Score" value={`${s.correct} of ${s.total}`} />
             <Stat label="Time" value={formatTime(s.ms)} />
             <div>
               <dt className="text-sm text-muted-foreground">Assessed level</dt>
@@ -53,38 +54,31 @@ function Results() {
           </dl>
           <hr className="my-6 border-border" />
           <h2 className="font-display text-2xl font-bold">Explore next</h2>
-          <p className="text-sm text-muted-foreground">Your three lowest-scoring planets.</p>
+          <p className="text-sm text-muted-foreground">{hasExtraLowestTies(s.scores) ? "Three of your lowest-scoring planets" : "Your three lowest-scoring planets"}</p>
           <ul className="mt-4 grid gap-3">
             {weak.map((w) => (
-              <li key={w.planetId} className="flex items-center gap-3 rounded-2xl bg-surface px-3 py-2">
+              <li key={w.planetId} className="flex items-center gap-3 rounded-lg bg-surface px-3 py-2">
                 <Planet color={w.planet.color} size={38} ring={w.planet.ring} />
-                <span className="flex-1 font-display text-lg font-semibold">{w.planet.name}</span>
-                <span className="text-sm text-muted-foreground">{w.correct}/{w.total}</span>
+                <span className="min-w-0 flex-1 font-display text-lg font-semibold">{w.planet.name}</span>
+                <span className="shrink-0 text-sm text-muted-foreground">{w.correct} of {w.total}</span>
+                <LennyTips planet={w.planet} iconOnly />
               </li>
             ))}
           </ul>
         </div>
       </div>
 
-      <details className="group mt-8 rounded-2xl border border-border bg-surface">
-        <summary className="flex min-h-14 cursor-pointer list-none items-center justify-between px-4 font-display font-semibold">
-          Planet by planet <ChevronDown className="size-5 transition-transform group-open:rotate-180" />
-        </summary>
-        <ul className="grid gap-1 px-4 pb-4">
-          {s.scores.map((p) => (
-            <li key={p.planetId} className="flex items-center gap-3 py-1.5">
-              <span className="size-3 rounded-full" style={{ backgroundColor: p.planet.color }} />
-              <span className="flex-1">{p.planet.name}</span>
-              <span className="flex gap-1" aria-label={`${p.correct} of ${p.total} correct`}>
-                {Array.from({ length: p.total }, (_, i) => (
-                  <span key={i} className={i < p.correct ? "h-2 w-6 rounded-full bg-success" : "h-2 w-6 rounded-full bg-muted"} />
-                ))}
-              </span>
-              <span className="w-16 text-right text-sm text-muted-foreground">{p.xp} XP</span>
-            </li>
-          ))}
+      <section className="mt-8">
+        <h2 className="font-display text-2xl font-bold">Your skill map</h2>
+        <ul className="mt-3 divide-y divide-border">
+          {s.scores.map(p => <li key={p.planetId} className="flex items-center gap-3 py-3">
+            <span className="size-3 shrink-0 rounded-full" style={{ backgroundColor: p.planet.color }} aria-hidden />
+            <span className="min-w-0 flex-1">{p.planet.name}</span>
+            <span className="shrink-0 text-sm text-muted-foreground">{p.correct} of {p.total}<span className="sr-only"> correct</span></span>
+            <LennyTips planet={p.planet} iconOnly />
+          </li>)}
         </ul>
-      </details>
+      </section>
 
       <div className="mt-6 flex flex-col gap-3 sm:flex-row">
         <Button asChild><Link to="/leaderboard"><Trophy /> See the leaderboard</Link></Button>
@@ -127,7 +121,7 @@ function SkillOrbit({ pct, scores }: { pct: number; scores: ReturnType<typeof su
         return (
           <div key={p.planetId} className="absolute -translate-x-1/2 -translate-y-1/2"
             style={{ left: `${((c + R * Math.cos(a)) / S) * 100}%`, top: `${((c + R * Math.sin(a)) / S) * 100}%` }}
-            title={`${p.planet.name}: ${p.correct}/${p.total}`}>
+            title={`${p.planet.name}: ${p.correct} of ${p.total}`}>
             <Planet color={p.planet.color} size={size} ring={p.planet.ring} state="done" className={p.correct ? undefined : "opacity-50 grayscale"} />
             {ratio === 1 && (
               <span className="absolute right-1 top-1 flex size-4 items-center justify-center rounded-full bg-success text-primary-foreground">

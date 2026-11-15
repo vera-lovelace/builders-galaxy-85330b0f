@@ -1,15 +1,31 @@
 import { describe, expect, it } from "vitest";
-import { levelFor, weakestPlanets, xpFor, formatTime } from "./rules";
+import { levelFor, weakestPlanets, xpFor, formatTime, SECONDS_PER_QUESTION, isLowTime, questionLevelsFor, hasExtraLowestTies } from "./rules";
 import { rankEntries } from "./leaderboard";
 import { newRun } from "./run";
+import { getQuestion } from "@/data/questionBank";
 import { PLANETS } from "@/data/planets";
 
 describe("game rules", () => {
-  it("gives 100 XP plus up to 50 for speed, 0 when wrong", () => {
-    expect(xpFor(true, 30)).toBe(150);
-    expect(xpFor(true, 0)).toBe(100);
-    expect(xpFor(true, 15)).toBe(125);
-    expect(xpFor(false, 30)).toBe(0);
+  it("uses 60 seconds per question", () => {
+    expect(SECONDS_PER_QUESTION).toBe(60);
+  });
+  it("awards exactly 100 XP when correct and zero otherwise", () => {
+    expect(xpFor(true)).toBe(100);
+    expect(xpFor(false)).toBe(0);
+  });
+  it("uses coral at 10 seconds or less", () => {
+    expect(isLowTime(10)).toBe(true);
+    expect(isLowTime(11)).toBe(false);
+  });
+  it.each(["Newbie", "Beginner", "Advanced", "Pro"] as const)("selects picked and next levels for %s", experience => {
+    const run = newRun({ nickname: "Ada", experience });
+    const expected = experience === "Newbie" ? ["newbie", "beginner"] : experience === "Beginner" ? ["beginner", "advanced"] : ["advanced", "professional"];
+    expect(questionLevelsFor(experience)).toEqual(expected);
+    for (const planet of PLANETS) expect(run.plan[planet.id].map(id => getQuestion(id)?.level)).toEqual(expected);
+  });
+  it("detects extra planets tied for the minimum", () => {
+    expect(hasExtraLowestTies(Array.from({ length: 4 }, (_, i) => ({ planetId: String(i), correct: 0, total: 2 })))).toBe(true);
+    expect(hasExtraLowestTies([{ planetId: "a", correct: 0, total: 2 }])).toBe(false);
   });
   it("assigns levels at 85/65/40% accuracy", () => {
     expect(levelFor(0.85)).toBe("Pro");

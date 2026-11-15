@@ -1,7 +1,8 @@
-import { Check, X, Timer, Sparkles } from "lucide-react";
+import { Check, X, Pause, Sparkles } from "lucide-react";
 import { PLANETS } from "@/data/planets";
 import { cn } from "@/lib/utils";
-import { SECONDS_PER_QUESTION } from "@/game/rules";
+import { SECONDS_PER_QUESTION, isLowTime } from "@/game/rules";
+import { Planet } from "./Planet";
 import { Rocket } from "./Rocket";
 import { PlayerAvatar } from "./PlayerAvatar";
 
@@ -51,15 +52,26 @@ export function RouteProgress({ current }: { current: number }) {
   );
 }
 
-export function TimerBar({ seconds }: { seconds: number }) {
-  const low = seconds <= 5;
+export function OrbitTimer({ seconds, paused, color, ring }: { seconds: number; paused: boolean; color: string; ring?: boolean | undefined }) {
+  const low = isLowTime(seconds);
+  const circumference = 2 * Math.PI * 88;
   return (
-    <div className="flex items-center gap-3" role="timer" aria-label={`${Math.ceil(seconds)} seconds left`}>
-      <Timer className={cn("size-5", low ? "text-danger" : "text-info")} aria-hidden />
-      <div className="h-2.5 flex-1 overflow-hidden rounded-full bg-muted">
-        <div className={cn("h-full rounded-full transition-[width] duration-200 ease-linear", low ? "bg-danger" : "bg-info")} style={{ width: `${(seconds / SECONDS_PER_QUESTION) * 100}%` }} />
+    <div className="flex flex-col items-center gap-2">
+      <div className="relative size-52">
+        <svg viewBox="0 0 208 208" className="absolute inset-0 size-full" aria-hidden>
+          <circle cx="104" cy="104" r="88" fill="none" className="stroke-muted" strokeWidth="5" />
+          <circle cx="104" cy="104" r="88" fill="none" className={low ? "stroke-danger" : "stroke-info"} strokeWidth="5"
+            strokeLinecap="round" strokeDasharray={`${circumference * Math.max(0, seconds) / SECONDS_PER_QUESTION} ${circumference}`}
+            transform="rotate(-90 104 104)" />
+        </svg>
+        <div className="absolute inset-0 flex items-center justify-center" aria-hidden><Planet color={color} ring={ring} size={80} /></div>
       </div>
-      <span className={cn("w-7 text-right font-display text-lg font-bold tabular-nums", low && "text-danger")}>{Math.ceil(seconds)}</span>
+      <span className={cn("inline-flex min-h-12 items-center gap-2 rounded-lg bg-surface-raised px-4 font-display text-xl font-bold tabular-nums", low && "text-danger")}>
+        {paused && <Pause className="size-5" aria-hidden />}
+        <span aria-hidden>{Math.ceil(seconds)}</span>
+        <span className="sr-only">{Math.ceil(seconds)} seconds left</span>
+        {paused && <span className="hidden sm:inline" aria-hidden>Paused</span>}
+      </span>
     </div>
   );
 }

@@ -152,7 +152,7 @@ function Galaxy() {
         {!done && (
           <div
             ref={rocketRef}
-            className="pointer-events-none absolute left-0 top-0 transition-transform duration-[1500ms] ease-in-out"
+            className="pointer-events-none absolute left-0 top-0 transition-transform flight-transition ease-in-out"
             style={{ transform: `translate(${rp.x - 14}px, ${rp.y - SIZE * 0.7 - 44}px) rotate(${angle}deg)` }}
           >
             <Rocket size={28} />

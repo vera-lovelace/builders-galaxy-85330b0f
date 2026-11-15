@@ -60,6 +60,10 @@
   --suit: oklch(0.97 0.01 270);
   --suit-shade: oklch(0.8 0.04 272);
   --radius: 0.625rem;
+  --duration-flight: 1500ms;
+  --podium-top: 210 45% 42%;
+  --podium-bottom: 210 45% 30%;
+  --gradient-podium: linear-gradient(to bottom, hsl(var(--podium-top)), hsl(var(--podium-bottom)));
 }
 
 @layer base {
@@ -111,3 +115,9 @@
     scroll-behavior: auto !important;
   }
 }
+
+.modal::backdrop { background: color-mix(in oklab, var(--background) 85%, transparent); }
+.modal { overflow-wrap: anywhere; }
+
+@utility bg-podium { background-image: var(--gradient-podium); }
+@utility flight-transition { transition-duration: var(--duration-flight); }

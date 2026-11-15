@@ -6,9 +6,13 @@
 - [x] Verify desktop + phone
 - [x] 30s question timer
 - [x] Pause button on questions
-- [ ] Prompt 1: 60s timer, fixed XP, accessible pause and keyboard controls
-- [ ] Import supplied baseline bank, level-pair selection and source links
-- [ ] Verify timer, question selection and desktop/mobile question flow
-- [ ] Prompt 2: topic-grouped Lenny tips, accessible dialog and Results buttons/score text
-- [ ] Prompt 3: What's next dialog and on-device share/copy/Markdown/JSON exports
-- [ ] Feature votes: waiting for permission to enable Cloud (previously declined)
+- [x] Prompt 1: 60s timer, fixed XP, accessible pause and keyboard controls
+- [x] Import supplied baseline bank, level-pair selection and source links
+- [x] Verify full run, rule tests, 320px question/dialogs and 200% dialog zoom
+- [x] Prompt 2: topic-grouped Lenny tips, accessible dialog and Results buttons/score text
+- [x] Prompt 3: What's next dialog and on-device share/copy/Markdown/JSON exports
+- [ ] Feature votes: blocked by explicit decision to keep Cloud disabled; submission disabled
+- [x] Review Prompt 4: no existing voice mode to amend; ElevenLabs remains disconnected
+- [x] Prompt 5: flight/podium tokens, 48px back controls and leaderboard radii
+- [x] Release content: show all options in tip details, cite titles without inventing missing URLs, correct voyage duration
+- [ ] Human release review: NVDA behaviour and source/content accuracy need user review

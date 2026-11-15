@@ -6,7 +6,7 @@ import { BrandMark, Rocket } from "@/components/Rocket";
 import { meta } from "@/lib/meta";
 
 export const Route = createFileRoute("/")({
-  head: () => meta("Builder's Galaxy — PM trivia voyage", "Fly through 12 planets of product management. Answer fast, earn XP, and see where you shine."),
+  head: () => meta("Builder's Galaxy — PM trivia voyage", "Fly through 12 planets of product management. Answer questions, earn XP, and see where you shine."),
   component: Welcome,
 });
 
@@ -21,12 +21,12 @@ function Welcome() {
           Builder's <span className="text-primary">Galaxy</span>
         </h1>
         <p className="mt-6 text-lg text-muted-foreground">
-          Fly through 12 planets of product management. Answer fast, earn XP, and see where you shine.
+          Fly through 12 planets of product management. Answer questions, earn XP, and see where you shine.
         </p>
         <Button asChild className="mt-8 w-full max-w-xs">
           <Link to="/join"><Play className="fill-current" /> Play</Link>
         </Button>
-        <p className="mt-4 text-sm text-muted-foreground">12 planets · about 5 minutes · room leaderboard</p>
+        <p className="mt-4 text-sm text-muted-foreground">12 planets · 24 questions · up to 24 minutes of answering</p>
       </section>
       <div className="relative h-[34vh] min-h-56">
         <Earth className="top-[38%]" />

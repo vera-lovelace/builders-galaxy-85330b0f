@@ -33,3 +33,7 @@ use the editor.
 - Questions load only through `src/data/questionBank.ts` (adapter over `src/data/questions.json`); never inline or generate questions — keeps one swappable source.
 - Game rules live in `src/game/rules.ts`, run state in `src/game/runStore.ts` (sessionStorage) and room data in `src/game/leaderboard.ts` (mock); screens never touch storage directly so a backend can replace these adapters later.
 - Planet hues are per-planet data in `src/data/planets.ts`, not theme tokens; all other colours are tokens in `src/styles.css`.
+
+- Lenny tip data is separate from the question adapter and never enters run plans, so tips cannot disclose a playable answer.
+- QuestionClock owns active-time accounting; screens use its pause/resume API so elapsed results exclude pauses.
+- Native dialogs share Modal for focus containment and opener restoration; exports are generated only in the browser to avoid uploading results.
