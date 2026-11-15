@@ -1,0 +1,866 @@
+[
+  {
+    "id": "base-problem-framing-newbie",
+    "topicId": "problem-framing",
+    "domain": "discovery-insight",
+    "level": "newbie",
+    "question": "In the Pragmatic Framework, what are market problems?",
+    "options": [
+      "The feature gaps a product shows against its strongest competitor, ranked by how often the sales team hears about them.",
+      "The pains, needs and desired outcomes that lead people to buy or use a product; they are measurable and observable.",
+      "The internal process difficulties a product team meets while planning and shipping its own releases.",
+      "The demographic and firmographic data that describe who a product's potential customers are and how many of them exist."
+    ],
+    "correctIndex": 1,
+    "explanation": "The guide defines market problems as the pains, needs and desired outcomes that lead people to buy or use a product, and adds that they are measurable and observable. Competitor feature gaps belong to the Competitive Landscape focus area; they can hint at problems, yet a ranked gap list describes rival products, which is a different object. Demographic and firmographic data are useful, but the guide states plainly that data and personas tell you who potential customers are without explaining why people buy. Internal delivery difficulties are not market problems at all, since the term refers to the market's pains.",
+    "sourceTitle": "Product Professionals' Guide to the Pragmatic Framework (refreshed for 2027)",
+    "sourceAuthor": "Pragmatic Institute",
+    "sourceUrl": "https://www.pragmaticinstitute.com/product/framework/"
+  },
+  {
+    "id": "base-problem-framing-beginner",
+    "topicId": "problem-framing",
+    "domain": "discovery-insight",
+    "level": "beginner",
+    "question": "You want to learn why people buy in your category. According to the Pragmatic guide, whom should you talk with?",
+    "options": [
+      "Nobody; product usage analytics on their own reveal why people chose to buy the product in the first place.",
+      "Evaluators, including both the people who decided to buy and the people who decided not to buy.",
+      "Your sales team, because they hear buyer objections and reasons for purchase in every single deal they run.",
+      "Your most loyal current customers, because they understand the product's value better than anyone else does."
+    ],
+    "correctIndex": 1,
+    "explanation": "The guide tells teams to talk with evaluators, both those who decided to buy and those who decided not to, and then validate, prioritise and share the problems that matter most. Loyal customers are part of that group, yet speaking only with buyers hides the reasons non-buyers walked away. The sales team hears a great deal, but it is a second-hand view; the guide even recommends that win/loss work be handled by someone outside sales so evaluators speak honestly. Usage analytics show behaviour after purchase and cannot by themselves explain the decision to buy.",
+    "sourceTitle": "Product Professionals' Guide to the Pragmatic Framework (refreshed for 2027)",
+    "sourceAuthor": "Pragmatic Institute",
+    "sourceUrl": "https://www.pragmaticinstitute.com/product/framework/"
+  },
+  {
+    "id": "base-problem-framing-advanced",
+    "topicId": "problem-framing",
+    "domain": "discovery-insight",
+    "level": "advanced",
+    "question": "The Skills Matrix includes a discipline called 'Driven by Self-Opinion'. What does it describe, and how should the score move?",
+    "options": [
+      "Relying on deep product knowledge, which the Matrix treats as the strongest suit and so as a safe basis for most decisions.",
+      "Basing decisions on one's own view of use and requirements instead of market factors; the score should be reduced over time.",
+      "A positive measure of conviction that the Matrix encourages product managers to raise as they become more senior.",
+      "A habit that mainly affects new product managers, who have not yet built enough product knowledge to judge requirements."
+    ],
+    "correctIndex": 1,
+    "explanation": "The Matrix warns that products can stagnate or drift in suboptimal directions when product managers base decisions on self-opinion about use and requirements instead of market factors, and says the score should be reduced by improving the market-orientated score. Deep product knowledge is indeed described as usually the strongest suit, which is exactly why it tempts experienced managers to substitute their own view for evidence. The habit is attributed to long-term product managers, so locating it among newcomers inverts the Matrix. Treating it as a virtue to increase contradicts the Matrix entirely.",
+    "sourceTitle": "Product Management Skills Matrix",
+    "sourceAuthor": "Unattributed",
+    "sourceUrl": ""
+  },
+  {
+    "id": "base-problem-framing-professional",
+    "topicId": "problem-framing",
+    "domain": "discovery-insight",
+    "level": "professional",
+    "question": "Your organisation does several things well, but competitors can match most of them. According to the Pragmatic guide, what should determine which market problems you choose to solve?",
+    "options": [
+      "Your distinctive competencies: strengths that reflect excellence, are unmatched in your market and resist replication.",
+      "Your core competencies, since they describe what the organisation does well and are therefore its safest foundation.",
+      "The problems buyers raise most often, ranked by frequency, regardless of whether your organisation stands out in solving them.",
+      "Whatever problem your largest competitor is tackling this year, so that you can copy its move as quickly as possible."
+    ],
+    "correctIndex": 0,
+    "explanation": "The guide asks teams to identify distinctive competencies, which must reflect excellence, be unmatched in the market and resist replication, and to use them to choose the problems the organisation is best positioned to solve. Core competencies are real strengths, but the guide separates them precisely because others can also do them. Buyer frequency matters, since problems must be validated and prioritised, yet frequency alone ignores where you can win. Copying a competitor is the weakest option; the guide advises validating what you learn before you copy a competitor's move.",
+    "sourceTitle": "Product Professionals' Guide to the Pragmatic Framework (refreshed for 2027)",
+    "sourceAuthor": "Pragmatic Institute",
+    "sourceUrl": "https://www.pragmaticinstitute.com/product/framework/"
+  },
+  {
+    "id": "base-user-discovery-newbie",
+    "topicId": "user-discovery",
+    "domain": "discovery-insight",
+    "level": "newbie",
+    "question": "What is the difference between buyer personas and user personas in the Pragmatic Framework?",
+    "options": [
+      "User personas matter only for consumer products, where the person who buys and the person who uses are identical.",
+      "Buyer personas serve the marketing team and user personas serve the sales team, though both describe the same people.",
+      "Buyer personas profile those who make or influence the purchase; user personas profile those who use the product.",
+      "The two terms are interchangeable names for a single document describing the product's target customer."
+    ],
+    "correctIndex": 2,
+    "explanation": "The guide defines buyer personas as profiles of the people who make or influence the purchase decision, including sponsors and approvers, and user personas as profiles of the people who use the product. It stresses that users often do not make the purchase decision. Splitting them by internal team misreads the distinction, which concerns different people, although both personas do help several teams. Restricting user personas to consumer products reverses the point, since the gap between buyer and user is most common in business settings. Treating the terms as synonyms ignores the separate focus areas.",
+    "sourceTitle": "Product Professionals' Guide to the Pragmatic Framework (refreshed for 2027)",
+    "sourceAuthor": "Pragmatic Institute",
+    "sourceUrl": "https://www.pragmaticinstitute.com/product/framework/"
+  },
+  {
+    "id": "base-user-discovery-beginner",
+    "topicId": "user-discovery",
+    "domain": "discovery-insight",
+    "level": "beginner",
+    "question": "Which set-up for win/loss analysis does the Pragmatic guide recommend?",
+    "options": [
+      "An independent interviewer studies the two or three largest lost deals in depth, since they carry the most revenue.",
+      "Someone outside sales interviews evaluators two to four weeks after their decision, repeated across at least 10 deals.",
+      "An automated survey goes only to customers who bought, because lost evaluators rarely answer and add little.",
+      "The account executive who ran each deal interviews the buyer straight after the decision, while the details are still fresh in memory."
+    ],
+    "correctIndex": 1,
+    "explanation": "The guide says win/loss analysis is best handled by someone outside sales so evaluators give honest feedback, with interviews two to four weeks after a decision and repetition across at least 10 deals to find patterns. Interviewing promptly is sensible, but having the deal owner ask invites polite answers. Using an independent interviewer is right, yet two or three deals cannot reveal patterns, whatever their size. Surveying only buyers removes half the purpose, since the analysis exists to learn why evaluators did or did not buy.",
+    "sourceTitle": "Product Professionals' Guide to the Pragmatic Framework (refreshed for 2027)",
+    "sourceAuthor": "Pragmatic Institute",
+    "sourceUrl": "https://www.pragmaticinstitute.com/product/framework/"
+  },
+  {
+    "id": "base-user-discovery-advanced",
+    "topicId": "user-discovery",
+    "domain": "discovery-insight",
+    "level": "advanced",
+    "question": "According to the Skills Matrix, what should effective two-way communication cover, and how do product managers improve it best?",
+    "options": [
+      "Mainly presentation skills, improved most effectively by observing how senior leaders present to large audiences.",
+      "Listening and questioning, which can be improved only through formal courses taken away from day-to-day work.",
+      "Listening, questioning, writing and presenting, improved through generic training followed by practice in the role.",
+      "Written specifications alone, since product managers communicate with their teams chiefly through documents."
+    ],
+    "correctIndex": 2,
+    "explanation": "The Matrix lists listening and questioning skills, written communications and presentation skills, and states that generic training followed by applying the skills in the role has proven the optimum way to improve. A focus on presentation captures one element and drops the listening that discovery interviews depend on. Naming listening and questioning is correct, but limiting improvement to formal courses ignores the Matrix's emphasis on applying skills in the job. Reducing communication to written specifications contradicts its two-way definition.",
+    "sourceTitle": "Product Management Skills Matrix",
+    "sourceAuthor": "Unattributed",
+    "sourceUrl": ""
+  },
+  {
+    "id": "base-user-discovery-professional",
+    "topicId": "user-discovery",
+    "domain": "discovery-insight",
+    "level": "professional",
+    "question": "Customer success keeps approving the same custom workaround for different accounts. What does the Pragmatic guide say this pattern signals?",
+    "options": [
+      "A sign that the approval criteria for exceptions are too loose, so the team should tighten them and refuse more requests.",
+      "A customer success matter to be handled account by account, so long as each workaround keeps that customer satisfied.",
+      "Proof that the product is complete, since customers can already work around any gap without new capabilities.",
+      "Evidence of a market problem the product does not yet solve, which should be tracked and fed back into product work."
+    ],
+    "correctIndex": 3,
+    "explanation": "Under Exceptions, the guide says to decide who approves exceptions and on what criteria, to track every one, and to treat a recurring exception as evidence of a market problem the product does not yet solve. Tightening criteria reflects the guide's call for clear approval rules, yet refusing more requests would discard the very signal it highlights. Handling cases account by account keeps customers content, which the guide values, but it leaves the pattern unexamined. Reading workarounds as completeness is the opposite of the guide's conclusion.",
+    "sourceTitle": "Product Professionals' Guide to the Pragmatic Framework (refreshed for 2027)",
+    "sourceAuthor": "Pragmatic Institute",
+    "sourceUrl": "https://www.pragmaticinstitute.com/product/framework/"
+  },
+  {
+    "id": "base-product-promise-newbie",
+    "topicId": "product-promise",
+    "domain": "strategy-positioning",
+    "level": "newbie",
+    "question": "How does the Pragmatic guide distinguish positioning from messaging?",
+    "options": [
+      "Positioning is what you want to communicate; messaging is how you will communicate it.",
+      "Messaging comes first, and positioning is later distilled from the messages that performed best in market.",
+      "Positioning is written for internal teams, while messaging is written exclusively for external audiences.",
+      "They are two names for the same document, used interchangeably by marketing and product teams."
+    ],
+    "correctIndex": 0,
+    "explanation": "The guide states that positioning is what you want to communicate and messaging is how you will communicate it. Positioning does keep engineering, marketing and sales consistent, which gives the internal-versus-external answer some truth, but positioning also explains to buyers why the product is the right choice. Deriving positioning from successful messages reverses the order, since the guide says positioning should happen early. Treating the terms as identical ignores the distinction the guide draws.",
+    "sourceTitle": "Product Professionals' Guide to the Pragmatic Framework (refreshed for 2027)",
+    "sourceAuthor": "Pragmatic Institute",
+    "sourceUrl": "https://www.pragmaticinstitute.com/product/framework/"
+  },
+  {
+    "id": "base-product-promise-beginner",
+    "topicId": "product-promise",
+    "domain": "strategy-positioning",
+    "level": "beginner",
+    "question": "When should positioning happen, and what should it centre on?",
+    "options": [
+      "After the first year of sales, using whichever messages happened to close the most deals.",
+      "Early, centred on the most advanced technical capabilities that set the product apart.",
+      "Just before launch, once the final feature set is known and can be described accurately.",
+      "Early, centred on the buyer's needs."
+    ],
+    "correctIndex": 3,
+    "explanation": "The guide says positioning should happen early and focus on the buyer's needs. Waiting until launch ensures accuracy about features, but by then positioning can no longer keep engineering, marketing and sales consistent during the build. Starting early is right, yet centring on technical capabilities puts the product before the buyer, even though differentiation does belong in the document. Waiting a year and reverse-engineering from sales results abandons the purpose of positioning.",
+    "sourceTitle": "Product Professionals' Guide to the Pragmatic Framework (refreshed for 2027)",
+    "sourceAuthor": "Pragmatic Institute",
+    "sourceUrl": "https://www.pragmaticinstitute.com/product/framework/"
+  },
+  {
+    "id": "base-product-promise-advanced",
+    "topicId": "product-promise",
+    "domain": "strategy-positioning",
+    "level": "advanced",
+    "question": "Product managers usually score highly on product knowledge. Which aspect of it does the Skills Matrix say often needs improvement?",
+    "options": [
+      "Knowing competitors' feature lists well enough to match each of them in the next release cycle.",
+      "Knowing every feature in technical depth, including the implementation details that engineering relies on.",
+      "Knowing which capabilities, functions or features matter, and to which market segments or personas they apply.",
+      "None; product knowledge is always the strongest suit and the Matrix sees no area within it to develop."
+    ],
+    "correctIndex": 2,
+    "explanation": "The Matrix notes that product knowledge is usually a product manager's strongest suit, and that one aspect often needing improvement is understanding which individual capabilities, functions or features are important and to which market segment or persona they apply. Technical depth can matter, yet the Matrix places deep technology knowledge in a separate discipline that may sit with engineering. Competitor knowledge is also its own discipline, and matching feature lists is not the gap described. Claiming nothing needs improvement takes the strongest-suit remark and ignores the qualification that follows it.",
+    "sourceTitle": "Product Management Skills Matrix",
+    "sourceAuthor": "Unattributed",
+    "sourceUrl": ""
+  },
+  {
+    "id": "base-product-promise-professional",
+    "topicId": "product-promise",
+    "domain": "strategy-positioning",
+    "level": "professional",
+    "question": "You are drafting a positioning document for a product sold to companies. According to the Pragmatic guide, what should a strong one contain?",
+    "options": [
+      "The problem and the solution, with messaging tuned to the executive sponsor, who signs the purchase order.",
+      "A full feature list and release history, since detail persuades buyers more than any statement of value.",
+      "The solution and its differentiation, with one universal message that every buyer type receives in the same form.",
+      "The problem, the solution and the differentiation, with messaging for functional, financial and technical buyers."
+    ],
+    "correctIndex": 3,
+    "explanation": "The guide says a strong positioning document defines the problem, the solution and the differentiation, with messaging for functional, financial and technical buyers. A single universal message keeps differentiation but omits the problem and ignores the guide's call to make value clear to different buyer types. Focusing on the sponsor recognises that buyers matter, yet it omits differentiation and narrows messaging to one buyer type. A feature list and history describe the product while saying little about the market problem.",
+    "sourceTitle": "Product Professionals' Guide to the Pragmatic Framework (refreshed for 2027)",
+    "sourceAuthor": "Pragmatic Institute",
+    "sourceUrl": "https://www.pragmaticinstitute.com/product/framework/"
+  },
+  {
+    "id": "base-prototype-testing-newbie",
+    "topicId": "prototype-testing",
+    "domain": "execution-validation",
+    "level": "newbie",
+    "question": "In the Pragmatic Framework, what does Ideation produce?",
+    "options": [
+      "A long list of brainstormed ideas, ranked by how enthusiastic the team felt about each one in the session.",
+      "Concepts, prototypes and experiments, drawn from market problems and user insight, to test before full delivery.",
+      "The final release plan, including launch dates, pricing and the marketing calendar for the year.",
+      "A backlog of committed features, already estimated and ready to hand to engineering for the next sprint."
+    ],
+    "correctIndex": 1,
+    "explanation": "The guide defines Ideation as exploring and shaping possible solutions before the team commits to full delivery, turning market problems and user insight into concepts, prototypes and experiments that can be tested. A committed backlog belongs after that commitment, so it skips the testing stage. A brainstormed list is a step toward ideation, yet ranking by enthusiasm ignores the guide's demand that ideas be grounded in validated problems and tested with users. Release plans and pricing sit in other focus areas entirely.",
+    "sourceTitle": "Product Professionals' Guide to the Pragmatic Framework (refreshed for 2027)",
+    "sourceAuthor": "Pragmatic Institute",
+    "sourceUrl": "https://www.pragmaticinstitute.com/product/framework/"
+  },
+  {
+    "id": "base-prototype-testing-beginner",
+    "topicId": "prototype-testing",
+    "domain": "execution-validation",
+    "level": "beginner",
+    "question": "After testing several concepts with real users, which should the team keep, according to the Pragmatic guide?",
+    "options": [
+      "The ideas that earn evidence, dropping the ones that do not.",
+      "Every idea that at least one tester responded to positively, so that nothing promising is lost.",
+      "The most ambitious idea, whatever the test results, because bold bets outweigh early feedback.",
+      "The ideas the build team likes most, because they will be the ones delivering the work."
+    ],
+    "correctIndex": 0,
+    "explanation": "The guide tells teams to ground every idea in a validated market problem, involve the people who will build and use the product, test early with real users, and keep the ideas that earn evidence while dropping the ones that do not. Involving the build team is recommended, but their preference is not the test. Keeping anything with a single positive reaction sets the bar for evidence far too low. Ignoring results in favour of ambition contradicts the purpose of testing.",
+    "sourceTitle": "Product Professionals' Guide to the Pragmatic Framework (refreshed for 2027)",
+    "sourceAuthor": "Pragmatic Institute",
+    "sourceUrl": "https://www.pragmaticinstitute.com/product/framework/"
+  },
+  {
+    "id": "base-prototype-testing-advanced",
+    "topicId": "prototype-testing",
+    "domain": "execution-validation",
+    "level": "advanced",
+    "question": "In the Skills Matrix's 'Market and Evidence Based' discipline, how do the best-performing product managers underpin their decisions?",
+    "options": [
+      "With their own product expertise, supported by market data whenever such data happens to be available.",
+      "With the opinion of the most senior stakeholder, since senior support is what gets decisions through.",
+      "With competitive analysis, so that each decision keeps the product level with what rivals ship.",
+      "With evidence-based data sourced from the market and from appropriate stakeholders."
+    ],
+    "correctIndex": 3,
+    "explanation": "The Matrix says the best performers run their portfolio through constant analysis of market trends and requirements and underpin decisions with evidence-based data sourced from the market and appropriate stakeholders. Product expertise is valuable, but making it the basis and data optional is the self-opinion pattern the Matrix warns against. Competitive analysis is part of the market picture, yet it is only one input and parity is not the aim. Deferring to seniority replaces evidence with authority.",
+    "sourceTitle": "Product Management Skills Matrix",
+    "sourceAuthor": "Unattributed",
+    "sourceUrl": ""
+  },
+  {
+    "id": "base-prototype-testing-professional",
+    "topicId": "prototype-testing",
+    "domain": "execution-validation",
+    "level": "professional",
+    "question": "A team uses AI to synthesise interview transcripts and generate prototype variants. What does the Pragmatic guide require of it?",
+    "options": [
+      "Verify the outputs, protect sensitive information and remain accountable for the decisions taken.",
+      "Let the AI make prioritisation calls, since an automated system removes human bias from the decision.",
+      "Treat AI as a separate category of the Framework, with its own owner responsible for every AI-assisted task.",
+      "Rely on AI outputs whenever they agree with the team's own findings, and check only those that disagree."
+    ],
+    "correctIndex": 0,
+    "explanation": "The guide states that there is no AI box: AI supports activities across the Framework, and teams need to verify its outputs, protect sensitive information and remain accountable for their decisions. Assigning a separate owner treats AI as a category, which the guide explicitly rejects, although clear ownership is otherwise sensible. Checking only disagreeing outputs is selective verification that leaves confirming errors unexamined. Handing decisions to AI abandons the accountability the guide keeps with the team.",
+    "sourceTitle": "Product Professionals' Guide to the Pragmatic Framework (refreshed for 2027)",
+    "sourceAuthor": "Pragmatic Institute",
+    "sourceUrl": "https://www.pragmaticinstitute.com/product/framework/"
+  },
+  {
+    "id": "base-mvp-specification-newbie",
+    "topicId": "mvp-specification",
+    "domain": "execution-validation",
+    "level": "newbie",
+    "question": "According to the Pragmatic guide, what should a good requirement describe?",
+    "options": [
+      "Only the release date and budget, leaving the problem itself for the team to discover during the build.",
+      "Who has the problem, together with the user interface the product manager prefers for solving it.",
+      "The solution in detail, so that engineers know precisely which screens and components to build.",
+      "The market problem: who has it, what it is and how often it happens, without prescribing a solution."
+    ],
+    "correctIndex": 3,
+    "explanation": "The guide says a good requirement describes the market problem, covering who has it, what it is and how often it happens, without prescribing a solution, so that design and development can innovate with the market context in hand. A detailed solution prescribes exactly what the guide asks requirements to avoid. Naming who has the problem is right, but adding a preferred interface again prescribes the solution. Dates and budget are constraints, not a description of the problem.",
+    "sourceTitle": "Product Professionals' Guide to the Pragmatic Framework (refreshed for 2027)",
+    "sourceAuthor": "Pragmatic Institute",
+    "sourceUrl": "https://www.pragmaticinstitute.com/product/framework/"
+  },
+  {
+    "id": "base-mvp-specification-beginner",
+    "topicId": "mvp-specification",
+    "domain": "execution-validation",
+    "level": "beginner",
+    "question": "Who typically owns requirements, and what do well-written requirements allow other teams to do?",
+    "options": [
+      "Sales owns them, because it is closest to buyers, and they let the company promise features to prospects.",
+      "Engineering leads own them, since they implement them, and they let product managers focus on strategy instead.",
+      "Product managers own them, and they let engineering follow a fixed design without needing to make choices.",
+      "Product managers own them, and they let design and development teams innovate with the market context in hand."
+    ],
+    "correctIndex": 3,
+    "explanation": "The guide says product managers typically own requirements and that requirements let development and design teams innovate with the market context in hand. Engineering does shape how requirements are met, but ownership sits with product managers. The second option names the right owner yet describes the opposite effect, since requirements are meant to leave room for design choices. Sales input is valuable, but turning requirements into prospect promises misreads their purpose.",
+    "sourceTitle": "Product Professionals' Guide to the Pragmatic Framework (refreshed for 2027)",
+    "sourceAuthor": "Pragmatic Institute",
+    "sourceUrl": "https://www.pragmaticinstitute.com/product/framework/"
+  },
+  {
+    "id": "base-mvp-specification-advanced",
+    "topicId": "mvp-specification",
+    "domain": "execution-validation",
+    "level": "advanced",
+    "question": "Your team builds with AI coding tools. How specific does the Pragmatic guide say requirements should be?",
+    "options": [
+      "As short as possible, because the AI tools can infer missing context from the existing codebase.",
+      "Requirements become unnecessary once AI tools generate the code directly from conversation.",
+      "Specific enough that both people and the team's AI tools can act on them.",
+      "Specific enough to dictate the implementation, so that the AI tools produce predictable output."
+    ],
+    "correctIndex": 2,
+    "explanation": "The guide asks for requirements written specifically enough that both people and the AI tools the team uses can act on them. Brevity has merit, yet relying on tools to infer missing context is the opposite of the instruction. Dictating the implementation gives precision, but it conflicts with the principle that requirements describe the problem without prescribing a solution. Dropping requirements entirely removes the context, intent and constraints the guide says teams need.",
+    "sourceTitle": "Product Professionals' Guide to the Pragmatic Framework (refreshed for 2027)",
+    "sourceAuthor": "Pragmatic Institute",
+    "sourceUrl": "https://www.pragmaticinstitute.com/product/framework/"
+  },
+  {
+    "id": "base-mvp-specification-professional",
+    "topicId": "mvp-specification",
+    "domain": "execution-validation",
+    "level": "professional",
+    "question": "According to the Skills Matrix, who owns the product management methodology, and how does it improve?",
+    "options": [
+      "Engineering owns it because delivery follows it, and it improves through retrospectives held after each release.",
+      "Nobody owns it once adopted, because a methodology should stay fixed so that every team follows the same steps.",
+      "The product management function owns it; it improves as product managers learn it, use it and involve colleagues.",
+      "Each product manager owns a personal version, refined individually according to what works for their own product."
+    ],
+    "correctIndex": 2,
+    "explanation": "The Matrix says implementing and refining a methodology involves many areas of the business but is owned and managed by the product management function, and that it improves as individual product managers learn the framework, build experience and involve colleagues across the organisation. Engineering is among the areas involved, and retrospectives are useful, yet ownership is assigned elsewhere. Individual versions undermine the shared, embedded process the Matrix values, even though individual learning drives improvement. A frozen methodology contradicts its call for continuous refinement.",
+    "sourceTitle": "Product Management Skills Matrix",
+    "sourceAuthor": "Unattributed",
+    "sourceUrl": ""
+  },
+  {
+    "id": "base-build-planning-newbie",
+    "topicId": "build-planning",
+    "domain": "prioritization-delivery",
+    "level": "newbie",
+    "question": "What is a product roadmap in the Pragmatic Framework?",
+    "options": [
+      "A visual plan of the product's direction and priorities over time that communicates strategy and guides execution.",
+      "A release schedule owned by engineering that records when each finished component will ship to production.",
+      "A record of competitor launches, kept so the team can respond to each one as it happens in the market.",
+      "A dated list of features already committed to customers, used mainly by the sales team in negotiations."
+    ],
+    "correctIndex": 0,
+    "explanation": "The guide defines a product roadmap as a visual plan of the product's direction and priorities over time that communicates strategy, secures buy-in and guides execution. Feature lists and dated commitments can appear on some roadmap types, yet the guide recommends flexible formats, including undated ones, and frames the roadmap around outcomes. A release schedule is one roadmap type, but the roadmap is broader than engineering's shipping record. Tracking competitor launches belongs to competitive work.",
+    "sourceTitle": "Product Professionals' Guide to the Pragmatic Framework (refreshed for 2027)",
+    "sourceAuthor": "Pragmatic Institute",
+    "sourceUrl": "https://www.pragmaticinstitute.com/product/framework/"
+  },
+  {
+    "id": "base-build-planning-beginner",
+    "topicId": "build-planning",
+    "domain": "prioritization-delivery",
+    "level": "beginner",
+    "question": "In the Skills Matrix's organisational skills discipline, what is described as central to the product management role?",
+    "options": [
+      "Running project schedules and tracking tasks, kept separate from any responsibility for leading people.",
+      "Avoiding delegation, so that the product manager personally completes every critical task.",
+      "Leading and managing cross-departmental teams without line management authority.",
+      "Managing a team of direct reports, setting their objectives and reviewing their performance each year."
+    ],
+    "correctIndex": 2,
+    "explanation": "The Matrix says leading and managing cross-departmental teams without line management authority is central to product management, supported by organisational and project management skills to delegate, set objectives and measure progress. Setting objectives is part of it, but the Matrix stresses the absence of direct reports. Project tracking is included, yet the Matrix ties it to leading people. Avoiding delegation contradicts the skills it lists.",
+    "sourceTitle": "Product Management Skills Matrix",
+    "sourceAuthor": "Unattributed",
+    "sourceUrl": ""
+  },
+  {
+    "id": "base-build-planning-advanced",
+    "topicId": "build-planning",
+    "domain": "prioritization-delivery",
+    "level": "advanced",
+    "question": "You must share the build plan with employees, executives and customers. How does the Pragmatic guide suggest tailoring it?",
+    "options": [
+      "Send every group the same detailed update, because identical information is the surest route to transparency.",
+      "Communicate only when the plan changes, since stable plans need no further communication with anyone.",
+      "Brief the executives in strategic terms and let them cascade the plan to employees and customers in whatever form they see fit.",
+      "Detailed updates for employees, strategic insight for executives and clear timelines for customers, each planned in advance."
+    ],
+    "correctIndex": 3,
+    "explanation": "Under Stakeholder Management, the guide notes that employees often need detailed updates, executives need strategic insight and customers want clear timelines, and asks product managers to plan how and when to communicate with each group; the roadmap section likewise says to tailor detail to each audience. Uniform detail is transparent but ignores different needs. Briefing executives strategically is right, yet delegating the rest abandons the plan for each group. Silence between changes undermines the shared clarity the focus area exists to maintain.",
+    "sourceTitle": "Product Professionals' Guide to the Pragmatic Framework (refreshed for 2027)",
+    "sourceAuthor": "Pragmatic Institute",
+    "sourceUrl": "https://www.pragmaticinstitute.com/product/framework/"
+  },
+  {
+    "id": "base-build-planning-professional",
+    "topicId": "build-planning",
+    "domain": "prioritization-delivery",
+    "level": "professional",
+    "question": "Demand for your product is rising quickly. What does the Pragmatic guide's Scaling focus area advise?",
+    "options": [
+      "Find manual processes, standardise, remove recurring work through product changes and plan capacity ahead of demand.",
+      "Add people to the manual processes as volume grows, so that capacity always keeps pace with incoming demand.",
+      "Keep the processes that served the first customers, because they are proven and changing them adds avoidable risk.",
+      "Pause new customer onboarding until the product has been rebuilt for scale from the ground up."
+    ],
+    "correctIndex": 0,
+    "explanation": "The guide says what worked for the first customers often needs to change as volume increases, and advises watching for manual processes, deciding what to standardise, identifying product changes that remove recurring work and planning capacity ahead of demand. Keeping early processes values stability but ignores that warning. Adding people does increase capacity, yet it keeps the manual effort the guide wants removed and reacts to demand instead of planning ahead. Halting onboarding is not among the guide's recommendations and would sacrifice customers.",
+    "sourceTitle": "Product Professionals' Guide to the Pragmatic Framework (refreshed for 2027)",
+    "sourceAuthor": "Pragmatic Institute",
+    "sourceUrl": "https://www.pragmaticinstitute.com/product/framework/"
+  },
+  {
+    "id": "base-business-model-newbie",
+    "topicId": "business-model",
+    "domain": "strategy-positioning",
+    "level": "newbie",
+    "question": "The Pragmatic guide warns against three pricing mistakes. Which set is it?",
+    "options": [
+      "Overly complex models, cost-plus pricing and testing prices too often.",
+      "Charging for the product before it has reached maturity in the market.",
+      "Delays, prices set too low and offering any discounts at all.",
+      "Delays, overly complex models and skipping price testing."
+    ],
+    "correctIndex": 3,
+    "explanation": "The guide tells teams to avoid delays, overly complex models and skipping price testing. The first distractor keeps delays but invents two warnings the guide does not make. The second keeps complexity, yet it lists cost-plus pricing, which the guide names as a common approach, and reverses the testing advice. Refusing to charge is not discussed; the guide treats pricing as how a product captures value.",
+    "sourceTitle": "Product Professionals' Guide to the Pragmatic Framework (refreshed for 2027)",
+    "sourceAuthor": "Pragmatic Institute",
+    "sourceUrl": "https://www.pragmaticinstitute.com/product/framework/"
+  },
+  {
+    "id": "base-business-model-beginner",
+    "topicId": "business-model",
+    "domain": "strategy-positioning",
+    "level": "beginner",
+    "question": "Which summary of the buy, build or partner trade-offs matches the Pragmatic guide?",
+    "options": [
+      "The choice belongs to the finance team alone and should not be shaped by market needs.",
+      "Partnering is fastest and safest, because it avoids both acquisition costs and the time needed to build.",
+      "Buying is fast but can be costly; building is proprietary but slow; partnering adds speed or expertise but needs careful agreements.",
+      "Building is always the cheapest option because the company keeps the intellectual property; buying and partnering only add cost."
+    ],
+    "correctIndex": 2,
+    "explanation": "The guide says buying offers speed but can be costly, building creates proprietary solutions but takes time, and partnering adds expertise or speed to market but needs careful agreements. The first distractor correctly links building with ownership but ignores its time cost and wrongly calls it cheapest. The second notes partnering's speed while omitting the agreement risk. The guide also says product leaders should guide the decision based on market needs, with input from several roles.",
+    "sourceTitle": "Product Professionals' Guide to the Pragmatic Framework (refreshed for 2027)",
+    "sourceAuthor": "Pragmatic Institute",
+    "sourceUrl": "https://www.pragmaticinstitute.com/product/framework/"
+  },
+  {
+    "id": "base-business-model-advanced",
+    "topicId": "business-model",
+    "domain": "strategy-positioning",
+    "level": "advanced",
+    "question": "What does the Skills Matrix describe as the ideal scenario for managing products as a business?",
+    "options": [
+      "Concentrating on features and usability, since commercial results follow automatically from a good product.",
+      "Using commercial and financial metrics to inform decisions, ideally reaching a P&L analysis of any product line.",
+      "Tracking each product's revenue closely, since revenue is the clearest single measure of commercial success.",
+      "Leaving financial analysis to the finance team so product managers can concentrate on market requirements."
+    ],
+    "correctIndex": 1,
+    "explanation": "The Matrix says building and managing a product line with commercial metrics is vital, and that the ideal scenario would lead to a P&L analysis of any product line. Revenue is one such metric, but a P&L also accounts for costs. Delegating financial analysis contradicts the Matrix, which calls this skill set often poorly represented among product managers and asks them to develop it. Assuming results follow from features dismisses commercial acumen.",
+    "sourceTitle": "Product Management Skills Matrix",
+    "sourceAuthor": "Unattributed",
+    "sourceUrl": ""
+  },
+  {
+    "id": "base-business-model-professional",
+    "topicId": "business-model",
+    "domain": "strategy-positioning",
+    "level": "professional",
+    "question": "A product launched three months ago is not yet profitable, and leadership asks whether it is failing. What does the Pragmatic guide suggest?",
+    "options": [
+      "Stop tracking outcomes altogether until the product is mature, because early figures are only noise.",
+      "Judge it on outcomes that fit its stage; early products may be judged on validation and adoption before profit.",
+      "Judge it on revenue alone at this stage, setting costs aside until the product has reached maturity.",
+      "Judge it on profit now, because the business plan exists precisely to show whether the product is paying off for the organisation."
+    ],
+    "correctIndex": 1,
+    "explanation": "The guide advises choosing outcomes that fit the product's stage and says early products may be judged on validation and adoption before profit. Business outcomes do track whether a product delivers what its plan promised, so profit matters eventually, but demanding it at three months misreads the stage. Revenue alone omits costs, while the guide measures profitability by subtracting all related costs from revenue. Ceasing to track abandons the evidence the guide wants decisions to rest on.",
+    "sourceTitle": "Product Professionals' Guide to the Pragmatic Framework (refreshed for 2027)",
+    "sourceAuthor": "Pragmatic Institute",
+    "sourceUrl": "https://www.pragmaticinstitute.com/product/framework/"
+  },
+  {
+    "id": "base-go-to-market-newbie",
+    "topicId": "go-to-market",
+    "domain": "growth-measurement",
+    "level": "newbie",
+    "question": "What is a distribution strategy in the Pragmatic Framework?",
+    "options": [
+      "The logistics plan for shipping physical goods, which digital and internal products do not need.",
+      "The internal process for distributing roadmap updates to the company's stakeholders.",
+      "The plan for how the product reaches its buyers and users: how it is accessed, purchased, delivered and supported.",
+      "The choice of advertising channels, such as social media, events and search, used to promote the product to potential buyers."
+    ],
+    "correctIndex": 2,
+    "explanation": "The guide defines distribution strategy as the plan for how the product reaches the people who buy and use it, covering access, purchase, delivery and support. Advertising channels belong to the marketing plan, though both concern reaching the market. Shipping logistics are part of delivery, yet the guide applies distribution to internal products as well, as access and rollout. Roadmap communication is a stakeholder matter.",
+    "sourceTitle": "Product Professionals' Guide to the Pragmatic Framework (refreshed for 2027)",
+    "sourceAuthor": "Pragmatic Institute",
+    "sourceUrl": "https://www.pragmaticinstitute.com/product/framework/"
+  },
+  {
+    "id": "base-go-to-market-beginner",
+    "topicId": "go-to-market",
+    "domain": "growth-measurement",
+    "level": "beginner",
+    "question": "Before a launch date, what does the Pragmatic guide say must be in place?",
+    "options": [
+      "Engineering's sign-off that the build is complete; readiness in other teams is helpful but optional.",
+      "The marketing campaign and press coverage; other teams can catch up during the weeks after launch.",
+      "Teams, systems, content, support and measures, with marketing, sales, engineering and support planning together.",
+      "Nothing in particular; launching quickly and fixing problems afterwards is always the better route."
+    ],
+    "correctIndex": 2,
+    "explanation": "The guide says launch success depends on timing, readiness and meeting market needs, so teams, systems, content, support and measures should be in place before you go, with marketing, sales, engineering and customer support planning together. Building interest ahead of the date matters, which gives the campaign answer some weight, but it leaves other teams unready. Engineering readiness is necessary but not sufficient. Launching without preparation contradicts the guide's readiness question.",
+    "sourceTitle": "Product Professionals' Guide to the Pragmatic Framework (refreshed for 2027)",
+    "sourceAuthor": "Pragmatic Institute",
+    "sourceUrl": "https://www.pragmaticinstitute.com/product/framework/"
+  },
+  {
+    "id": "base-go-to-market-advanced",
+    "topicId": "go-to-market",
+    "domain": "growth-measurement",
+    "level": "advanced",
+    "question": "Sales and support describe your product's value differently to customers. What does organisational alignment require?",
+    "options": [
+      "Every team shares one picture of audience, value, responsibilities and outcomes, kept current through ongoing communication.",
+      "The sales team's version becomes the standard for everyone else, since sales speaks to buyers first and sets their expectations early.",
+      "Nothing; different teams naturally describe value differently, and customers expect that variety.",
+      "A single alignment meeting at launch, after which each team can be trusted to stay consistent on its own."
+    ],
+    "correctIndex": 0,
+    "explanation": "The guide says each team needs the same understanding of the audience, value proposition, responsibilities and expected outcomes, maintained through regular meetings, dedicated channels and updates, because alignment takes effort to build and maintain. Adopting sales' version produces consistency but skips the shared understanding the guide describes. One meeting is a start, yet the guide stresses continuing effort. Accepting inconsistency ignores the guide's point that alignment gives customers a more consistent experience.",
+    "sourceTitle": "Product Professionals' Guide to the Pragmatic Framework (refreshed for 2027)",
+    "sourceAuthor": "Pragmatic Institute",
+    "sourceUrl": "https://www.pragmaticinstitute.com/product/framework/"
+  },
+  {
+    "id": "base-go-to-market-professional",
+    "topicId": "go-to-market",
+    "domain": "growth-measurement",
+    "level": "professional",
+    "question": "You must choose between selling direct and selling through partners. Where does the Pragmatic guide say to start?",
+    "options": [
+      "Start from the channels the organisation already supports, since existing capability lowers the risk of execution.",
+      "Copy the largest competitor's channel mix, because the market has already validated it.",
+      "Ask current customers how they would prefer to buy, since they have already shown they will purchase.",
+      "Research how customers and non-customers prefer to buy, then assess what the organisation can support."
+    ],
+    "correctIndex": 3,
+    "explanation": "The guide tells teams to start by researching how customers and non-customers prefer to buy, then assess what the organisation can support, monitor performance and revisit the strategy as preferences change. Existing capability matters, but the guide places it second, after market preference. Asking current customers is part of the research, yet leaving out non-customers misses those the current model fails to reach. Copying a competitor substitutes imitation for research.",
+    "sourceTitle": "Product Professionals' Guide to the Pragmatic Framework (refreshed for 2027)",
+    "sourceAuthor": "Pragmatic Institute",
+    "sourceUrl": "https://www.pragmaticinstitute.com/product/framework/"
+  },
+  {
+    "id": "base-metrics-adoption-newbie",
+    "topicId": "metrics-adoption",
+    "domain": "growth-measurement",
+    "level": "newbie",
+    "question": "In the Pragmatic guide, how do leading and lagging indicators differ?",
+    "options": [
+      "Leading indicators, such as incoming leads, predict results; lagging indicators, such as product sales, confirm them.",
+      "They are the same metrics, labelled differently depending on whether results are good or bad.",
+      "Leading indicators are the metrics the leadership team watches; lagging indicators are tracked by individual teams.",
+      "Leading indicators measure product usage, while lagging indicators measure marketing activity such as campaigns."
+    ],
+    "correctIndex": 0,
+    "explanation": "The guide says to use leading indicators, such as incoming leads, to predict results, and lagging indicators, such as product sales, to confirm them. Leadership attention has nothing to do with the distinction, though executives may watch both. Usage can be a leading signal, but the guide's own example of a leading indicator is leads, a marketing measure, so the split by function is wrong. The terms describe timing, not whether results are good.",
+    "sourceTitle": "Product Professionals' Guide to the Pragmatic Framework (refreshed for 2027)",
+    "sourceAuthor": "Pragmatic Institute",
+    "sourceUrl": "https://www.pragmaticinstitute.com/product/framework/"
+  },
+  {
+    "id": "base-metrics-adoption-beginner",
+    "topicId": "metrics-adoption",
+    "domain": "growth-measurement",
+    "level": "beginner",
+    "question": "How does the Skills Matrix describe analytical skills for product managers?",
+    "options": [
+      "Numerical analysis is their lifeblood; the skills can be taught, refined at work and shown in better decisions.",
+      "Analysis belongs to data teams, and product managers need only read the dashboards they are given.",
+      "Numerical analysis matters chiefly for pricing, while most other product decisions rest on qualitative judgement.",
+      "Analytical ability is largely innate, so teams should hire people who already have it instead of developing it."
+    ],
+    "correctIndex": 0,
+    "explanation": "The Matrix calls numerical analysis the lifeblood of product managers as they research market dynamics, product performance and competitive trends and prioritise features, and says generic skills can be taught, then applied and refined in daily work, evidenced by better decisions and improved reporting. Pricing does draw on numbers, but the Matrix applies analysis far more widely. Calling it innate contradicts its statement that skills can be taught. Delegating analysis entirely ignores its central place in the role.",
+    "sourceTitle": "Product Management Skills Matrix",
+    "sourceAuthor": "Unattributed",
+    "sourceUrl": ""
+  },
+  {
+    "id": "base-metrics-adoption-advanced",
+    "topicId": "metrics-adoption",
+    "domain": "growth-measurement",
+    "level": "advanced",
+    "question": "When should adoption be planned, and what does the Pragmatic guide include in that plan?",
+    "options": [
+      "Before launch, focused on the first sign-in, since activation is the moment that determines adoption.",
+      "Before launch: define meaningful use, decide who needs onboarding and training, and track whether use continues.",
+      "Adoption need not be planned, because a good product will be used without any onboarding or training.",
+      "After launch, once real usage data shows which customers are struggling and which of them need onboarding and training support."
+    ],
+    "correctIndex": 1,
+    "explanation": "The guide says to plan adoption before launch: define what meaningful use looks like, decide who needs onboarding and training, and track whether use continues over time. Usage data after launch is valuable, but waiting for it reverses the guide's sequence. Planning before launch is right, yet stopping at activation ignores continued use, since adoption covers people who begin meaningful use and keep using the product. Skipping planning dismisses the guide's point that value arrives only when people use the product.",
+    "sourceTitle": "Product Professionals' Guide to the Pragmatic Framework (refreshed for 2027)",
+    "sourceAuthor": "Pragmatic Institute",
+    "sourceUrl": "https://www.pragmaticinstitute.com/product/framework/"
+  },
+  {
+    "id": "base-metrics-adoption-professional",
+    "topicId": "metrics-adoption",
+    "domain": "growth-measurement",
+    "level": "professional",
+    "question": "Trial sign-ups are rising and revenue is on plan, yet several customers are not achieving the results they bought the product for. Which focus area covers that last problem?",
+    "options": [
+      "Awareness, because customers who do not reach results probably never understood the problem.",
+      "Business Outcomes, because it tracks whether the product is delivering the results the plan expected.",
+      "Measurement, because it defines the indicators showing whether the product is producing its intended outcomes.",
+      "Customer Value Realization, which asks whether customers got the outcome they wanted."
+    ],
+    "correctIndex": 3,
+    "explanation": "The guide distinguishes three questions: Measurement sets the indicators, Business Outcomes tracks results for the organisation, and Customer Value Realization asks whether customers got the outcome they wanted. Measurement is plausible because it defines indicators, but it does not judge customer results. Business Outcomes concerns the organisation's results, which here are on plan. Awareness is the first step of buying and does not address customers who have already bought.",
+    "sourceTitle": "Product Professionals' Guide to the Pragmatic Framework (refreshed for 2027)",
+    "sourceAuthor": "Pragmatic Institute",
+    "sourceUrl": "https://www.pragmaticinstitute.com/product/framework/"
+  },
+  {
+    "id": "base-demo-prioritization-newbie",
+    "topicId": "demo-prioritization",
+    "domain": "prioritization-delivery",
+    "level": "newbie",
+    "question": "According to the Skills Matrix, how are prioritisation skills best developed?",
+    "options": [
+      "They cannot be developed; prioritisation depends on the authority of whoever holds the budget.",
+      "On the job, by relying on intuition built from experience, without formal processes or tools.",
+      "On the job, through the processes and tools that usually form part of a product management methodology.",
+      "Through formal training in prioritisation frameworks, completed before taking on product responsibility."
+    ],
+    "correctIndex": 2,
+    "explanation": "The Matrix says deciding on strategies, roadmaps or features is all about prioritisation, and that these skills are best developed on the job through the processes and tools that are usually part of a product management methodology. Formal training has value elsewhere in the Matrix, but here it points to practice. Learning on the job is right, yet dropping the tools contradicts the Matrix's method. Treating prioritisation as authority dismisses it as a skill.",
+    "sourceTitle": "Product Management Skills Matrix",
+    "sourceAuthor": "Unattributed",
+    "sourceUrl": ""
+  },
+  {
+    "id": "base-demo-prioritization-beginner",
+    "topicId": "demo-prioritization",
+    "domain": "communication-influence",
+    "level": "beginner",
+    "question": "In the Pragmatic guide, demos sit with case studies and ROI calculators as 'assets'. Who should build them?",
+    "options": [
+      "Product alone, because it knows the product best and can show every capability accurately.",
+      "Sales alone, because sales delivers the demos and knows exactly what persuades buyers in the room.",
+      "Product, marketing and sales together, each adding what they know about the product, market and selling.",
+      "An outside agency, because internal teams are too close to the product to present it well."
+    ],
+    "correctIndex": 2,
+    "explanation": "The guide lists demos among assets and says building them takes product, marketing and sales working together, each contributing knowledge of the product, the market and the selling process. Sales does use demos and understands buyers, but alone it lacks product and market depth. Product knows the capabilities, yet showing everything is not the aim, and product alone lacks selling insight. An agency is not mentioned and would lack all three perspectives.",
+    "sourceTitle": "Product Professionals' Guide to the Pragmatic Framework (refreshed for 2027)",
+    "sourceAuthor": "Pragmatic Institute",
+    "sourceUrl": "https://www.pragmaticinstitute.com/product/framework/"
+  },
+  {
+    "id": "base-demo-prioritization-advanced",
+    "topicId": "demo-prioritization",
+    "domain": "prioritization-delivery",
+    "level": "advanced",
+    "question": "A stakeholder asks for a feature that does not serve the product's direction. What does the Pragmatic guide say product strategy should help you do?",
+    "options": [
+      "Accept the request and log it, since the strategy should flex to keep important stakeholders supportive.",
+      "Say no to work that does not serve the strategy, which is grounded in market problems and distinctive competencies.",
+      "Revisit the strategy whenever a senior stakeholder disagrees, since disagreement signals a changing market.",
+      "Build the feature quietly, so that the strategy document stays unchanged while the stakeholder is satisfied."
+    ],
+    "correctIndex": 1,
+    "explanation": "The guide says to ground strategy in market problems and distinctive competencies, write it down, connect it to company goals, and use it to say no to work that does not serve it. Flexibility has a place, but bending strategy to keep stakeholders content defeats its purpose. The guide does say to revisit strategy, yet the trigger is a change in the market, not a stakeholder's disagreement. Quietly building the feature both breaks the strategy and hides the decision.",
+    "sourceTitle": "Product Professionals' Guide to the Pragmatic Framework (refreshed for 2027)",
+    "sourceAuthor": "Pragmatic Institute",
+    "sourceUrl": "https://www.pragmaticinstitute.com/product/framework/"
+  },
+  {
+    "id": "base-demo-prioritization-professional",
+    "topicId": "demo-prioritization",
+    "domain": "prioritization-delivery",
+    "level": "professional",
+    "question": "You manage several products and must decide where to invest. Which approach does the Pragmatic guide describe?",
+    "options": [
+      "Map each offer by lifecycle stage and problem solved, allocate by strategy, and balance horizons from today to the future.",
+      "Manage each product independently, since portfolio-level planning adds bureaucracy without benefit.",
+      "Spread investment evenly across all of the products in the portfolio, so that each product team has a fair chance to succeed.",
+      "Invest in the products with the highest current revenue, since they have already proven demand in the market."
+    ],
+    "correctIndex": 0,
+    "explanation": "The guide recommends managing the portfolio like a product: map each offer by lifecycle stage and the problems it solves, allocate resources based on strategy, and use a horizon view to balance core products today, emerging products next and new bets for the future. Revenue matters, but investing only in current earners neglects later horizons. Even allocation sounds fair, yet it ignores strategy. Managing products independently discards the benefits the guide cites, such as freed resources and reduced risk.",
+    "sourceTitle": "Product Professionals' Guide to the Pragmatic Framework (refreshed for 2027)",
+    "sourceAuthor": "Pragmatic Institute",
+    "sourceUrl": "https://www.pragmaticinstitute.com/product/framework/"
+  },
+  {
+    "id": "base-commercial-case-newbie",
+    "topicId": "commercial-case",
+    "domain": "strategy-positioning",
+    "level": "newbie",
+    "question": "According to the Skills Matrix, when is a business case the central element?",
+    "options": [
+      "At the end of each financial year, when budgets are renewed and product lines are compared with one another.",
+      "Never; business cases slow product teams down and are best left to finance departments.",
+      "Only at the start of a brand-new product; improvements to existing products are justified by usage data instead.",
+      "At the start of any new product life cycle, or for any major improvement to a product already in the market."
+    ],
+    "correctIndex": 3,
+    "explanation": "The Matrix says a comprehensive and clear business case is the central element at the start of any new product life cycle or for any major improvement to a product once in the market. Limiting it to new products drops the second case the Matrix names. Annual budgeting is a plausible occasion, but it is not the trigger the Matrix gives. Dismissing business cases contradicts its emphasis on building them as a career skill.",
+    "sourceTitle": "Product Management Skills Matrix",
+    "sourceAuthor": "Unattributed",
+    "sourceUrl": ""
+  },
+  {
+    "id": "base-commercial-case-beginner",
+    "topicId": "commercial-case",
+    "domain": "strategy-positioning",
+    "level": "beginner",
+    "question": "Formats for a product business plan vary. What does the Pragmatic guide say every plan should document?",
+    "options": [
+      "The revenue forecast and the cost estimate, since leadership funds plans on financial projections.",
+      "The market problems the product addresses and why your organisation is well suited to solve them.",
+      "The market problems the product addresses, together with a detailed feature specification.",
+      "Only the vision statement, because detail is premature at the business planning stage."
+    ],
+    "correctIndex": 1,
+    "explanation": "The guide says formats vary, but every plan should document the market problems the product addresses and explain why the organisation is well suited to solve them. Estimating costs and assessing value are part of validating the opportunity, so financials belong, but they are not the elements every plan must document. Naming market problems is right, yet a detailed specification belongs to requirements and omits why the organisation can win. A vision alone falls short of the problem and the opportunity analysis the guide requires.",
+    "sourceTitle": "Product Professionals' Guide to the Pragmatic Framework (refreshed for 2027)",
+    "sourceAuthor": "Pragmatic Institute",
+    "sourceUrl": "https://www.pragmaticinstitute.com/product/framework/"
+  },
+  {
+    "id": "base-commercial-case-advanced",
+    "topicId": "commercial-case",
+    "domain": "strategy-positioning",
+    "level": "advanced",
+    "question": "What should be the first step in building a product business plan, according to the Pragmatic guide?",
+    "options": [
+      "Confirm that the idea supports company strategy.",
+      "Estimate costs and revenue, so that the plan opens with the numbers leadership will ask about first.",
+      "Define the target market and problem, since every other part of the plan rests on them.",
+      "Build a prototype first, because a working product makes the plan unnecessary."
+    ],
+    "correctIndex": 0,
+    "explanation": "The guide says to start by confirming the idea supports company strategy, then define the vision, target market and problem, then validate the opportunity by analysing needs, estimating costs and assessing value, presenting early and keeping the plan current. Cost estimation is part of validation, but it comes later. Defining market and problem is the second step, so it is close but out of order. A prototype does not replace the plan, which helps leadership decide what to fund, delay or stop.",
+    "sourceTitle": "Product Professionals' Guide to the Pragmatic Framework (refreshed for 2027)",
+    "sourceAuthor": "Pragmatic Institute",
+    "sourceUrl": "https://www.pragmaticinstitute.com/product/framework/"
+  },
+  {
+    "id": "base-commercial-case-professional",
+    "topicId": "commercial-case",
+    "domain": "strategy-positioning",
+    "level": "professional",
+    "question": "The Skills Matrix links many of its disciplines to business cases. What does it say is important for career development in this area?",
+    "options": [
+      "Consolidating the outputs of the other skills and using a process and tools to build and sign off the business case.",
+      "Mastering the financial model, since the numbers are the part of any business case that executives scrutinise most closely.",
+      "Writing persuasively, since a business case succeeds or fails mainly on the quality of its prose.",
+      "Delegating business cases to finance, so that product managers can stay focused on product delivery."
+    ],
+    "correctIndex": 0,
+    "explanation": "The Matrix says many skills in the matrix support the business case process, and that consolidating their outputs and using a process and tools to build and sign off the business case are important in career development. Writing is part of researching, structuring, writing and delivering a case, but it is one capability among several. Financial analysis matters too, yet the Matrix stresses consolidation and sign-off. Delegating the case contradicts its view of business cases as a key product skill.",
+    "sourceTitle": "Product Management Skills Matrix",
+    "sourceAuthor": "Unattributed",
+    "sourceUrl": ""
+  },
+  {
+    "id": "base-pitch-build-newbie",
+    "topicId": "pitch-build",
+    "domain": "communication-influence",
+    "level": "newbie",
+    "question": "According to the Skills Matrix, what does leadership enable in product management?",
+    "options": [
+      "A compelling personal presence on stage, which is what makes a product manager's vision persuasive to others.",
+      "Cross-departmental teams collaborating under a common vision and strategy, with product management often leading.",
+      "Authority over the engineering and marketing teams, which product managers gain once they become senior.",
+      "Leadership is outside the product role and matters only for those who manage people directly."
+    ],
+    "correctIndex": 1,
+    "explanation": "The Matrix says managing the product life cycle requires cross-departmental teams to collaborate under a common vision and product strategy, and that many organisations look to product management to lead the process. Formal authority is not the basis, since the Matrix stresses working without line management responsibility. Presence helps in pitching, yet the Matrix defines leadership through shared vision. Excluding leadership from the role contradicts its statement that the best product managers always exhibit it.",
+    "sourceTitle": "Product Management Skills Matrix",
+    "sourceAuthor": "Unattributed",
+    "sourceUrl": ""
+  },
+  {
+    "id": "base-pitch-build-beginner",
+    "topicId": "pitch-build",
+    "domain": "communication-influence",
+    "level": "beginner",
+    "question": "Which two pitfalls does the Pragmatic guide name when shaping positioning and the messages built on it?",
+    "options": [
+      "Trying to appeal to everyone and quoting prices too early.",
+      "Being too specific about the buyer and the problem.",
+      "Using jargon and mentioning competitors by name.",
+      "Using jargon and trying to appeal to everyone."
+    ],
+    "correctIndex": 3,
+    "explanation": "The guide tells teams to avoid jargon and trying to appeal to everyone. The first distractor keeps jargon but adds a warning the guide does not give. The second keeps the broad-appeal trap but adds an invented pricing rule. Being specific is what positioning requires, since the guide defines it as solving market problems for a specific audience.",
+    "sourceTitle": "Product Professionals' Guide to the Pragmatic Framework (refreshed for 2027)",
+    "sourceAuthor": "Pragmatic Institute",
+    "sourceUrl": "https://www.pragmaticinstitute.com/product/framework/"
+  },
+  {
+    "id": "base-pitch-build-advanced",
+    "topicId": "pitch-build",
+    "domain": "communication-influence",
+    "level": "advanced",
+    "question": "The Skills Matrix says effective product managers operate at a senior level. What does that achieve, and what can help?",
+    "options": [
+      "Nothing distinct; seniority comes automatically with tenure and needs no particular skills.",
+      "Strategic input from the market and buy-in from senior managers, helped by better communication and a Market Map.",
+      "Strategic input from the market, helped by spending most of one's time with customers instead of colleagues.",
+      "Direct control of the roadmap without consultation, helped by a reporting line straight into the chief executive."
+    ],
+    "correctIndex": 1,
+    "explanation": "The Matrix says an effective product manager operates at a senior level internally and externally, receiving strategic input from the market and getting input and buy-in from senior managers for strategies and roadmaps, and that better communication and tools such as a Market Map can improve this. Control without consultation is the opposite of seeking buy-in. Market input is half of the description, but neglecting internal senior managers loses the other half. Tenure is not mentioned as a substitute for these skills.",
+    "sourceTitle": "Product Management Skills Matrix",
+    "sourceAuthor": "Unattributed",
+    "sourceUrl": ""
+  },
+  {
+    "id": "base-pitch-build-professional",
+    "topicId": "pitch-build",
+    "domain": "communication-influence",
+    "level": "professional",
+    "question": "Sales, service, engineering and marketing each hold firm views on where your product should go. What does the Skills Matrix recommend?",
+    "options": [
+      "Let the stakeholder with the most experience of the product decide, since experience predicts acceptance.",
+      "Override everyone and decide alone, since stakeholder views are opinions and should be ignored.",
+      "Negotiate positively for mutual agreement on strategies, roadmap plans and key features.",
+      "Compromise by giving each department one roadmap item, so that no group feels its view was ignored."
+    ],
+    "correctIndex": 2,
+    "explanation": "The Matrix notes that an engaged organisation has stakeholders with their own views on where the product should go, and says negotiating positively for mutual agreement on strategies, roadmap plans and key features is particularly useful. Experience is valued, but handing the decision to one stakeholder abandons negotiation. Splitting the roadmap appears to be agreement, yet it trades strategy for appeasement. Overriding everyone discards both negotiation and the evidence stakeholders can hold.",
+    "sourceTitle": "Product Management Skills Matrix",
+    "sourceAuthor": "Unattributed",
+    "sourceUrl": ""
+  }
+]
