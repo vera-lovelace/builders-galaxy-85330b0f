@@ -21,4 +21,4 @@
 - [x] Replace the Welcome arch with one vertical planet line and verify desktop/phone
 - [x] Show What's next buttons on Leaderboard and Results, including an unfinished voyage
 
-- [ ] ElevenLabs voice agent: waiting on connection approval and agent ID from user
+- [x] ElevenLabs voice agent wired (public agent, client tools)

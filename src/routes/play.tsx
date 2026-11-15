@@ -1,6 +1,9 @@
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { ArrowRight, CheckCircle2, XCircle, Clock, Pause, Play } from "lucide-react";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { lazy, Suspense, useCallback, useEffect, useRef, useState } from "react";
+import { ClientOnly } from "@tanstack/react-router";
+import type { VoiceHandlers } from "@/components/VoiceAgent";
+const VoiceAgent = lazy(() => import("@/components/VoiceAgent"));
 import { Button } from "@/components/Button";
 import { AnswerOption, RouteProgress, OrbitTimer, XpReward, XpTotal, type OptionState } from "@/components/game";
 import { LennyTips } from "@/components/LennyTips";
@@ -33,6 +36,7 @@ function QuestionScreen() {
   const warnedRef = useRef(false);
   const [paused, setPaused] = useState(false);
   const [announcement, setAnnouncement] = useState("");
+  const voice = useRef<VoiceHandlers>({ selectOption: () => "", repeatQuestion: () => "", nextQuestion: () => "", pauseTimer: () => "", resumeTimer: () => "" });
   const togglePause = () => {
     if (clock.current.paused) {
       clock.current.resume(Date.now());
@@ -109,6 +113,21 @@ function QuestionScreen() {
     navigate({ to: finished ? "/results" : "/galaxy" });
   };
 
+  const questionText = `${planet.name}, question ${qi + 1} of ${ids.length}: ${q.prompt} ` + q.options.map((o, i) => `Option ${i + 1}: ${o}.`).join(" ");
+  voice.current = {
+    selectOption: (n) => {
+      if (answer) return "Already answered. Call nextQuestion to continue.";
+      if (!(n >= 1 && n <= q.options.length)) return "Choose an option from 1 to 4.";
+      const correct = n - 1 === q.answerIndex;
+      record(n - 1);
+      return `${correct ? "Correct" : "Not quite"}. The correct answer is option ${q.answerIndex + 1}: ${q.options[q.answerIndex]}. ${q.explanation ?? ""} Source: ${q.sourceTitle ?? ""}`;
+    },
+    repeatQuestion: () => questionText,
+    nextQuestion: () => { if (!answer) return "Answer the current question first."; next(); return "Moving on."; },
+    pauseTimer: () => { if (answer || clock.current.paused) return "Timer is not running."; togglePause(); return "Timer paused."; },
+    resumeTimer: () => { if (!clock.current.paused) return "Timer is already running."; togglePause(); return "Timer resumed."; },
+  };
+  const voiceContext = answer ? `The player has answered. Correct: ${answer.correct}. Call nextQuestion when they are ready.` : `New question. Read it aloud: ${questionText}`;
   const stateFor = (i: number): OptionState => {
     if (!answer) return "idle";
     if (i === answer.choice) return answer.correct ? "correct" : "wrong";
@@ -130,9 +149,12 @@ function QuestionScreen() {
             <p className="mt-1 text-sm text-muted-foreground">Stop {run.current + 1} · Question {qi + 1} of {ids.length}</p>
             {answer && <div className="mt-3"><LennyTips planet={planet} /></div>}
           </div>
+          <div className="flex shrink-0 flex-col gap-2">
           {!answer && <Button variant="secondary" size="md" className="shrink-0 px-2 lg:px-5" onClick={togglePause}>
             {paused ? <><Play aria-hidden /> Resume</> : <><Pause aria-hidden /> Pause</>}
           </Button>}
+          <ClientOnly fallback={null}><Suspense fallback={null}><VoiceAgent handlers={voice} context={voiceContext} /></Suspense></ClientOnly>
+          </div>
         </div>
         <div role="group" aria-labelledby="question-heading" onKeyDown={event => {
           if (answer || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
