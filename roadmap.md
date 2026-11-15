@@ -6,3 +6,9 @@
 - [x] Verify desktop + phone
 - [x] 30s question timer
 - [x] Pause button on questions
+- [ ] Prompt 1: 60s timer, fixed XP, accessible pause and keyboard controls
+- [ ] Import supplied baseline bank, level-pair selection and source links
+- [ ] Verify timer, question selection and desktop/mobile question flow
+- [ ] Prompt 2: topic-grouped Lenny tips, accessible dialog and Results buttons/score text
+- [ ] Prompt 3: What's next dialog and on-device share/copy/Markdown/JSON exports
+- [ ] Feature votes: waiting for permission to enable Cloud (previously declined)

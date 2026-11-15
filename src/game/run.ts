@@ -1,6 +1,6 @@
 import { PLANETS, type PlanetId } from "@/data/planets";
 import { questionsForPlanet } from "@/data/questionBank";
-import { QUESTIONS_PER_PLANET, levelFor, pick, type Level } from "./rules";
+import { questionLevelsFor, levelFor, pick, type Level } from "./rules";
 
 export interface Player { nickname: string; experience: Level }
 export interface Answer { choice: number | null; correct: boolean; xp: number; ms: number }
@@ -20,7 +20,13 @@ export interface Run {
 
 export function newRun(player: Player, rand: () => number = Math.random): Run {
   const plan = {} as Record<PlanetId, string[]>;
-  for (const p of PLANETS) plan[p.id] = pick(questionsForPlanet(p.id), QUESTIONS_PER_PLANET, rand).map((q) => q.id);
+  for (const p of PLANETS) {
+    plan[p.id] = questionLevelsFor(player.experience).map(level => {
+      const question = pick(questionsForPlanet(p.id).filter(q => q.level === level), 1, rand)[0];
+      if (!question) throw new Error(`Missing ${level} question for ${p.name}`);
+      return question.id;
+    });
+  }
   return { player, plan, answers: {}, current: 0, shown: 0, startedAt: Date.now() };
 }
 

@@ -1,6 +1,9 @@
 import raw from "./questions.json";
 import { PLANETS, type PlanetId } from "./planets";
 
+export const QUESTION_LEVELS = ["newbie", "beginner", "advanced", "professional"] as const;
+export type QuestionLevel = typeof QUESTION_LEVELS[number];
+
 export interface Question {
   id: string;
   planetId: PlanetId;
@@ -8,7 +11,9 @@ export interface Question {
   options: [string, string, string, string];
   answerIndex: number;
   explanation?: string | undefined;
-  difficulty?: string | undefined;
+  level: QuestionLevel;
+  sourceTitle?: string | undefined;
+  sourceUrl?: string | undefined;
 }
 
 interface RawQuestion {
@@ -18,7 +23,9 @@ interface RawQuestion {
   options: string[];
   correctIndex: number;
   explanation?: string;
-  difficulty?: string;
+  level: QuestionLevel;
+  sourceTitle?: string;
+  sourceUrl?: string;
 }
 
 const planetIds = new Set<string>(PLANETS.map((p) => p.id));
@@ -33,7 +40,9 @@ export function toQuestion(q: RawQuestion): Question | null {
     options: q.options as Question["options"],
     answerIndex: q.correctIndex,
     explanation: q.explanation,
-    difficulty: q.difficulty,
+    level: q.level,
+    sourceTitle: q.sourceTitle,
+    sourceUrl: q.sourceUrl,
   };
 }
 
