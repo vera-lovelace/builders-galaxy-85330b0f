@@ -66,6 +66,11 @@ function About() {
           <p>A rocket flies through 12 planets, one for each product skill, from problem framing to pitch. You answer 2 questions on each planet, see where you shine, and leave with three places to learn next. There is no account and no sign-up.</p>
         </Section>
 
+        <Section title="Job search beta">
+          <p>After your voyage, the job search beta finds live product, engineering and design roles from JSearch on RapidAPI. Pick a suggested keyword or type your own, filter by location, remote work and date posted, and open each job's own Apply link.</p>
+          <p className="mt-3">"Best performing" keywords are ranked by how many live results they return in your session, not by invented statistics. An optional voice search guide can run searches and read jobs aloud for up to 10 minutes per session. It is a beta: searches only work once the job search key is set up.</p>
+        </Section>
+
         <Section title="Open source">
           <dl className="space-y-3">
             <div><dt className="font-semibold text-foreground">Code</dt><dd>MIT licence: use, change and share it freely, including commercially.</dd></div>
@@ -92,6 +97,7 @@ function About() {
             <li>Answer keys (1 to 4, A to D) work only while you are in the question.</li>
             <li>Reduced-motion settings are respected.</li>
             <li>The voice guide is opt-in and available for up to 10 minutes per session.</li>
+            <li>Job searches send only your keywords and filters to JSearch (RapidAPI) through our server; nothing about you is stored.</li>
           </ul>
           <p><strong className="text-foreground">Known gaps:</strong> the game has been checked with automated and keyboard tests, but not yet by people using NVDA or VoiceOver, so some parts may still be hard to use. It is available in English only. To report a problem, tell your workshop facilitator; once the repository is public you can also open an issue there.</p>
         </Section>
@@ -102,6 +108,7 @@ function About() {
             <li>Downloads and copies of your results are made on your device; nothing is uploaded.</li>
             <li>Feature voting is not switched on yet, so nothing you pick is sent or stored.</li>
             <li>The voice guide sends your voice to ElevenLabs only after you start it, only while it is on, and for up to 10 minutes per session.</li>
+            <li>Job searches send only your keywords and filters to JSearch (RapidAPI) through our server; nothing about you is stored.</li>
           </ul>
         </Section>
 

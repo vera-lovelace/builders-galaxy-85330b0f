@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Info, Play } from "lucide-react";
+import { Briefcase, Info, Play } from "lucide-react";
 import { Button } from "@/components/Button";
 import { Earth } from "@/components/Earth";
 import { WelcomeOrbit } from "@/components/WelcomeOrbit";
@@ -30,6 +30,9 @@ function Welcome() {
           <Link to="/join"><Play className="fill-current" /> Start your voyage</Link>
         </Button>
         <p className="mt-4 text-sm text-muted-foreground">12 planets · 24 questions · free, no sign-up</p>
+        <p className="mt-3 text-sm text-muted-foreground">
+          After your voyage, try the <Link to="/jobs" className="inline-flex items-center gap-1 text-foreground underline underline-offset-4 hover:text-info"><Briefcase className="size-3.5" aria-hidden />job search beta</Link>: live product roles, by keyword or by voice.
+        </p>
       </section>
       <div className="relative h-96 shrink-0">
         <Earth className="top-[90%]" />
