@@ -29,8 +29,8 @@ function Welcome() {
         </Button>
         <p className="mt-4 text-sm text-muted-foreground">12 planets · 24 questions · up to 24 minutes of answering</p>
       </section>
-      <div className="relative h-[34vh] min-h-56">
-        <Earth className="top-[38%]" />
+      <div className="relative h-96 shrink-0">
+        <Earth className="top-[90%]" />
         <WelcomeOrbit />
       </div>
     </main>

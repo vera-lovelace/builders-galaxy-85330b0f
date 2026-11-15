@@ -18,3 +18,4 @@
 - [ ] Human release review: NVDA behaviour and source/content accuracy need user review
 - [x] Remaining design review: Welcome orbit, Galaxy route/spacing, Question layout/feedback, Results labels, controls/dialog styling and accurate portable docs; exclude voice and Cloud
 - [x] Compare newly supplied desktop and mobile round-2 screenshots; refine Question, Results and dialogs without enabling voice or voting
+- [x] Replace the Welcome arch with one vertical planet line and verify desktop/phone
