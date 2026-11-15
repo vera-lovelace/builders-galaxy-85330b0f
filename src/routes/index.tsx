@@ -30,12 +30,12 @@ function Welcome() {
           <Link to="/join"><Play className="fill-current" /> Start your voyage</Link>
         </Button>
         <p className="mt-4 text-sm text-muted-foreground">12 planets · 24 trivia questions · free, no sign-up, nothing stored</p>
-        <TriviaNote className="mt-6 max-w-xl" />
       </section>
       <div className="relative h-[37rem] shrink-0">
         <Earth size={200} className="bottom-2" />
         <WelcomeOrbit />
       </div>
+      <div className="relative z-10 mx-auto w-full max-w-xl px-5 pt-6"><TriviaNote /></div>
 
       <section aria-labelledby="get-h" className="relative z-10 mx-auto w-full max-w-6xl px-5 py-16">
         <h2 id="get-h" className="text-center font-display text-3xl font-extrabold sm:text-5xl">One voyage. Everything you need for the next step.</h2>
