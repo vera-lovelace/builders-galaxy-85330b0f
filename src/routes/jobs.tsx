@@ -1,6 +1,7 @@
 import { ClientOnly, createFileRoute, Link } from "@tanstack/react-router";
 import { useServerFn } from "@tanstack/react-start";
-import { ExternalLink, Search, TrendingUp } from "lucide-react";
+import { ArrowLeft, ExternalLink, Search, TrendingUp } from "lucide-react";
+import { useRun } from "@/game/runStore";
 import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import { Button } from "@/components/Button";
 import { Shell } from "@/components/Shell";
@@ -35,6 +36,7 @@ function Jobs() {
   const [open, setOpen] = useState<string | null>(null);
   const [stats, setStats] = useState<Record<string, number>>({});
   const [status, setStatus] = useState("");
+  const hasRun = Boolean(useRun());
 
   useEffect(() => { try { setStats(JSON.parse(sessionStorage.getItem(STATS_KEY) ?? "{}")); } catch { /* ignore */ } }, []);
 
@@ -65,6 +67,7 @@ function Jobs() {
 
   return (
     <Shell wide className="max-w-5xl" right={<ClientOnly fallback={null}><Suspense fallback={null}><JobsVoiceAgent handlers={voice} context={context} /></Suspense></ClientOnly>}>
+      {hasRun && <Button asChild variant="ghost" size="md" className="mb-4 self-start"><Link to="/results"><ArrowLeft aria-hidden /> Back to results</Link></Button>}
       <p className="text-sm font-semibold uppercase tracking-wide text-primary">Beta</p>
       <h1 className="font-display text-3xl font-extrabold sm:text-4xl">Find your next mission</h1>
       <p className="mt-2 max-w-2xl text-muted-foreground">Live listings from job boards via JSearch. Pick a keyword or type your own; keywords that return the most listings rise to the top. The voice guide runs up to 10 minutes per session. <Link to="/jobs-setup" className="font-semibold text-primary underline underline-offset-4">Setup guide</Link></p>
@@ -98,7 +101,7 @@ function Jobs() {
 
       <section className="mt-8" aria-labelledby="results-h">
         <h2 id="results-h" className="font-display text-2xl font-bold">{searched ? `Results for “${searched}”` : "Results"}</h2>
-        {error && <p role="alert" className="mt-3 rounded-lg border border-danger/70 bg-surface p-3 text-danger">{error}</p>}
+        {error && <p role="alert" className="mt-3 rounded-lg border border-danger/70 bg-surface p-3 text-danger">{error}{error.includes("not set up") && <> <Link to="/jobs-setup" className="font-semibold underline underline-offset-4">Open the setup guide</Link></>}</p>}
         {!searched && !error && <p className="mt-2 text-muted-foreground">Pick a keyword to start.</p>}
         {searched && !error && !loading && jobs.length === 0 && <p className="mt-2 text-muted-foreground">No jobs found. Try a broader keyword.</p>}
         <ol className="mt-4 grid gap-3">
