@@ -119,3 +119,8 @@ Project URLs at handover: published/primary `https://builders-galaxy.lovable.app
 ## Suggested opening instruction after transfer
 
 > Continue Builder's Galaxy from PROJECT_HANDOVER.md, AGENTS.md and roadmap.md. Preserve the supplied designs and current rules. Keep Cloud and ElevenLabs disconnected unless I explicitly resume them. Review existing work before editing; do not rebuild working parts.
+
+## Update before transfer (15 Nov 2026)
+Since this file was first written: ElevenLabs voice guide (game) and job search beta (/jobs, RapidAPI JSearch, voice search guide, AI role matcher via Lovable AI Gateway) were added; /jobs-setup was removed; About has a Buy Me a Coffee button (placeholder link); a dormant shared-leaderboard adapter and `supabase/setup/001_shared_leaderboard.sql` are ready.
+
+Lost on transfer and must be redone: RAPIDAPI_KEY secret, ElevenLabs connection and agent actions, AI credits, chat panel history, personal preferences. Keep `builders-galaxy.lovable.app` by using Move workspace. See CHAT_HISTORY.md and the after-transfer checklist in project memory.

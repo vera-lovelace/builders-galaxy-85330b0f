@@ -29,6 +29,14 @@ Chronological record of requests and outcomes in this project (as of 15 Nov 2026
 24. **Journey check Results → job search** — added Back to results on /jobs and a setup-guide link in the missing-key message; verified desktop and phone.
 25. **Secured database prep (shared leaderboard)** — user chose anonymous sign-in, leaderboard only. Added setup script `supabase/setup/001_shared_leaderboard.sql` (anyone reads; players write only their own score per room; XP/time/nickname checks) and a dormant connection adapter that turns on once the database is connected. Mock leaderboard stays the fallback. Not run against a real database yet.
 
+26. **Memory + chat update** after database prep.
+27. **Welcome and About** — job search beta line on Welcome; About section on the job search and a privacy line (only keywords and filters are sent).
+28. **Job search setup page deleted** — /jobs-setup and its links removed.
+29. **AI role matcher on /jobs** — describe role, location and preferences in plain words; AI (Lovable AI Gateway) suggests keywords and filters that prefill the search. Not live-tested.
+30. **After-transfer checklist saved to memory.**
+31. **Buy the developers a coffee** button in About → Credits; links to the Buy Me a Coffee home page until the real page link is supplied.
+32. **Transfer prep** — listed what is lost on transfer: secrets (RAPIDAPI_KEY), connectors (ElevenLabs), credits, chat panel history, user-level preferences, subdomain unless moved via Move workspace.
+
 ## Open items
 - After transfer: connect your own database, enable Anonymous sign-ins, run the setup script, then ask to switch Results/Leaderboard to shared scores.
 - Feature voting: disabled (Cloud stays off).
@@ -37,3 +45,5 @@ Chronological record of requests and outcomes in this project (as of 15 Nov 2026
 - Add the RapidAPI JSearch key, then test a live job search.
 - Add the five job search actions to the ElevenLabs agent and test the voice search guide.
 - The game's Voice guide doesn't stop at 10 minutes yet; only the job search one does.
+- Replace the Buy Me a Coffee link with the developers' own page.
+- Test the AI role matcher in the new workspace (needs AI credits there).
