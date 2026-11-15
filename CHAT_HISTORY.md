@@ -36,6 +36,11 @@ Chronological record of requests and outcomes in this project (as of 15 Nov 2026
 30. **After-transfer checklist saved to memory.**
 31. **Buy the developers a coffee** button in About → Credits; links to the Buy Me a Coffee home page until the real page link is supplied.
 32. **Transfer prep** — listed what is lost on transfer: secrets (RAPIDAPI_KEY), connectors (ElevenLabs), credits, chat panel history, user-level preferences, subdomain unless moved via Move workspace.
+33. **Mission statement journey** — builder type + AI mission statement on Results (shareable card), job search prefilled from it, per-job pitch/copy buttons, tips drill, sound toggle, anonymous background matcher.
+34. **Landing page** — homepage is "The Builder's Galaxy" product promise page; minutes estimates removed; the "launch window" section was replaced by the trivia note at the bottom.
+35. **Visuals** — real full-Earth image under the rocket (homepage, voyage map); planets get surface texture and deeper shading.
+36. **Trivia disclaimers** — "trivia" wording everywhere; homepage, Results and About say it's a fun game to motivate aspiring PMs, not a skills assessment, and that data is secure and nothing is stored. "Assessed level" is now "Trivia level".
+37. **Promo video** — 26 s, 16:9, app screens only (no person), captions and music; saved in Files at media/videos/builders_galaxy_promo.mp4, not in the app.
 
 ## Open items
 - After transfer: connect your own database, enable Anonymous sign-ins, run the setup script, then ask to switch Results/Leaderboard to shared scores.

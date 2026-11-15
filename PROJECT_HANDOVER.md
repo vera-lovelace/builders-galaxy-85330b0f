@@ -36,7 +36,7 @@ The user initially requested Cloud, then explicitly reversed that instruction. C
 - Orbit timer turns coral at 10 seconds or less, not 5.
 - Equal leaderboard XP is ordered by shorter active answering time; the leaderboard remains mock, not shared multiplayer.
 - Two questions per planet, 24 total: one at the selected level and one at the next level. Newbie → newbie/beginner; Beginner → beginner/advanced; Advanced and Pro → advanced/professional. The user described this selection rule as a placeholder.
-- Display levels: Newbie, Beginner, Advanced, Pro. Assessed level thresholds: ≥85% Pro, ≥65% Advanced, ≥40% Beginner, otherwise Newbie.
+- Display levels: Newbie, Beginner, Advanced, Pro. Trivia level thresholds: ≥85% Pro, ≥65% Advanced, ≥40% Beginner, otherwise Newbie.
 - Explore-next recommendations select three lowest accuracy planets; ties keep voyage order. When more planets tie for minimum than fit, intro reads 'Three of your lowest-scoring planets'.
 
 ## Content
@@ -112,7 +112,8 @@ Open items:
 - Human NVDA, missing-source/content and spoken explanation accuracy review before release.
 - Remaining non-service design updates were implemented after the handover: Welcome orbit, dashed Galaxy route and mission strip, laptop spacing, ring clearance, desktop Question split, timer chip, visible orbit scores, segmented skill scores, dialog/tip styling, focus outlines and post-answer focus/live feedback. Voice and Cloud are explicitly left for the next profile, without permission to connect automatically.
 - Reverification: 18 tests passed and a full 24-answer browser run confirmed focus on the next action after every answer with no runtime errors. Human screen-reader verification remains pending.
-- Welcome duration now says '12 planets · 24 questions · up to 24 minutes of answering'; earlier 'about 5 minutes' is obsolete. Final landing/voyage wording can still be reviewed with the user.
+- Welcome shows no time estimate (user removed minutes). Subline: '12 planets · 24 trivia questions · free, no sign-up, nothing stored'. The trivia note (fun game, not a skills assessment; nothing stored) closes the homepage and appears on Results and About.
+- Promo video lives only in Files (media/videos/builders_galaxy_promo.mp4); app screens only, no presenter.
 
 Project URLs at handover: published/primary `https://builders-galaxy.lovable.app`; preview `https://id-preview--eb1b10bb-8e9d-4ce1-8b3f-deb21bf5fa55.lovable.app`. Their availability/ownership after transfer is unverified. Saving code does not publish it.
 
