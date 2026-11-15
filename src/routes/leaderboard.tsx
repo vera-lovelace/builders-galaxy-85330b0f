@@ -67,7 +67,7 @@ function Leaderboard() {
           </ol>
         </div>
 
-        {run && run.current >= 12 && <WhatsNext run={run} />}
+        <WhatsNext run={run ?? null} />
         <Button asChild variant="secondary" className="mt-3 w-full">
           <Link to="/results"><ArrowLeft /> Back to my results</Link>
         </Button>

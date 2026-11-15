@@ -11,17 +11,19 @@ const IDEAS = [
   ['Ask the sources', 'Explore questions with the source material.'],
   ['Play live against the room', 'Play multiplayer with other people in the room.'],
 ];
-export function WhatsNext({ run }: { run: Run }) {
+export function WhatsNext({ run }: { run?: Run | null }) {
   const [open, setOpen] = useState(false);
   const [canShare, setCanShare] = useState(false);
   const [status, setStatus] = useState('');
   useEffect(() => { setCanShare(typeof navigator.share === 'function'); }, []);
-  const results = exportResults(run);
+  const results = run ? exportResults(run) : null;
   const copy = async () => {
+    if (!results) return;
     try { await navigator.clipboard.writeText(results.markdown); setStatus('Results copied.'); }
     catch { setStatus('Copy unavailable. Download your results instead.'); }
   };
   const share = async () => {
+    if (!results) return;
     try { await navigator.share({ title: "Builder's Galaxy results", text: results.shareText }); }
     catch (error) { if (!(error instanceof DOMException && error.name === 'AbortError')) setStatus('Sharing unavailable. Copy your results instead.'); }
   };
@@ -32,11 +34,12 @@ export function WhatsNext({ run }: { run: Run }) {
         <h3 className="font-display text-xl font-bold">Take your results with you</h3>
         <p className="mt-2 text-sm text-muted-foreground">Your score, every question and its source. Made on this device, nothing is uploaded.</p>
         <div className="mt-4 grid gap-3 sm:grid-cols-2">
-          {canShare && <Button variant="secondary" size="md" onClick={share}><Share2 aria-hidden /> Share</Button>}
-          <Button variant="secondary" size="md" onClick={copy}><Copy aria-hidden /> Copy results</Button>
-          <Button variant="secondary" size="md" onClick={() => downloadResults(results.markdown, 'md')}><Download aria-hidden /> Download (Markdown)</Button>
-          <Button variant="secondary" size="md" onClick={() => downloadResults(JSON.stringify(results.data, null, 2), 'json')}><Download aria-hidden /> Download (JSON)</Button>
+          {canShare && <Button disabled={!results} variant="secondary" size="md" onClick={share}><Share2 aria-hidden /> Share</Button>}
+          <Button disabled={!results} variant="secondary" size="md" onClick={copy}><Copy aria-hidden /> Copy results</Button>
+          <Button disabled={!results} variant="secondary" size="md" onClick={() => { if (results) downloadResults(results.markdown, 'md'); }}><Download aria-hidden /> Download (Markdown)</Button>
+          <Button disabled={!results} variant="secondary" size="md" onClick={() => { if (results) downloadResults(JSON.stringify(results.data, null, 2), 'json'); }}><Download aria-hidden /> Download (JSON)</Button>
         </div>
+        {!results && <p className="mt-3 text-sm text-muted-foreground">Play a voyage to take your results with you.</p>}
         <p role="status" className="mt-3 text-sm text-success">{status}</p>
       </section>
       <section className="mt-8 border-t border-border pt-6">

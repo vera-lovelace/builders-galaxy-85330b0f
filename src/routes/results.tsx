@@ -2,6 +2,7 @@ import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { Check, RotateCcw, Trophy } from "lucide-react";
 import { useEffect } from "react";
 import { LennyTips } from "@/components/LennyTips";
+import { WhatsNext } from "@/components/WhatsNext";
 import { Button } from "@/components/Button";
 import { Planet } from "@/components/Planet";
 import { PlayerAvatar } from "@/components/PlayerAvatar";
@@ -82,8 +83,9 @@ function Results() {
         </ul>
       </section>
 
-      <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-        <Button asChild><Link to="/leaderboard"><Trophy /> See the leaderboard</Link></Button>
+      <WhatsNext run={run} />
+      <div className="mt-3 flex flex-col gap-3 sm:flex-row">
+        <Button asChild variant="secondary"><Link to="/leaderboard"><Trophy /> See the leaderboard</Link></Button>
         <Button variant="secondary" onClick={() => { runStore.set(null); navigate({ to: "/join" }); }}>
           <RotateCcw /> Play again
         </Button>
