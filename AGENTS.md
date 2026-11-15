@@ -40,3 +40,4 @@ use the editor.
 - Results and Leaderboard share WhatsNext; keep its trigger visible independently of voyage completion, and disable exports when no local run exists so sample scores are never exported as personal results.
 
 - WelcomeOrbit renders a decorative preview from the shared planet list; RouteProgress renders semantic voyage progress on Questions and the Galaxy mission bar so stop identities stay consistent.
+- About page lists sources via src/data/sources.ts, grouped from the data files; never hand-type source lists.

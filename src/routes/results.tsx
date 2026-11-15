@@ -1,5 +1,5 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
-import { Check, RotateCcw, Trophy } from "lucide-react";
+import { Check, Info, RotateCcw, Trophy } from "lucide-react";
 import { useEffect } from "react";
 import { LennyTips } from "@/components/LennyTips";
 import { WhatsNext } from "@/components/WhatsNext";
@@ -89,6 +89,7 @@ function Results() {
         <Button variant="secondary" onClick={() => { runStore.set(null); navigate({ to: "/join" }); }}>
           <RotateCcw /> Play again
         </Button>
+        <Button asChild variant="ghost" size="md" className="self-start sm:self-center"><Link to="/about"><Info /> About and sources</Link></Button>
       </div>
     </Shell>
   );

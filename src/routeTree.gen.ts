@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
 import { Route as GalaxyRouteImport } from './routes/galaxy'
 import { Route as JoinRouteImport } from './routes/join'
 import { Route as LeaderboardRouteImport } from './routes/leaderboard'
@@ -19,6 +20,11 @@ import { Route as ResultsRouteImport } from './routes/results'
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
 const GalaxyRoute = GalaxyRouteImport.update({
@@ -49,6 +55,7 @@ const ResultsRoute = ResultsRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
   '/galaxy': typeof GalaxyRoute
   '/join': typeof JoinRoute
   '/leaderboard': typeof LeaderboardRoute
@@ -57,6 +64,7 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
   '/galaxy': typeof GalaxyRoute
   '/join': typeof JoinRoute
   '/leaderboard': typeof LeaderboardRoute
@@ -66,6 +74,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
   '/galaxy': typeof GalaxyRoute
   '/join': typeof JoinRoute
   '/leaderboard': typeof LeaderboardRoute
@@ -74,12 +83,15 @@ export interface FileRoutesById {
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/galaxy' | '/join' | '/leaderboard' | '/play' | '/results'
+  fullPaths:
+    '/' | '/about' | '/galaxy' | '/join' | '/leaderboard' | '/play' | '/results'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/galaxy' | '/join' | '/leaderboard' | '/play' | '/results'
+  to:
+    '/' | '/about' | '/galaxy' | '/join' | '/leaderboard' | '/play' | '/results'
   id:
     | '__root__'
     | '/'
+    | '/about'
     | '/galaxy'
     | '/join'
     | '/leaderboard'
@@ -89,6 +101,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
   GalaxyRoute: typeof GalaxyRoute
   JoinRoute: typeof JoinRoute
   LeaderboardRoute: typeof LeaderboardRoute
@@ -103,6 +116,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/galaxy': {
@@ -145,6 +165,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
   GalaxyRoute: GalaxyRoute,
   JoinRoute: JoinRoute,
   LeaderboardRoute: LeaderboardRoute,
