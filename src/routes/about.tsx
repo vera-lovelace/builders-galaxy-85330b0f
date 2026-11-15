@@ -91,7 +91,7 @@ function About() {
             <li>The 60-second timer can be paused. Screen readers announce it only at 10 seconds left, and when you pause or resume it.</li>
             <li>Answer keys (1 to 4, A to D) work only while you are in the question.</li>
             <li>Reduced-motion settings are respected.</li>
-            <li>Voice mode, in development, is opt-in, untimed and shows everything it says as text.</li>
+            <li>The voice guide is opt-in and available for up to 10 minutes per session.</li>
           </ul>
           <p><strong className="text-foreground">Known gaps:</strong> the game has been checked with automated and keyboard tests, but not yet by people using NVDA or VoiceOver, so some parts may still be hard to use. It is available in English only. To report a problem, tell your workshop facilitator; once the repository is public you can also open an issue there.</p>
         </Section>
@@ -101,7 +101,7 @@ function About() {
             <li>Your nickname and answers stay in this browser tab and are cleared when you close it.</li>
             <li>Downloads and copies of your results are made on your device; nothing is uploaded.</li>
             <li>Feature voting is not switched on yet, so nothing you pick is sent or stored.</li>
-            <li>Voice mode is not available yet; when it is, it will send your voice to ElevenLabs only after you start it and only while it is on.</li>
+            <li>The voice guide sends your voice to ElevenLabs only after you start it, only while it is on, and for up to 10 minutes per session.</li>
           </ul>
         </Section>
 
