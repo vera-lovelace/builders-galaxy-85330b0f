@@ -9,6 +9,9 @@ import type { JobVoiceHandlers } from "@/components/JobsVoiceAgent";
 import { KEYWORD_GROUPS } from "@/data/jobKeywords";
 import { searchJobs, type Job } from "@/lib/jobs.functions";
 import { RoleMatcher } from "@/components/RoleMatcher";
+import { MissionPanel } from "@/components/MissionPanel";
+import { JobCopyActions } from "@/components/JobCopyActions";
+import { useMission } from "@/game/missionStore";
 import { meta } from "@/lib/meta";
 import { cn } from "@/lib/utils";
 
@@ -16,6 +19,7 @@ const JobsVoiceAgent = lazy(() => import("@/components/JobsVoiceAgent"));
 
 export const Route = createFileRoute("/jobs")({
   head: () => meta("Job search beta — Builder's Galaxy", "Search live job listings by the best-performing keywords, with an optional voice guide."),
+  validateSearch: (s: Record<string, unknown>): { from?: "mission" } => (s["from"] === "mission" ? { from: "mission" } : {}),
   component: Jobs,
 });
 
@@ -38,6 +42,9 @@ function Jobs() {
   const [stats, setStats] = useState<Record<string, number>>({});
   const [status, setStatus] = useState("");
   const hasRun = Boolean(useRun());
+  const mission = useMission();
+  const { from } = Route.useSearch();
+  const auto = useRef(false);
 
   useEffect(() => { try { setStats(JSON.parse(sessionStorage.getItem(STATS_KEY) ?? "{}")); } catch { /* ignore */ } }, []);
 
@@ -52,6 +59,8 @@ function Jobs() {
     if (!r.error && opts.page === 1) setStats((s) => { const n = { ...s, [q]: r.jobs.length }; sessionStorage.setItem(STATS_KEY, JSON.stringify(n)); return n; });
     return r;
   };
+
+  useEffect(() => { if (from === "mission" && mission && !auto.current) { auto.current = true; go({ q: mission.keywords[0] }); } /* eslint-disable-next-line react-hooks/exhaustive-deps */ }, [from, mission]);
 
   const ranked = Object.entries(stats).filter(([, n]) => n > 0).sort((a, b) => b[1] - a[1]).slice(0, 6);
   const say = (r: { jobs: Job[]; error: string | null }) => r.error ?? (r.jobs.length ? `${r.jobs.length} jobs. ` + r.jobs.slice(0, 5).map((j, i) => `${i + 1}: ${j.title} at ${j.company}, ${j.location}.`).join(" ") : "No jobs found.");
@@ -74,7 +83,9 @@ function Jobs() {
       <p className="mt-2 max-w-2xl text-muted-foreground">Live listings from job boards via JSearch. Pick a keyword or type your own; keywords that return the most listings rise to the top. The voice guide runs up to 10 minutes per session.</p>
       <p className="sr-only" aria-live="polite">{status}</p>
 
-      <RoleMatcher onApply={(x) => { setLocation(x.location); setRemoteOnly(x.remoteOnly); setDatePosted(x.datePosted); go({ q: x.keyword, loc: x.location, remote: x.remoteOnly, days: x.datePosted }); }} />
+      <MissionPanel mission={mission} />
+      {mission && <ul className="mt-3 flex flex-wrap gap-2" aria-label="Keywords for your builder type">{mission.keywords.map((k) => <li key={k}><Button variant="ghost" size="md" className="border border-border" onClick={() => go({ q: k })}>{k}</Button></li>)}</ul>}
+      <RoleMatcher mission={mission?.statement ?? null} onApply={(x) => { setLocation(x.location); setRemoteOnly(x.remoteOnly); setDatePosted(x.datePosted); go({ q: x.keyword, loc: x.location, remote: x.remoteOnly, days: x.datePosted }); }} />
       <form className="mt-6 grid gap-3 rounded-2xl bg-surface p-4 sm:grid-cols-[1fr_200px_auto]" onSubmit={(e) => { e.preventDefault(); go(); }}>
         <label className="grid gap-1 text-sm">Keywords<input value={query} onChange={(e) => setQuery(e.target.value)} className="h-12 rounded-lg border border-border bg-background px-3 text-base" placeholder="e.g. Product Manager" /></label>
         <label className="grid gap-1 text-sm">Location<input value={location} onChange={(e) => setLocation(e.target.value)} className="h-12 rounded-lg border border-border bg-background px-3 text-base" placeholder="Any" /></label>
@@ -120,6 +131,7 @@ function Jobs() {
               </div>
             </div>
             {open === j.id && <p className="mt-3 whitespace-pre-line text-sm leading-relaxed text-muted-foreground">{j.description || "No description provided."}{j.publisher ? `\n\nListed on ${j.publisher}.` : ""}</p>}
+            {open === j.id && <JobCopyActions job={j} mission={mission?.statement ?? null} />}
           </li>)}
         </ol>
         {jobs.length > 0 && <div className="mt-4 flex gap-3">

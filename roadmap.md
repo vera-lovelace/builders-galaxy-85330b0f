@@ -26,3 +26,5 @@
 - [ ] After transfer: connect database, enable Anonymous sign-ins, run supabase/setup/001_shared_leaderboard.sql, then wire sharedLeaderboard into Results/Leaderboard (blocked: database not connected)
 - [x] Note after-transfer setup steps in memory
 - [x] AI role matcher on /jobs (AI Gateway)
+- [x] Mission statement, job copy buttons, tips drill, sound, anonymous background matcher ("your data, your space, nothing stored")
+- [x] Share the builder card on social (share sheet, LinkedIn, X)

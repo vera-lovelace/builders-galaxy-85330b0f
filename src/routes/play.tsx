@@ -1,4 +1,5 @@
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
+import { play } from "@/game/sound";
 import { ArrowRight, CheckCircle2, XCircle, Clock, Pause, Play } from "lucide-react";
 import { lazy, Suspense, useCallback, useEffect, useRef, useState } from "react";
 import { ClientOnly } from "@tanstack/react-router";
@@ -41,11 +42,11 @@ function QuestionScreen() {
     if (clock.current.paused) {
       clock.current.resume(Date.now());
       setPaused(false);
-      setAnnouncement("Timer resumed");
+      setAnnouncement("Timer resumed"); play("resume");
     } else {
       clock.current.pause(Date.now());
       setPaused(true);
-      setAnnouncement("Timer paused");
+      setAnnouncement("Timer paused"); play("pause");
     }
   };
 
@@ -67,6 +68,7 @@ function QuestionScreen() {
       const ms = Math.min(SECONDS_PER_QUESTION * 1000, clock.current.elapsed(Date.now()));
       const correct = choice === q.answerIndex;
       const xp = xpFor(correct);
+      play(correct ? "correct" : "wrong");
       if (clock.current.paused) {
         clock.current.resume(Date.now());
         setPaused(false);
@@ -92,7 +94,7 @@ function QuestionScreen() {
       setLeft(Math.max(0, l));
       if (l <= LOW_TIME_SECONDS && !warnedRef.current) {
         warnedRef.current = true;
-        setAnnouncement("10 seconds left");
+        setAnnouncement("10 seconds left"); play("warning");
       }
       if (l <= 0) record(null);
     }, 100);
@@ -110,6 +112,7 @@ function QuestionScreen() {
     if (nextId) return setActiveId(nextId);
     const finished = run.current + 1 >= PLANETS.length;
     runStore.update((r) => ({ ...r, current: r.current + 1, finishedAt: finished ? Date.now() : r.finishedAt }));
+    if (!finished) play("flight");
     navigate({ to: finished ? "/results" : "/galaxy" });
   };
 

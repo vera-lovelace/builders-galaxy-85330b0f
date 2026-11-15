@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
+import { Route as DrillRouteImport } from './routes/drill'
 import { Route as GalaxyRouteImport } from './routes/galaxy'
 import { Route as JobsRouteImport } from './routes/jobs'
 import { Route as JoinRouteImport } from './routes/join'
@@ -26,6 +27,11 @@ const IndexRoute = IndexRouteImport.update({
 const AboutRoute = AboutRouteImport.update({
   id: '/about',
   path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DrillRoute = DrillRouteImport.update({
+  id: '/drill',
+  path: '/drill',
   getParentRoute: () => rootRouteImport,
 } as any)
 const GalaxyRoute = GalaxyRouteImport.update({
@@ -62,6 +68,7 @@ const ResultsRoute = ResultsRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/drill': typeof DrillRoute
   '/galaxy': typeof GalaxyRoute
   '/jobs': typeof JobsRoute
   '/join': typeof JoinRoute
@@ -72,6 +79,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/drill': typeof DrillRoute
   '/galaxy': typeof GalaxyRoute
   '/jobs': typeof JobsRoute
   '/join': typeof JoinRoute
@@ -83,6 +91,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/drill': typeof DrillRoute
   '/galaxy': typeof GalaxyRoute
   '/jobs': typeof JobsRoute
   '/join': typeof JoinRoute
@@ -95,6 +104,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/about'
+    | '/drill'
     | '/galaxy'
     | '/jobs'
     | '/join'
@@ -105,6 +115,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/about'
+    | '/drill'
     | '/galaxy'
     | '/jobs'
     | '/join'
@@ -115,6 +126,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/about'
+    | '/drill'
     | '/galaxy'
     | '/jobs'
     | '/join'
@@ -126,6 +138,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
+  DrillRoute: typeof DrillRoute
   GalaxyRoute: typeof GalaxyRoute
   JobsRoute: typeof JobsRoute
   JoinRoute: typeof JoinRoute
@@ -148,6 +161,13 @@ declare module '@tanstack/react-router' {
       path: '/about'
       fullPath: '/about'
       preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/drill': {
+      id: '/drill'
+      path: '/drill'
+      fullPath: '/drill'
+      preLoaderRoute: typeof DrillRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/galaxy': {
@@ -198,6 +218,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
+  DrillRoute: DrillRoute,
   GalaxyRoute: GalaxyRoute,
   JobsRoute: JobsRoute,
   JoinRoute: JoinRoute,

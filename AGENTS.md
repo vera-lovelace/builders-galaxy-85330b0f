@@ -45,3 +45,5 @@ use the editor.
 - Job search beta calls JSearch (RapidAPI) only from `src/lib/jobs.functions.ts` with the server-side RAPIDAPI_KEY; keyword ranking is live session result counts, never invented demand stats.
 - Shared leaderboard backend is prepared but dormant: `src/game/sharedLeaderboard.ts` activates only when VITE_SUPABASE_* env exists, writes via anonymous sign-in, and relies on RLS in `supabase/setup/001_shared_leaderboard.sql`; the mock in leaderboard.ts stays the fallback so the game works unconnected.
 - Job search AI suggestions run only in `src/lib/jobSuggest.functions.ts` via the AI Gateway SDK and only prefill search keywords/filters; they never invent demand stats.
+- Builder type comes from fixed planet groups in `src/game/archetype.ts` (never AI); mission text lives in `src/game/missionStore.ts` (sessionStorage) and AI writing only in `src/lib/mission.functions.ts`, so nothing personal is stored server-side.
+- Sound cues live in `src/game/sound.ts` (Web Audio, off by default); screens call `play()` only.

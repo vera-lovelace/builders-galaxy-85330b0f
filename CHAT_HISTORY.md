@@ -47,3 +47,5 @@ Chronological record of requests and outcomes in this project (as of 15 Nov 2026
 - The game's Voice guide doesn't stop at 10 minutes yet; only the job search one does.
 - Replace the Buy Me a Coffee link with the developers' own page.
 - Test the AI role matcher in the new workspace (needs AI credits there).
+
+- Mission statement journey: builder type + AI mission statement on Results (shareable card), job search prefilled from it, per-job pitch/copy buttons, tips drill, sound toggle, anonymous background matcher ("your data, your space, nothing stored").

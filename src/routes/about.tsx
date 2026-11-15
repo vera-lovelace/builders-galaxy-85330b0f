@@ -71,6 +71,10 @@ function About() {
           <p className="mt-3">"Best performing" keywords are ranked by how many live results they return in your session, not by invented statistics. An optional voice search guide can run searches and read jobs aloud for up to 10 minutes per session. It is a beta: searches only work once the job search key is set up.</p>
         </Section>
 
+        <Section title="Your builder card and practice">
+          <p>Results show your builder type, worked out from your planet scores, and a short AI-written mission statement you can copy, download as a card or share on social. In the job search, each job can get a tailored pitch from your mission statement, ready to copy before you apply. The tips drill turns Lenny's tips into flashcards, starting with your weakest planets. Sound effects are off until you turn them on.</p>
+        </Section>
+
         <Section title="Open source">
           <dl className="space-y-3">
             <div><dt className="font-semibold text-foreground">Code</dt><dd>MIT licence: use, change and share it freely, including commercially.</dd></div>
@@ -97,6 +101,7 @@ function About() {
             <li>Answer keys (1 to 4, A to D) work only while you are in the question.</li>
             <li>Reduced-motion settings are respected.</li>
             <li>The voice guide is opt-in and available for up to 10 minutes per session.</li>
+            <li>Your data, your space, nothing stored: the mission statement, pitches and background matcher need no account. Only your planet scores, or the text you type, go to the AI to write a reply; nothing is kept after this browser session.</li>
             <li>Job searches send only your keywords and filters to JSearch (RapidAPI) through our server; nothing about you is stored.</li>
           </ul>
           <p><strong className="text-foreground">Known gaps:</strong> the game has been checked with automated and keyboard tests, but not yet by people using NVDA or VoiceOver, so some parts may still be hard to use. It is available in English only. To report a problem, tell your workshop facilitator; once the repository is public you can also open an issue there.</p>
@@ -108,6 +113,7 @@ function About() {
             <li>Downloads and copies of your results are made on your device; nothing is uploaded.</li>
             <li>Feature voting is not switched on yet, so nothing you pick is sent or stored.</li>
             <li>The voice guide sends your voice to ElevenLabs only after you start it, only while it is on, and for up to 10 minutes per session.</li>
+            <li>Your data, your space, nothing stored: the mission statement, pitches and background matcher need no account. Only your planet scores, or the text you type, go to the AI to write a reply; nothing is kept after this browser session.</li>
             <li>Job searches send only your keywords and filters to JSearch (RapidAPI) through our server; nothing about you is stored.</li>
           </ul>
         </Section>

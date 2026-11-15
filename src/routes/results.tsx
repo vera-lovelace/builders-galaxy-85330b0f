@@ -2,6 +2,8 @@ import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { Check, Info, Search, RotateCcw, Trophy } from "lucide-react";
 import { useEffect } from "react";
 import { LennyTips } from "@/components/LennyTips";
+import { MissionCard } from "@/components/MissionCard";
+import { play } from "@/game/sound";
 import { WhatsNext } from "@/components/WhatsNext";
 import { Button } from "@/components/Button";
 import { Planet } from "@/components/Planet";
@@ -23,6 +25,7 @@ function Results() {
   useEffect(() => {
     if (run === null) navigate({ to: "/join" });
   }, [run, navigate]);
+  useEffect(() => { play("finish"); }, []);
   if (!run) return <div className="min-h-dvh bg-space" />;
 
   const s = summary(run);
@@ -82,6 +85,8 @@ function Results() {
           </li>)}
         </ul>
       </section>
+
+      <MissionCard nickname={run.player.nickname} level={s.level} pct={pct} scores={s.scores} weak={weak} />
 
       <WhatsNext run={run} />
       <div className="mt-3 flex flex-col gap-3 sm:flex-row">
