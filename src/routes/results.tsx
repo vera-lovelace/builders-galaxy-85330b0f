@@ -12,10 +12,11 @@ import { Shell } from "@/components/Shell";
 import { summary } from "@/game/run";
 import { runStore, useRun } from "@/game/runStore";
 import { formatTime, weakestPlanets, hasExtraLowestTies } from "@/game/rules";
+import { TriviaNote } from "@/components/TriviaNote";
 import { meta } from "@/lib/meta";
 
 export const Route = createFileRoute("/results")({
-  head: () => meta("Your results — Builder's Galaxy", "XP, score, assessed level and the planets to explore next."),
+  head: () => meta("Your results — Builder's Galaxy", "XP, score, trivia level and the planets to explore next."),
   component: Results,
 });
 
@@ -51,7 +52,7 @@ function Results() {
             <Stat label="Score" value={`${s.correct} of ${s.total}`} />
             <Stat label="Time" value={formatTime(s.ms)} />
             <div>
-              <dt className="text-sm text-muted-foreground">Assessed level</dt>
+              <dt className="text-sm text-muted-foreground">Trivia level</dt>
               <dd className="font-display text-3xl font-bold tabular-nums">{s.level}</dd>
               <dd className="text-sm text-muted-foreground">You picked {run.player.experience}</dd>
             </div>
@@ -88,6 +89,7 @@ function Results() {
 
       <MissionCard nickname={run.player.nickname} level={s.level} pct={pct} scores={s.scores} weak={weak} />
 
+      <TriviaNote className="mb-4" />
       <WhatsNext run={run} />
       <div className="mt-3 flex flex-col gap-3 sm:flex-row">
         <Button asChild variant="secondary"><Link to="/leaderboard"><Trophy /> See the leaderboard</Link></Button>

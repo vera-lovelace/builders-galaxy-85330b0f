@@ -36,20 +36,28 @@ export function Planet({ color, size = 80, ring, state = "done", className }: Pr
             <stop offset="100%" stopColor={color} stopOpacity="1" />
           </radialGradient>
           <radialGradient id={`s${id}`} cx="70%" cy="75%" r="70%">
-            <stop offset="40%" stopColor="black" stopOpacity="0" />
-            <stop offset="100%" stopColor="black" stopOpacity="0.45" />
+            <stop offset="30%" stopColor="black" stopOpacity="0" />
+            <stop offset="75%" stopColor="black" stopOpacity="0.55" />
+            <stop offset="100%" stopColor="black" stopOpacity="0.85" />
           </radialGradient>
           <clipPath id={`c${id}`}><circle cx={c} cy={c} r={r} /></clipPath>
+          <filter id={`t${id}`} x="0" y="0" width="100%" height="100%">
+            <feTurbulence type="fractalNoise" baseFrequency={`${(0.9 / size).toFixed(3)} ${(7 / size).toFixed(3)}`} numOctaves="4" seed={color.length + size} />
+            <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1.6 -0.55" />
+          </filter>
+          <radialGradient id={`a${id}`} cx="50%" cy="50%" r="50%">
+            <stop offset="80%" stopColor={color} stopOpacity="0" />
+            <stop offset="100%" stopColor={color} stopOpacity="0.45" />
+          </radialGradient>
         </defs>
         {ring && (
           <ellipse cx={c} cy={c} rx={r * 1.75} ry={r * 0.45} fill="none" stroke={color} strokeOpacity="0.55" strokeWidth={size * 0.06}
             transform={`rotate(-12 ${c} ${c})`} />
         )}
-        <circle cx={c} cy={c} r={r + 2} fill={color} opacity="0.25" />
+        <circle cx={c} cy={c} r={r * 1.12} fill={`url(#a${id})`} />
         <circle cx={c} cy={c} r={r} fill={`url(#g${id})`} />
-        <g clipPath={`url(#c${id})`} opacity="0.25">
-          <rect x={c - r} y={c - r * 0.15} width={size} height={r * 0.12} fill="white" />
-          <rect x={c - r} y={c + r * 0.25} width={size} height={r * 0.2} fill="black" opacity="0.6" />
+        <g clipPath={`url(#c${id})`} style={{ mixBlendMode: "multiply" }} opacity="0.55">
+          <rect x={c - r} y={c - r} width={size} height={size} filter={`url(#t${id})`} transform={`rotate(-12 ${c} ${c})`} />
         </g>
         <circle cx={c} cy={c} r={r} fill={`url(#s${id})`} />
         {ring && (

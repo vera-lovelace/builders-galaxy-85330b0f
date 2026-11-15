@@ -23,7 +23,7 @@ export function exportResults(run: Run) {
     pickedLevel: run.player.experience, assessedLevel: s.level, exploreNext: explore, planets, questions };
   const markdown = ["# Builder's Galaxy results", '',
     `Score: ${s.correct} of ${s.total}`, `XP: ${s.xp}`, `Time: ${data.time}`,
-    `Picked level: ${data.pickedLevel}`, `Assessed level: ${data.assessedLevel}`,
+    `Picked level: ${data.pickedLevel}`, `Trivia level: ${data.assessedLevel}`,
     '', '## Explore next', ...explore.map(p => `- ${p}`), '', '## Planet by planet',
     ...planets.map(p => `- ${p.planet}: ${p.correct} of ${p.total} correct · ${p.xp} XP`), '', '## Questions',
     ...questions.flatMap(q => [`### ${q.planet}: ${q.question}`, `Your answer: ${q.yourAnswer ?? "No answer"}`,

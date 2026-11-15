@@ -4,10 +4,11 @@ import { Button } from "@/components/Button";
 import { Earth } from "@/components/Earth";
 import { WelcomeOrbit } from "@/components/WelcomeOrbit";
 import { BrandMark } from "@/components/Rocket";
+import { TriviaNote } from "@/components/TriviaNote";
 import { meta } from "@/lib/meta";
 
 export const Route = createFileRoute("/")({
-  head: () => meta("The Builder's Galaxy", "A 12-planet product trivia voyage that reveals your builder type, writes your mission statement and turns it into job pitches. Free, no sign-up."),
+  head: () => meta("The Builder's Galaxy", "A fun 12-planet product trivia game for aspiring PMs that reveals your builder type, writes your mission statement and turns it into job pitches. Free, no sign-up."),
   component: Welcome,
 });
 
@@ -24,14 +25,15 @@ function Welcome() {
           The Builder's <span className="text-primary">Galaxy</span>
         </h1>
         <p className="mt-6 text-xl text-foreground sm:text-2xl">Find out what kind of builder you are, then turn it into your next role.</p>
-        <p className="mt-3 text-lg text-muted-foreground">Fly through 12 product skills. Leave with your builder type, a mission statement in your own voice, and job pitches ready to paste.</p>
+        <p className="mt-3 text-lg text-muted-foreground">Play a fun product trivia game across 12 planets. Leave with your builder type, a mission statement in your own voice, and job pitches ready to paste.</p>
         <Button asChild className="mt-8 w-full max-w-xs">
           <Link to="/join"><Play className="fill-current" /> Start your voyage</Link>
         </Button>
-        <p className="mt-4 text-sm text-muted-foreground">12 planets · 24 questions · free, no sign-up, nothing stored</p>
+        <p className="mt-4 text-sm text-muted-foreground">12 planets · 24 trivia questions · free, no sign-up, nothing stored</p>
+        <TriviaNote className="mt-6 max-w-xl" />
       </section>
-      <div className="relative h-96 shrink-0">
-        <Earth className="top-[90%]" />
+      <div className="relative h-[37rem] shrink-0">
+        <Earth size={200} className="bottom-2" />
         <WelcomeOrbit />
       </div>
 
@@ -74,7 +76,7 @@ function Welcome() {
 }
 
 const FEATURES = [
-  { icon: Play, title: "A 12-planet voyage", body: "24 scenario questions at your level, from problem framing to the pitch. A 60-second timer you can pause any time." },
+  { icon: Play, title: "A 12-planet trivia voyage", body: "24 trivia questions at your level, from problem framing to the pitch. A 60-second timer you can pause any time." },
   { icon: Sparkles, title: "Your builder type", body: "Discovery Navigator, Product Strategist, Growth Commander or Pitch Pilot, with a mission statement and a card to share on LinkedIn or X." },
   { icon: Briefcase, title: "Jobs that fit you", body: "Live product, engineering and design roles, matched to your builder type, with a tailored pitch for each job, ready to copy." },
   { icon: BookOpen, title: "Lenny's tips drill", body: "93 tips from Lenny's Newsletter and Podcast as flashcards, starting with your three weakest planets." },
@@ -83,6 +85,6 @@ const FEATURES = [
 ];
 const STEPS = [
   { title: "Launch", body: "Pick a nickname and your experience level. That's it." },
-  { title: "Explore", body: "Visit 12 planets and answer two questions on each." },
+  { title: "Explore", body: "Visit 12 planets and answer two trivia questions on each." },
   { title: "Take off", body: "Get your builder type, share your card and find roles that fit." },
 ];

@@ -60,10 +60,12 @@ function About() {
       <div className="mx-auto w-full max-w-xl">
         <Button variant="ghost" size="md" className="-ml-3" onClick={back}><ArrowLeft /> Back</Button>
         <h1 ref={h1} tabIndex={-1} className="mt-4 font-display text-4xl font-extrabold sm:text-5xl">About Builder's Galaxy</h1>
-        <p className="mt-3 text-lg text-muted-foreground">A free, open-source game for learning product management, made for SheBuilds workshops.</p>
+        <p className="mt-3 text-lg text-muted-foreground">A free, open-source trivia game to motivate aspiring PMs, made for SheBuilds workshops.</p>
 
         <Section title="What it is">
-          <p>A rocket flies through 12 planets, one for each product skill, from problem framing to pitch. You answer 2 questions on each planet, see where you shine, and leave with three places to learn next. There is no account and no sign-up.</p>
+          <p>A rocket flies through 12 planets, one for each product skill, from problem framing to pitch. You answer 2 trivia questions on each planet, see where you shine, and leave with three places to learn next. There is no account and no sign-up.</p>
+          <p className="mt-3"><strong>It is trivia, not a test.</strong> Builder's Galaxy is a fun game and a motivation for aspiring PMs. It is not a real skills assessment, and your score, level and builder type are not a judgement of your ability.</p>
+          <p className="mt-3"><strong>Your data is secure.</strong> Nothing is stored: your answers stay in this browser tab and disappear when you close it.</p>
         </Section>
 
         <Section title="Job search beta">

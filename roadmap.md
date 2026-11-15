@@ -28,3 +28,5 @@
 - [x] AI role matcher on /jobs (AI Gateway)
 - [x] Mission statement, job copy buttons, tips drill, sound, anonymous background matcher ("your data, your space, nothing stored")
 - [x] Share the builder card on social (share sheet, LinkedIn, X)
+- [x] Trivia disclaimers: call it trivia everywhere, a fun game and motivation for aspiring PMs, not a skills assessment
+- [x] Data-secure note: nothing is stored

@@ -122,7 +122,7 @@ function Galaxy() {
   return (
     <main className="relative min-h-dvh overflow-x-clip bg-space pb-40">
       <div ref={ref} className="relative mx-auto w-full max-w-6xl" style={{ height: H }}>
-        <Earth className="h-[220px]" />
+        <Earth size={260} className="-bottom-6" />
         <svg className="absolute inset-0" width={w} height={H} aria-hidden>
           <path d={pathD(PLANETS.length - 1)} fill="none" className="stroke-foreground/28" strokeWidth="2" strokeDasharray="4 8" strokeLinecap="round" />
           <path d={pathD(Math.min(landed, PLANETS.length - 1))} fill="none" className="stroke-info transition-all" strokeWidth="2" />
