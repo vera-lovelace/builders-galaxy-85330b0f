@@ -128,6 +128,7 @@ function QuestionScreen() {
           <div className="min-w-0 flex-1 lg:flex-none">
             <p className="font-display text-xl font-bold">{planet.name}</p>
             <p className="mt-1 text-sm text-muted-foreground">Stop {run.current + 1} · Question {qi + 1} of {ids.length}</p>
+            {answer && <div className="mt-3"><LennyTips planet={planet} /></div>}
           </div>
           {!answer && <Button variant="secondary" size="md" className="shrink-0 px-2 lg:px-5" onClick={togglePause}>
             {paused ? <><Play aria-hidden /> Resume</> : <><Pause aria-hidden /> Pause</>}
@@ -165,7 +166,6 @@ function QuestionScreen() {
 
             </div>
             <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-            <LennyTips planet={planet} />
             <Button ref={nextRef} onClick={next} className="w-full shrink-0 sm:w-auto">
               {isLast ? (run.current + 1 >= PLANETS.length ? "See results" : "Back to galaxy") : "Next question"} <ArrowRight />
             </Button>
