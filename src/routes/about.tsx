@@ -87,12 +87,13 @@ function About() {
           <ul className="list-disc space-y-1 pl-5">
             <li>Every control works with a keyboard and has a touch target of at least 48 pixels.</li>
             <li>Right and wrong answers always show an icon and words, never colour alone.</li>
-            <li>The 60-second timer can be paused. Screen readers hear it only at 10 seconds left.</li>
+            <li>Built to work with the NVDA (Windows) and VoiceOver (Mac, iPhone and iPad) screen readers: clear headings, labelled buttons, and focus moves to each new question and dialog.</li>
+            <li>The 60-second timer can be paused. Screen readers announce it only at 10 seconds left, and when you pause or resume it.</li>
             <li>Answer keys (1 to 4, A to D) work only while you are in the question.</li>
             <li>Reduced-motion settings are respected.</li>
             <li>Voice mode, in development, is opt-in, untimed and shows everything it says as text.</li>
           </ul>
-          <p><strong className="text-foreground">Known gaps:</strong> the game has not yet been tested with screen reader users, and it is available in English only. To report a problem, tell your workshop facilitator; once the repository is public you can also open an issue there.</p>
+          <p><strong className="text-foreground">Known gaps:</strong> the game has been checked with automated and keyboard tests, but not yet by people using NVDA or VoiceOver, so some parts may still be hard to use. It is it is available in English only. To report a problem, tell your workshop facilitator; once the repository is public you can also open an issue there.</p>
         </Section>
 
         <Section title="Privacy">
