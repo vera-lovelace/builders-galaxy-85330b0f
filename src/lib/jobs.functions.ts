@@ -35,7 +35,7 @@ export const searchJobs = createServerFn({ method: "POST" })
       console.error(`JSearch failed [${res.status}]: ${await res.text()}`);
       return { jobs: [] as Job[], error: res.status === 429 ? "Search limit reached. Try again later." : `Job search failed (${res.status}).` };
     }
-    const body = (await res.json()) as { data?: Record<string, unknown>[] };
+    const body = (await res.json()) as { data?: Partial<Record<"job_id"|"job_title"|"employer_name"|"job_city"|"job_state"|"job_country"|"job_is_remote"|"job_employment_type"|"job_posted_at_datetime_utc"|"job_publisher"|"job_apply_link"|"job_description"|"job_min_salary"|"job_max_salary"|"job_salary_currency"|"job_salary_period", unknown>>[] };
     const s = (v: unknown) => (typeof v === "string" && v ? v : null);
     const jobs: Job[] = (body.data ?? []).map((j) => {
       const min = j.job_min_salary as number | null, max = j.job_max_salary as number | null;

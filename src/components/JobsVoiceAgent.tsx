@@ -7,20 +7,20 @@ import { ELEVENLABS_AGENT_ID } from "./VoiceAgent";
 export const VOICE_SESSION_MS = 10 * 60_000;
 
 export interface JobVoiceHandlers {
-  searchJobs: (p: { keywords?: string; location?: string; remoteOnly?: boolean }) => Promise<string>;
+  searchJobs: (p: { keywords?: string | undefined; location?: string | undefined; remoteOnly?: boolean | undefined }) => Promise<string>;
   selectKeyword: (keyword: string) => Promise<string>;
   describeJob: (index: number) => string;
-  filterResults: (p: { remoteOnly?: boolean; postedWithinDays?: number }) => Promise<string>;
+  filterResults: (p: { remoteOnly?: boolean | undefined; postedWithinDays?: number | undefined }) => Promise<string>;
   nextPage: () => Promise<string>;
 }
 
 function Inner({ handlers, context }: { handlers: MutableRefObject<JobVoiceHandlers>; context: string }) {
   const conv = useConversation({
     clientTools: {
-      searchJobs: (p: { keywords?: string; location?: string; remoteOnly?: boolean }) => handlers.current.searchJobs(p ?? {}),
+      searchJobs: (p: { keywords?: string | undefined; location?: string | undefined; remoteOnly?: boolean | undefined }) => handlers.current.searchJobs(p ?? {}),
       selectKeyword: (p: { keyword?: string }) => handlers.current.selectKeyword(String(p?.keyword ?? "")),
       describeJob: (p: { index?: number | string }) => handlers.current.describeJob(Number(p?.index)),
-      filterResults: (p: { remoteOnly?: boolean; postedWithinDays?: number }) => handlers.current.filterResults(p ?? {}),
+      filterResults: (p: { remoteOnly?: boolean | undefined; postedWithinDays?: number | undefined }) => handlers.current.filterResults(p ?? {}),
       nextPage: () => handlers.current.nextPage(),
     },
     onError: (e: unknown) => console.error("Voice agent error", e),

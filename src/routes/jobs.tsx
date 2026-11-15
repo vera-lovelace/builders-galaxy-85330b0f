@@ -38,7 +38,7 @@ function Jobs() {
 
   useEffect(() => { try { setStats(JSON.parse(sessionStorage.getItem(STATS_KEY) ?? "{}")); } catch { /* ignore */ } }, []);
 
-  const go = async (o: { q?: string; loc?: string; remote?: boolean; days?: Days; pg?: number } = {}) => {
+  const go = async (o: { q?: string | undefined; loc?: string | undefined; remote?: boolean | undefined; days?: Days | undefined; pg?: number | undefined } = {}) => {
     const q = (o.q ?? query).trim();
     if (q.length < 2) return { jobs: [] as Job[], error: "Enter at least two characters." };
     const opts = { query: q, location: (o.loc ?? location) || undefined, remoteOnly: o.remote ?? remoteOnly, datePosted: o.days ?? datePosted, page: o.pg ?? 1 };
