@@ -11,8 +11,8 @@ let client: SupabaseClient | null | undefined;
 
 function getClient(): SupabaseClient | null {
   if (client !== undefined) return client;
-  const url = import.meta.env.VITE_SUPABASE_URL as string | undefined;
-  const key = (import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY ?? import.meta.env.VITE_SUPABASE_ANON_KEY) as string | undefined;
+  const url = import.meta.env["VITE_SUPABASE_URL"] as string | undefined;
+  const key = (import.meta.env["VITE_SUPABASE_PUBLISHABLE_KEY"] ?? import.meta.env["VITE_SUPABASE_ANON_KEY"]) as string | undefined;
   client = url && key && typeof window !== "undefined" ? createClient(url, key) : null;
   return client;
 }
