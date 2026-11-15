@@ -93,7 +93,7 @@ function About() {
             <li>Reduced-motion settings are respected.</li>
             <li>Voice mode, in development, is opt-in, untimed and shows everything it says as text.</li>
           </ul>
-          <p><strong className="text-foreground">Known gaps:</strong> the game has been checked with automated and keyboard tests, but not yet by people using NVDA or VoiceOver, so some parts may still be hard to use. It is it is available in English only. To report a problem, tell your workshop facilitator; once the repository is public you can also open an issue there.</p>
+          <p><strong className="text-foreground">Known gaps:</strong> the game has been checked with automated and keyboard tests, but not yet by people using NVDA or VoiceOver, so some parts may still be hard to use. It is available in English only. To report a problem, tell your workshop facilitator; once the repository is public you can also open an issue there.</p>
         </Section>
 
         <Section title="Privacy">
