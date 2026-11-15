@@ -131,6 +131,6 @@
 }
 @utility shadow-raised { box-shadow: var(--shadow-raised); }
 @utility shadow-press { box-shadow: var(--shadow-press); }
-.welcome-orbit { position: absolute; display: flex; flex-direction: column; align-items: center; gap: 4px; width: 48px; left: 50%; top: 0; transform: translateX(-50%); }
+.welcome-orbit { position: absolute; display: flex; flex-direction: column-reverse; align-items: center; gap: 4px; width: 48px; left: 50%; top: 0; transform: translateX(-50%); }
 .mission-dock { padding-bottom: max(16px, env(safe-area-inset-bottom)); }
 .planet-locked { filter: saturate(0.3); opacity: 0.6; }
