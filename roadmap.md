@@ -24,3 +24,5 @@
 - [x] ElevenLabs voice agent wired (public agent, client tools)
 - [ ] Job search beta (/jobs, JSearch via RapidAPI, voice guide tools): waiting on RAPIDAPI_KEY and ElevenLabs tool setup
 - [ ] After transfer: connect database, enable Anonymous sign-ins, run supabase/setup/001_shared_leaderboard.sql, then wire sharedLeaderboard into Results/Leaderboard (blocked: database not connected)
+- [x] Note after-transfer setup steps in memory
+- [x] AI role matcher on /jobs (AI Gateway)

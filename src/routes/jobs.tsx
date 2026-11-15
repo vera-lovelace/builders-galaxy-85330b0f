@@ -8,6 +8,7 @@ import { Shell } from "@/components/Shell";
 import type { JobVoiceHandlers } from "@/components/JobsVoiceAgent";
 import { KEYWORD_GROUPS } from "@/data/jobKeywords";
 import { searchJobs, type Job } from "@/lib/jobs.functions";
+import { RoleMatcher } from "@/components/RoleMatcher";
 import { meta } from "@/lib/meta";
 import { cn } from "@/lib/utils";
 
@@ -73,6 +74,7 @@ function Jobs() {
       <p className="mt-2 max-w-2xl text-muted-foreground">Live listings from job boards via JSearch. Pick a keyword or type your own; keywords that return the most listings rise to the top. The voice guide runs up to 10 minutes per session.</p>
       <p className="sr-only" aria-live="polite">{status}</p>
 
+      <RoleMatcher onApply={(x) => { setLocation(x.location); setRemoteOnly(x.remoteOnly); setDatePosted(x.datePosted); go({ q: x.keyword, loc: x.location, remote: x.remoteOnly, days: x.datePosted }); }} />
       <form className="mt-6 grid gap-3 rounded-2xl bg-surface p-4 sm:grid-cols-[1fr_200px_auto]" onSubmit={(e) => { e.preventDefault(); go(); }}>
         <label className="grid gap-1 text-sm">Keywords<input value={query} onChange={(e) => setQuery(e.target.value)} className="h-12 rounded-lg border border-border bg-background px-3 text-base" placeholder="e.g. Product Manager" /></label>
         <label className="grid gap-1 text-sm">Location<input value={location} onChange={(e) => setLocation(e.target.value)} className="h-12 rounded-lg border border-border bg-background px-3 text-base" placeholder="Any" /></label>
