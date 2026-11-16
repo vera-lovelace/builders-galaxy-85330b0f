@@ -1,5 +1,5 @@
-import { createFileRoute, useRouter } from "@tanstack/react-router";
-import { ArrowLeft, Coffee, ExternalLink } from "lucide-react";
+import { createFileRoute, Link, useRouter } from "@tanstack/react-router";
+import { ArrowLeft, Coffee, ExternalLink, Play } from "lucide-react";
 import { useEffect, useRef, type ReactNode } from "react";
 import { Button } from "@/components/Button";
 import { Shell } from "@/components/Shell";
@@ -60,21 +60,51 @@ function About() {
       <div className="mx-auto w-full max-w-xl">
         <Button variant="ghost" size="md" className="-ml-3" onClick={back}><ArrowLeft /> Back</Button>
         <h1 ref={h1} tabIndex={-1} className="mt-4 font-display text-4xl font-extrabold sm:text-5xl">About Builder's Galaxy</h1>
-        <p className="mt-3 text-lg text-muted-foreground">A free, open-source trivia game to motivate aspiring PMs, made for SheBuilds workshops.</p>
+        <p className="mt-3 font-display text-xl font-semibold text-foreground">Play your way through the product universe.</p>
+        <p className="mt-3 text-lg text-muted-foreground">What kind of product builder are you? Take off on a fun trivia adventure across 12 planets, explore the world of product management, and discover your own builder identity.</p>
+        <p className="mt-3 text-muted-foreground">Play a fun product trivia game across 12 planets. Leave with your builder type, a mission statement in your own voice, and job pitches ready to paste.</p>
+        <p className="mt-3 text-muted-foreground">No account. No sign-up. Just play, explore, and discover.</p>
 
-        <Section title="What it is">
-          <p>A rocket flies through 12 planets, one for each product skill, from problem framing to pitch. You answer 2 trivia questions on each planet, see where you shine, and leave with three places to learn next. There is no account and no sign-up.</p>
-          <p className="mt-3"><strong>It is trivia, not a test.</strong> Builder's Galaxy is a fun game and a motivation for aspiring PMs. It is not a real skills assessment, and your score, level and builder type are not a judgement of your ability.</p>
-          <p className="mt-3"><strong>Your data is secure.</strong> Nothing is stored: your answers stay in this browser tab and disappear when you close it.</p>
+        <Section title="Your mission: explore 12 planets">
+          <p>Each planet represents a different part of building great products — from understanding users and solving problems to strategy, collaboration, experimentation, and delivery.</p>
+          <p>Your rocket takes you from planet to planet, with two trivia questions waiting at each stop.</p>
+          <p>There are {questionCount} questions across four difficulty levels, so you can test what you know, discover new ideas, and have fun along the way.</p>
+          <p><strong className="text-foreground">This isn't an exam or a formal assessment.</strong> There are no pass or fail results. It's a playful way to explore product thinking and see which areas resonate with you.</p>
         </Section>
 
-        <Section title="Job search beta">
-          <p>After your voyage, the job search beta finds live product, engineering and design roles from JSearch on RapidAPI. Pick a suggested keyword or type your own, filter by location, remote work and date posted, and open each job's own Apply link.</p>
-          <p className="mt-3">"Best performing" keywords are ranked by how many live results they return in your session, not by invented statistics. An optional voice search guide can run searches and read jobs aloud for up to 10 minutes per session. It is a beta: searches only work once the job search key is set up.</p>
+        <Section title="Discover your builder type">
+          <p>Once you've explored the galaxy, your planet scores help reveal your <strong className="text-foreground">builder type</strong> — a snapshot of the strengths and interests that emerged during your journey.</p>
+          <p>You'll also get an AI-generated mission statement, written in your own voice, that brings your product identity together.</p>
+          <p>Copy it, download it, or share it. It's yours to use and make your own.</p>
         </Section>
 
-        <Section title="Your builder card and practice">
-          <p>Results show your builder type, worked out from your planet scores, and a short AI-written mission statement you can copy, download as a card or share on social. In the job search, each job can get a tailored pitch from your mission statement, ready to copy before you apply. The tips drill turns Lenny's tips into flashcards, starting with your weakest planets. Sound effects are off until you turn them on.</p>
+        <Section title="Turn your results into career-ready words">
+          <p>Your mission statement is more than a fun souvenir. You can use it as a starting point for your next career move.</p>
+          <p>Builder's Galaxy also includes:</p>
+          <ul className="list-disc space-y-1 pl-5">
+            <li><strong className="text-foreground">Job search:</strong> Explore product roles with filters to help narrow down your search.</li>
+            <li><strong className="text-foreground">Ready-to-use job pitches:</strong> Turn your mission statement into tailored pitches for specific roles — ready to copy and adapt.</li>
+            <li><strong className="text-foreground">Product tips:</strong> Practise with bite-sized flashcards, starting with the planets where you have the most room to grow.</li>
+          </ul>
+          <p>Some features are still evolving, but the goal is simple: help you turn what you've discovered into words and actions you can use.</p>
+        </Section>
+
+        <Section title="Made for curious builders">
+          <p>Builder's Galaxy was created for aspiring product managers and curious builders, with a little help from the SheBuilds community and workshops.</p>
+          <p>Whether you're exploring product management for the first time, figuring out how to describe your strengths, or getting ready to apply for a role, this is a space to experiment without pressure.</p>
+          <p>You don't need to know everything before you start. Curiosity is enough.</p>
+        </Section>
+
+        <Section title="Open, accessible, and privacy-conscious">
+          <p>Builder's Galaxy is free to play and open source. You can explore without creating an account.</p>
+          <p>Accessibility matters. The experience is designed with keyboard navigation, screen-reader support, reduced-motion preferences, and other accessibility considerations in mind. We're continuing to improve it and welcome feedback.</p>
+          <p>Some optional features use external services:</p>
+          <ul className="list-disc space-y-1 pl-5">
+            <li>AI-generated results use the information you choose to submit.</li>
+            <li>Voice guidance is sent to a voice service only when you opt in.</li>
+            <li>Job searches send search terms and filters to the job-search provider.</li>
+          </ul>
+          <p>You can play the trivia game without using these optional features. See the Privacy section for more detail about what each feature sends and how it is handled.</p>
         </Section>
 
         <Section title="Open source">
@@ -103,8 +133,6 @@ function About() {
             <li>Answer keys (1 to 4, A to D) work only while you are in the question.</li>
             <li>Reduced-motion settings are respected.</li>
             <li>The voice guide is opt-in and available for up to 10 minutes per session.</li>
-            <li>Your data, your space, nothing stored: the mission statement, pitches and background matcher need no account. Only your planet scores, or the text you type, go to the AI to write a reply; nothing is kept after this browser session.</li>
-            <li>Job searches send only your keywords and filters to JSearch (RapidAPI) through our server; nothing about you is stored.</li>
           </ul>
           <p><strong className="text-foreground">Known gaps:</strong> the game has been checked with automated and keyboard tests, but not yet by people using NVDA or VoiceOver, so some parts may still be hard to use. It is available in English only. To report a problem, tell your workshop facilitator; once the repository is public you can also open an issue there.</p>
         </Section>
@@ -128,6 +156,15 @@ function About() {
             </a>
           </Button>
         </Section>
+
+        <section className="mt-10 rounded-2xl border border-border bg-surface p-6 text-center">
+          <h2 className="font-display text-2xl font-bold">Ready for launch?</h2>
+          <p className="mt-2 text-muted-foreground">Your next product adventure is waiting.</p>
+          <p className="mt-2 font-semibold text-foreground">Explore 12 planets. Discover your builder type. Find the words to tell your story.</p>
+          <Button asChild className="mt-4 w-full max-w-xs">
+            <Link to="/join"><Play className="fill-current" /> Start playing Builder's Galaxy</Link>
+          </Button>
+        </section>
       </div>
     </Shell>
   );
