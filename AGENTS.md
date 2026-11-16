@@ -47,3 +47,12 @@ use the editor.
 - Job search AI suggestions run only in `src/lib/jobSuggest.functions.ts` via the AI Gateway SDK and only prefill search keywords/filters; they never invent demand stats.
 - Builder type comes from fixed planet groups in `src/game/archetype.ts` (never AI); mission text lives in `src/game/missionStore.ts` (sessionStorage) and AI writing only in `src/lib/mission.functions.ts`, so nothing personal is stored server-side.
 - Sound cues live in `src/game/sound.ts` (Web Audio, off by default); screens call `play()` only.
+
+## The `prototype/` folder
+
+`prototype/` holds the original coded design prototype (React + Vite), its screenshots, handoff prompts, the ElevenLabs agent spec and the archived first question bank. It is reference only:
+
+- Do not import from it, build it, or copy its code into `src/`. The app in `src/` is the source of truth.
+- Where a document in `prototype/` disagrees with a root document (`DESIGN.md`, `PRODUCT.md`, `LOVABLE-UPDATE.md`, `LICENSE`) or with the app, the root and the app win.
+- `prototype/design/elevenlabs-agent.md` is the voice agent spec: system prompt, client tools and test script.
+

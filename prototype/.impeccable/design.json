@@ -1,0 +1,463 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-12T20:24:09+00:00",
+  "title": "Design System: Builder's Galaxy",
+  "extensions": {
+    "colorMeta": {
+      "background": {
+        "role": "neutral",
+        "displayName": "Void Navy",
+        "canonical": "hsl(232 50% 5%)",
+        "cssVar": "--background",
+        "tonalRamp": [
+          "hsl(232 30% 15%)",
+          "hsl(232 50% 25%)",
+          "hsl(232 50% 35%)",
+          "hsl(232 50% 45%)",
+          "hsl(232 50% 55%)",
+          "hsl(232 50% 68%)",
+          "hsl(232 50% 80%)",
+          "hsl(232 30% 92%)"
+        ]
+      },
+      "foreground": {
+        "role": "neutral",
+        "displayName": "Starlight",
+        "canonical": "hsl(225 60% 96%)",
+        "cssVar": "--foreground",
+        "tonalRamp": [
+          "hsl(225 36% 15%)",
+          "hsl(225 60% 25%)",
+          "hsl(225 60% 35%)",
+          "hsl(225 60% 45%)",
+          "hsl(225 60% 55%)",
+          "hsl(225 60% 68%)",
+          "hsl(225 60% 80%)",
+          "hsl(225 36% 92%)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Hull Indigo",
+        "canonical": "hsl(232 38% 10%)",
+        "cssVar": "--surface",
+        "tonalRamp": [
+          "hsl(232 23% 15%)",
+          "hsl(232 38% 25%)",
+          "hsl(232 38% 35%)",
+          "hsl(232 38% 45%)",
+          "hsl(232 38% 55%)",
+          "hsl(232 38% 68%)",
+          "hsl(232 38% 80%)",
+          "hsl(232 23% 92%)"
+        ]
+      },
+      "surface-raised": {
+        "role": "neutral",
+        "displayName": "Raised Hull",
+        "canonical": "hsl(232 34% 15%)",
+        "cssVar": "--surface-raised",
+        "tonalRamp": [
+          "hsl(232 20% 15%)",
+          "hsl(232 34% 25%)",
+          "hsl(232 34% 35%)",
+          "hsl(232 34% 45%)",
+          "hsl(232 34% 55%)",
+          "hsl(232 34% 68%)",
+          "hsl(232 34% 80%)",
+          "hsl(232 20% 92%)"
+        ]
+      },
+      "border": {
+        "role": "neutral",
+        "displayName": "Orbit Line",
+        "canonical": "hsl(230 26% 24%)",
+        "cssVar": "--border",
+        "tonalRamp": [
+          "hsl(230 16% 15%)",
+          "hsl(230 26% 25%)",
+          "hsl(230 26% 35%)",
+          "hsl(230 26% 45%)",
+          "hsl(230 26% 55%)",
+          "hsl(230 26% 68%)",
+          "hsl(230 26% 80%)",
+          "hsl(230 16% 92%)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Dim Track",
+        "canonical": "hsl(230 28% 18%)",
+        "cssVar": "--muted",
+        "tonalRamp": [
+          "hsl(230 17% 15%)",
+          "hsl(230 28% 25%)",
+          "hsl(230 28% 35%)",
+          "hsl(230 28% 45%)",
+          "hsl(230 28% 55%)",
+          "hsl(230 28% 68%)",
+          "hsl(230 28% 80%)",
+          "hsl(230 17% 92%)"
+        ]
+      },
+      "muted-foreground": {
+        "role": "neutral",
+        "displayName": "Moon Grey",
+        "canonical": "hsl(228 32% 76%)",
+        "cssVar": "--muted-foreground",
+        "tonalRamp": [
+          "hsl(228 19% 15%)",
+          "hsl(228 32% 25%)",
+          "hsl(228 32% 35%)",
+          "hsl(228 32% 45%)",
+          "hsl(228 32% 55%)",
+          "hsl(228 32% 68%)",
+          "hsl(228 32% 80%)",
+          "hsl(228 19% 92%)"
+        ]
+      },
+      "primary": {
+        "role": "primary",
+        "displayName": "Nova Yellow",
+        "canonical": "hsl(45 100% 60%)",
+        "cssVar": "--primary",
+        "tonalRamp": [
+          "hsl(45 60% 15%)",
+          "hsl(45 100% 25%)",
+          "hsl(45 100% 35%)",
+          "hsl(45 100% 45%)",
+          "hsl(45 100% 55%)",
+          "hsl(45 100% 68%)",
+          "hsl(45 100% 80%)",
+          "hsl(45 60% 92%)"
+        ]
+      },
+      "primary-foreground": {
+        "role": "neutral",
+        "displayName": "Deep Hull",
+        "canonical": "hsl(232 60% 10%)",
+        "cssVar": "--primary-foreground",
+        "tonalRamp": [
+          "hsl(232 36% 15%)",
+          "hsl(232 60% 25%)",
+          "hsl(232 60% 35%)",
+          "hsl(232 60% 45%)",
+          "hsl(232 60% 55%)",
+          "hsl(232 60% 68%)",
+          "hsl(232 60% 80%)",
+          "hsl(232 36% 92%)"
+        ]
+      },
+      "info": {
+        "role": "secondary",
+        "displayName": "Sky Signal",
+        "canonical": "hsl(195 90% 64%)",
+        "cssVar": "--info",
+        "tonalRamp": [
+          "hsl(195 54% 15%)",
+          "hsl(195 90% 25%)",
+          "hsl(195 90% 35%)",
+          "hsl(195 90% 45%)",
+          "hsl(195 90% 55%)",
+          "hsl(195 90% 68%)",
+          "hsl(195 90% 80%)",
+          "hsl(195 54% 92%)"
+        ]
+      },
+      "success": {
+        "role": "tertiary",
+        "displayName": "Mint Signal",
+        "canonical": "hsl(158 68% 52%)",
+        "cssVar": "--success",
+        "tonalRamp": [
+          "hsl(158 41% 15%)",
+          "hsl(158 68% 25%)",
+          "hsl(158 68% 35%)",
+          "hsl(158 68% 45%)",
+          "hsl(158 68% 55%)",
+          "hsl(158 68% 68%)",
+          "hsl(158 68% 80%)",
+          "hsl(158 41% 92%)"
+        ]
+      },
+      "danger": {
+        "role": "tertiary",
+        "displayName": "Coral Signal",
+        "canonical": "hsl(8 92% 68%)",
+        "cssVar": "--danger",
+        "tonalRamp": [
+          "hsl(8 55% 15%)",
+          "hsl(8 92% 25%)",
+          "hsl(8 92% 35%)",
+          "hsl(8 92% 45%)",
+          "hsl(8 92% 55%)",
+          "hsl(8 92% 68%)",
+          "hsl(8 92% 80%)",
+          "hsl(8 55% 92%)"
+        ]
+      },
+      "ring": {
+        "role": "primary",
+        "displayName": "Focus Nova",
+        "canonical": "hsl(45 100% 60%)",
+        "cssVar": "--ring",
+        "tonalRamp": [
+          "hsl(45 60% 15%)",
+          "hsl(45 100% 25%)",
+          "hsl(45 100% 35%)",
+          "hsl(45 100% 45%)",
+          "hsl(45 100% 55%)",
+          "hsl(45 100% 68%)",
+          "hsl(45 100% 80%)",
+          "hsl(45 60% 92%)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Welcome wordmark only; 3.75rem on phone, 6rem from 640px."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "One onboarding question or results heading per screen; 2.25rem rising to 3rem."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Question prompts, section headings, planet names, verdicts; 1.5rem rising to 1.875rem."
+      },
+      "numeral": {
+        "displayName": "Numeral",
+        "purpose": "Stats, ranks, XP, seconds, percentages; tabular figures, 1.875rem rising to 2.25rem."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Answers, explanations and promises; answers rise to 1.125rem from 640px."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Metadata, hints and stat labels in Moon Grey, sentence case."
+      }
+    },
+    "shadows": [
+      {
+        "name": "raised",
+        "value": "0 10px 28px -10px hsl(232 80% 2% / 0.85), 0 2px 6px -2px hsl(232 80% 2% / 0.6)",
+        "purpose": "Secondary buttons and the answer feedback panel."
+      },
+      {
+        "name": "press",
+        "value": "0 6px 16px -6px hsl(232 80% 2% / 0.9), 0 1px 0 0 hsl(45 100% 80% / 0.5) inset",
+        "purpose": "Primary button only; warm inset top edge."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out-expo",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Default easing for state transitions, route fill and reward rises."
+      },
+      {
+        "name": "duration-fast",
+        "value": "160ms",
+        "purpose": "Hover, press and answer-state transitions (built as 150ms utilities)."
+      },
+      {
+        "name": "duration-base",
+        "value": "320ms",
+        "purpose": "Planet status changes and step transitions."
+      },
+      {
+        "name": "flight",
+        "value": "1500ms ease-in-out (cubic)",
+        "purpose": "Rocket flight between planets on the Galaxy map; the 1100ms --duration-flight token is not what the build uses."
+      },
+      {
+        "name": "halo-spin",
+        "value": "24s linear infinite",
+        "purpose": "Current planet's dashed halo; motion-safe only."
+      },
+      {
+        "name": "timer-drain",
+        "value": "1000ms linear",
+        "purpose": "Orbit timer ring per second; disabled under reduced motion."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "prefers-reduced-motion: reduce",
+        "purpose": "All animations and transitions collapse to 1ms; the rocket lands instantly."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ],
+    "route": {
+      "dash": "4 8",
+      "strokeWidth": "2px",
+      "ahead": "foreground at 28% (map) / border (strip)",
+      "travelled": "info, solid",
+      "currentHalo": "r 66 on a 100 viewbox, foreground at 45%, dashed 4 8"
+    },
+    "planetHue": {
+      "source": "src/data/planets.ts",
+      "lit": "hsl(h 78% 62%)",
+      "shade": "hsl(h 58% 40%)",
+      "highlight": "hsl(h 90% 80%)",
+      "ring": "hsl(h 70% 82%)",
+      "dot": "hsl(h 80% 62%)",
+      "ringedSlot": "about 2.2x planet diameter"
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one Nova Yellow action per screen (Play, Launch, Continue).",
+      "html": "<button class=\"ds-btn-primary\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M6 4l14 8-14 8z\"/></svg>Play</button>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:56px;padding:0 28px;border:none;border-radius:var(--radius);background:hsl(var(--primary));color:hsl(var(--primary-foreground));font-family:\"Bricolage Grotesque Variable\", system-ui, sans-serif;font-weight:600;font-size:1.125rem;box-shadow:var(--shadow-press);cursor:pointer;transition:filter 150ms var(--ease-out-expo),transform 150ms var(--ease-out-expo);}.ds-btn-primary:hover{filter:brightness(1.05);}.ds-btn-primary:active{transform:translateY(1px);}.ds-btn-primary:focus-visible{outline:3px solid hsl(var(--ring));outline-offset:3px;}.ds-btn-primary:disabled{opacity:.45;box-shadow:none;cursor:not-allowed;}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Supporting actions (Leaderboard, Play again).",
+      "html": "<button class=\"ds-btn-secondary\">See the leaderboard</button>",
+      "css": ".ds-btn-secondary{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 20px;border:1px solid hsl(var(--border));border-radius:var(--radius);background:hsl(var(--surface-raised));color:hsl(var(--foreground));font-family:\"Bricolage Grotesque Variable\", system-ui, sans-serif;font-weight:600;font-size:1rem;box-shadow:var(--shadow-raised);cursor:pointer;transition:background-color 150ms var(--ease-out-expo);}.ds-btn-secondary:hover{background:hsl(var(--muted));}.ds-btn-secondary:focus-visible{outline:3px solid hsl(var(--ring));outline-offset:3px;}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Quiet tertiary actions.",
+      "html": "<button class=\"ds-btn-ghost\">Back to rocket</button>",
+      "css": ".ds-btn-ghost{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 20px;border:none;border-radius:var(--radius);background:transparent;color:hsl(var(--muted-foreground));font-family:\"Bricolage Grotesque Variable\", system-ui, sans-serif;font-weight:600;font-size:1rem;cursor:pointer;transition:background-color 150ms,color 150ms;}.ds-btn-ghost:hover{background:hsl(var(--surface));color:hsl(var(--foreground));}.ds-btn-ghost:focus-visible{outline:3px solid hsl(var(--ring));outline-offset:3px;}"
+    },
+    {
+      "name": "Answer Option",
+      "kind": "custom",
+      "refersTo": "answer-option",
+      "description": "One of four answers; idle, correct and wrong states shown. Verdicts carry icon plus label plus colour.",
+      "html": "<div class=\"ds-answers\"><button class=\"ds-answer\"><span class=\"ds-answer-badge\">A</span><span>Interview five target users</span></button><button class=\"ds-answer ds-answer--correct\"><span class=\"ds-answer-badge\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20 6 9 17l-5-5\"/></svg></span><span>Define the problem first</span></button><button class=\"ds-answer ds-answer--wrong\"><span class=\"ds-answer-badge\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" aria-hidden=\"true\"><path d=\"M18 6 6 18M6 6l12 12\"/></svg></span><span>Build the full product</span></button></div>",
+      "css": ".ds-answers{display:grid;gap:12px;}.ds-answer{display:flex;align-items:center;gap:16px;min-height:64px;width:100%;padding:12px 16px;text-align:left;border:2px solid hsl(var(--border));border-radius:var(--radius);background:hsl(var(--surface));color:hsl(var(--foreground));font-family:\"Figtree Variable\", system-ui, sans-serif;font-weight:500;font-size:1rem;cursor:pointer;transition:background-color 150ms,border-color 150ms;}.ds-answer:hover{background:hsl(var(--surface-raised));border-color:hsl(var(--info) / .6);}.ds-answer:focus-visible{outline:3px solid hsl(var(--ring));outline-offset:3px;}.ds-answer-badge{display:grid;place-items:center;width:36px;height:36px;flex-shrink:0;border-radius:var(--radius-sm);background:hsl(var(--muted));font-family:\"Bricolage Grotesque Variable\", system-ui, sans-serif;font-weight:700;}.ds-answer--correct{border-color:hsl(var(--success));background:hsl(var(--success) / .15);}.ds-answer--correct .ds-answer-badge{background:hsl(var(--success));color:hsl(var(--primary-foreground));}.ds-answer--wrong{border-color:hsl(var(--danger));background:hsl(var(--danger) / .15);}.ds-answer--wrong .ds-answer-badge{background:hsl(var(--danger));color:hsl(var(--primary-foreground));}"
+    },
+    {
+      "name": "Nickname Input",
+      "kind": "input",
+      "refersTo": "input-nickname",
+      "description": "Large display-face field; Nova border on focus, Coral on error.",
+      "html": "<input class=\"ds-input\" placeholder=\"e.g. Nova\" aria-label=\"Nickname\">",
+      "css": ".ds-input{min-height:64px;width:100%;padding:0 20px;border:2px solid hsl(var(--border));border-radius:var(--radius);background:hsl(var(--surface));color:hsl(var(--foreground));font-family:\"Bricolage Grotesque Variable\", system-ui, sans-serif;font-weight:600;font-size:1.5rem;caret-color:hsl(var(--primary));}.ds-input::placeholder{font-family:\"Figtree Variable\", system-ui, sans-serif;font-weight:400;font-size:1.125rem;color:hsl(var(--muted-foreground) / .7);}.ds-input:focus{outline:none;border-color:hsl(var(--primary));}.ds-input[aria-invalid=true]{border-color:hsl(var(--danger));}"
+    },
+    {
+      "name": "XP Chip",
+      "kind": "chip",
+      "refersTo": "xp-chip",
+      "description": "Reward pill after a correct answer.",
+      "html": "<span class=\"ds-xp\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 3l1.9 5.8L20 11l-6.1 2.2L12 19l-1.9-5.8L4 11l6.1-2.2z\"/></svg>+130 XP</span>",
+      "css": ".ds-xp{display:inline-flex;align-items:center;gap:6px;padding:4px 12px;border-radius:9999px;background:hsl(var(--primary) / .15);color:hsl(var(--primary));font-family:\"Bricolage Grotesque Variable\", system-ui, sans-serif;font-weight:700;font-variant-numeric:tabular-nums;animation:ds-xp-rise 420ms var(--ease-out-expo);}@keyframes ds-xp-rise{from{opacity:0;transform:translateY(8px) scale(.92);}to{opacity:1;transform:none;}}@media (prefers-reduced-motion:reduce){.ds-xp{animation:none;}}"
+    },
+    {
+      "name": "Route Progress",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Twelve hue dots on a dashed route, travelled stretch solid Sky; recurs on the mission bar and Question screen.",
+      "html": "<div class=\"ds-route\" role=\"progressbar\" aria-valuemin=\"1\" aria-valuemax=\"12\" aria-valuenow=\"4\"><span class=\"ds-route-dash\"></span><span class=\"ds-route-done\" style=\"width:calc(27.3% - 8px)\"></span><span class=\"ds-route-dot\" style=\"background:hsl(12 80% 62%)\"></span><span class=\"ds-route-dot\" style=\"background:hsl(38 80% 62%)\"></span><span class=\"ds-route-dot\" style=\"background:hsl(52 80% 62%)\"></span><span class=\"ds-route-dot ds-route-dot--now\" style=\"background:hsl(150 80% 62%)\"></span><span class=\"ds-route-dot ds-route-dot--ahead\" style=\"background:hsl(178 80% 62%)\"></span><span class=\"ds-route-dot ds-route-dot--ahead\" style=\"background:hsl(200 80% 62%)\"></span><span class=\"ds-route-dot ds-route-dot--ahead\" style=\"background:hsl(222 80% 62%)\"></span><span class=\"ds-route-dot ds-route-dot--ahead\" style=\"background:hsl(262 80% 62%)\"></span><span class=\"ds-route-dot ds-route-dot--ahead\" style=\"background:hsl(290 80% 62%)\"></span><span class=\"ds-route-dot ds-route-dot--ahead\" style=\"background:hsl(318 80% 62%)\"></span><span class=\"ds-route-dot ds-route-dot--ahead\" style=\"background:hsl(340 80% 62%)\"></span><span class=\"ds-route-dot ds-route-dot--ahead\" style=\"background:hsl(96 80% 62%)\"></span></div>",
+      "css": ".ds-route{position:relative;display:flex;align-items:center;justify-content:space-between;width:100%;max-width:520px;}.ds-route-dash{position:absolute;left:4px;right:4px;top:50%;border-top:2px dashed hsl(var(--border));}.ds-route-done{position:absolute;left:4px;top:50%;border-top:2px solid hsl(var(--info));}.ds-route-dot{position:relative;width:10px;height:10px;border-radius:9999px;}.ds-route-dot--now{width:14px;height:14px;}.ds-route-dot--ahead{opacity:.4;}"
+    },
+    {
+      "name": "Orbit Timer Chip",
+      "kind": "chip",
+      "refersTo": "timer-chip",
+      "description": "Seconds left on the orbit ring; Coral at 5 seconds or less.",
+      "html": "<span class=\"ds-timer\">12</span> <span class=\"ds-timer ds-timer--low\">4</span>",
+      "css": ".ds-timer{display:inline-flex;align-items:center;gap:4px;padding:2px 12px;border:1px solid hsl(var(--border));border-radius:9999px;background:hsl(var(--surface));color:hsl(var(--foreground));font-family:\"Bricolage Grotesque Variable\", system-ui, sans-serif;font-weight:700;font-size:1.25rem;font-variant-numeric:tabular-nums;}.ds-timer--low{border-color:hsl(var(--danger));color:hsl(var(--danger));}"
+    },
+    {
+      "name": "Feedback Panel",
+      "kind": "card",
+      "refersTo": "feedback-panel",
+      "description": "Verdict panel after answering, bordered in the verdict colour.",
+      "html": "<section class=\"ds-feedback\"><p class=\"ds-feedback-verdict\">Correct</p><p class=\"ds-feedback-body\">Framing the problem first keeps the build honest.</p></section>",
+      "css": ".ds-feedback{padding:20px;border:2px solid hsl(var(--success) / .6);border-radius:var(--radius-lg);background:hsl(var(--surface));box-shadow:var(--shadow-raised);}.ds-feedback-verdict{margin:0;font-family:\"Bricolage Grotesque Variable\", system-ui, sans-serif;font-weight:700;font-size:1.5rem;color:hsl(var(--success));}.ds-feedback-body{margin:8px 0 0;font-family:\"Figtree Variable\", system-ui, sans-serif;color:hsl(var(--muted-foreground));max-width:65ch;}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Voyage Log",
+    "overview": "A run is a voyage, not a quiz form. Every screen sits on the same deep-space ground: a near-black navy field with a quiet, static starfield and a faint indigo nebula at the top. Against it, twelve flat-vector planets carry all of the saturated colour, each with its own hue, and a single nova-yellow action per screen tells the player what to do next. Progress is always distance travelled along one dashed route, drawn the same way on the full Galaxy map and as the compact strip above every question.\n\nDensity is low and the type is large. Controls are rounded but firm, with soft offset shadows that lift them off the void instead of making them glow. Motion belongs to the voyage: the rocket flies the route, a flag plants on a finished planet, and the next planet wakes. Everything else stays still. The starfield never moves. Reduced motion is honoured: the rocket appears at its destination and state changes still read.\n\nThe build refuses the default trivia layout of a progress bar, a card and four pills on a grey field. Feedback is never carried by colour alone.",
+    "keyCharacteristics": [
+      "Near-black navy ground, indigo surfaces, colour reserved for planets and four signal roles.",
+      "One nova-yellow primary action per screen.",
+      "Progress is a route through 12 named planets, dashed ahead and solid sky where travelled.",
+      "Bricolage Grotesque for headings, numbers and buttons; Figtree for reading.",
+      "Rounded-but-firm controls, soft offset shadows, a static starfield.",
+      "Large touch targets (44 to 64px) and icon plus label plus colour for every verdict."
+    ],
+    "rules": [
+      {
+        "name": "The One Nova Rule",
+        "body": "Each screen has exactly one Nova Yellow action. Everything else is secondary, ghost, or a planet.",
+        "section": "colors"
+      },
+      {
+        "name": "The Planets Own the Colour Rule",
+        "body": "Saturated hue belongs to the planets and the four signal roles. Surfaces, borders and text stay in the navy-indigo family.",
+        "section": "colors"
+      },
+      {
+        "name": "The Signal Meaning Rule",
+        "body": "Sky is position and time, Mint is correct, Coral is wrong or out of time. Never swap them for decoration.",
+        "section": "colors"
+      },
+      {
+        "name": "The Numbers Speak Bricolage Rule",
+        "body": "XP, scores, ranks, seconds and percentages are set in the display face with tabular figures, so they line up and feel like instruments.",
+        "section": "typography"
+      },
+      {
+        "name": "The Route Recurs Rule",
+        "body": "The voyage route is the progress indicator everywhere. The Galaxy map draws it as a curve through the planets; the mission bar and the Question screen repeat it as a 12-dot strip with a rocket over the current planet. Never substitute a percentage bar for voyage progress.",
+        "section": "layout"
+      },
+      {
+        "name": "The Ring Slot Rule",
+        "body": "A ringed planet's tilted ring overhangs about 1.1x the planet's diameter on each side, so a ringed planet needs a slot about 2.2x its diameter (render it smaller in a fixed slot: 0.46 versus 0.62 of the orbit-timer, 16 versus 22px in a 40px skill-map slot). Labels beside a planet clear whichever is larger, the ring or the current-planet halo (radius 66 on a 100 viewbox, 1.32x the planet's radius).",
+        "section": "layout"
+      },
+      {
+        "name": "The Still Sky Rule",
+        "body": "The starfield and nebula never move. Motion is spent on the voyage.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do show voyage progress as the dashed route (4 on 8) with the travelled part solid Sky, on the map, the mission bar and the Question screen.",
+      "Do keep exactly one Nova Yellow action per screen.",
+      "Do pair every verdict with an icon and a text label as well as Mint or Coral.",
+      "Do draw the countdown as the Orbit Timer, Coral at 5 seconds or less, seconds on a chip.",
+      "Do give ringed planets a slot about 2.2x their diameter and keep labels clear of the ring and the current-planet halo.",
+      "Do keep touch targets at least 44px, and 48 to 64px for primary controls and answers.",
+      "Do set numbers in Bricolage Grotesque with tabular figures.",
+      "Do respect reduced motion: land the rocket instantly and keep state changes legible."
+    ],
+    "donts": [
+      "Don't use a generic percentage bar for voyage progress.",
+      "Don't animate or parallax the starfield.",
+      "Don't signal correct, wrong or time-up with colour alone.",
+      "Don't put saturated colour on surfaces, borders or body text; it belongs to planets and signals.",
+      "Don't use hard-edged or black-on-grey shadows; depth is navy and soft.",
+      "Don't set translucent list panels over scenery; the leaderboard list stays opaque."
+    ]
+  }
+}

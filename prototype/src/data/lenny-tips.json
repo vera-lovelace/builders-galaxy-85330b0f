@@ -1,0 +1,1676 @@
+[
+  {
+    "id": "lenny-problem-framing-01",
+    "topicId": "problem-framing",
+    "domain": "discovery-insight",
+    "level": "newbie",
+    "question": "Where have Google Labs' best ideas usually come from, according to the head of Google Labs?",
+    "options": [
+      "Competitor analysis, since copying what rivals ship removes most of the risk from choosing what to build.",
+      "Unplanned moments, such as hallway conversations, weekends and side projects; good ideas cannot be rushed on a schedule.",
+      "Design sprints, provided the team blocks dedicated calendar time, invites people from several functions and protects the week.",
+      "Interesting people and their passion projects, though only once those projects have been moved into a formal sprint."
+    ],
+    "correctIndex": 1,
+    "explanation": "The guest says ideas very rarely come from design sprints or calendar time set aside for ideation; they tend to emerge in hallways, at weekends or during breaks, and he sums this up by saying you cannot microwave good ideas. Design sprints are a respectable practice, yet they are precisely the setting he says rarely produces Labs' ideas. He does stress interesting people and their side projects, but pulling those projects into a formal sprint reintroduces the scheduling he doubts. Copying competitors is not part of his account.",
+    "sourceTitle": "Why every company now needs to think and operate like a lab team",
+    "sourceAuthor": "Josh Woodward",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/why-every-company-now-needs-to-think"
+  },
+  {
+    "id": "lenny-problem-framing-02",
+    "topicId": "problem-framing",
+    "domain": "discovery-insight",
+    "level": "newbie",
+    "question": "When starting a B2B company, which prospects should a founder look for first?",
+    "options": [
+      "People who complain loudly about the status quo, whether or not they have taken any steps towards changing it.",
+      "The largest companies in the category, since their budgets make even a small conversion rate worthwhile.",
+      "People who are broadly satisfied today but could be persuaded, with enough evidence, that a new approach would serve them better.",
+      "People for whom the status quo is not acceptable and who are already trying to change, so they need no convincing."
+    ],
+    "correctIndex": 3,
+    "explanation": "The guest says the bar for buying something new is high because the status quo is generally fine, so the aim is to find the people for whom it is not okay: those already trying to change, who do not need convincing. Persuading satisfied people is the uphill path he warns against. Complaining shows some dissatisfaction, but his test is whether they are already acting. Company size does not feature in his reasoning.",
+    "sourceTitle": "An 86-minute guide to finding PMF",
+    "sourceAuthor": "Rob Snyder",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/an-86-minute-guide-to-finding-pmf"
+  },
+  {
+    "id": "lenny-problem-framing-03",
+    "topicId": "problem-framing",
+    "domain": "discovery-insight",
+    "level": "beginner",
+    "question": "A founder wants to 'solve her own problem'. When does that advice work?",
+    "options": [
+      "When former colleagues in her old job agree the problem is real and say they would happily use a tool to fix it.",
+      "When it is something she would have paid someone else to solve, as opposed to something she merely thinks should exist.",
+      "Never; founders should avoid their own problems, because personal experience always biases judgement.",
+      "When she personally experiences the problem every day, since daily pain is the strongest signal of demand a founder can ever have."
+    ],
+    "correctIndex": 1,
+    "explanation": "The guest cites a founder from security engineering at AWS who found something she would have paid somebody to solve, and says that in such a case solving your own problem is right. Where it falls flat is a thing you think should exist yet would never have paid for. Daily experience matters, yet frequency alone does not show willingness to pay. Colleagues agreeing they would use a tool is the kind of polite interest he distrusts. He does not reject the advice outright.",
+    "sourceTitle": "An 86-minute guide to finding PMF",
+    "sourceAuthor": "Rob Snyder",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/an-86-minute-guide-to-finding-pmf"
+  },
+  {
+    "id": "lenny-problem-framing-04",
+    "topicId": "problem-framing",
+    "domain": "discovery-insight",
+    "level": "beginner",
+    "question": "What is Zynga's founder's rule of thumb about founders' instincts and ideas?",
+    "options": [
+      "Neither matters, because only customer research can tell a founder what to build.",
+      "Instincts and ideas are both usually right, so founders should commit early, persist through doubts and avoid second-guessing.",
+      "Ideas are right most of the time while instincts mislead, so founders should trust careful analysis over gut feeling.",
+      "Instincts are right about 95% of the time and ideas wrong about 75% of the time, so do not cling to a losing idea."
+    ],
+    "correctIndex": 3,
+    "explanation": "The guest says gut-level instincts are pretty much always right, roughly 95% of the time, while the ideas built on top of them are wrong about 75% of the time, and he warns against founders who heroically stick with a losing idea. The first distractor keeps faith in instinct but extends it to ideas. The second inverts his rule. Dismissing both ignores his argument, which concerns how founders should treat their own judgements.",
+    "sourceTitle": "The hidden pattern behind successful products",
+    "sourceAuthor": "Mark Pincus",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/the-common-pattern-behind-successful"
+  },
+  {
+    "id": "lenny-problem-framing-05",
+    "topicId": "problem-framing",
+    "domain": "discovery-insight",
+    "level": "advanced",
+    "question": "Which category of 'tar pit' start-up ideas keeps failing, according to the source?",
+    "options": [
+      "Copying a fast-growing start-up's product almost exactly, which works only if you can build it faster and sell it more cheaply than them.",
+      "Building for a niche market, because small segments never generate enough revenue to sustain a company.",
+      "Entering any crowded category, because markets with several competitors leave no room for a newcomer to grow.",
+      "Entering a space that already has a clear winner, with no theory of how you will be different for some unblocked customer."
+    ],
+    "correctIndex": 3,
+    "explanation": "The guest names ideas that go after a space with a clear winner without any theory on being different, giving the example of cloning a fast-growing, bootstrapped sales-automation tool; unless a different kind of customer is unblocked, these almost always fail. Crowding is part of it, yet his point concerns the absence of a theory of difference. Copying a winner is the pattern itself, and speed or cost does not rescue it in his account. Niche markets are not his concern; serving an unblocked segment is his suggested way out.",
+    "sourceTitle": "An 86-minute guide to finding PMF",
+    "sourceAuthor": "Rob Snyder",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/an-86-minute-guide-to-finding-pmf"
+  },
+  {
+    "id": "lenny-problem-framing-06",
+    "topicId": "problem-framing",
+    "domain": "discovery-insight",
+    "level": "advanced",
+    "question": "Why should consumer companies not rely on asking customers what they want?",
+    "options": [
+      "Customer interviews are too slow for consumer markets, so teams should replace them with quick A/B tests on live traffic.",
+      "Consumer purchases are subconscious, so conscious answers mislead; enterprise customer development works because a decision maker judges utility.",
+      "Customers cannot imagine products that do not yet exist, so research is useful only for incremental improvements to existing products and never for new categories.",
+      "Customers deliberately lie to companies, so their answers should be inverted before they are used."
+    ],
+    "correctIndex": 1,
+    "explanation": "The guest argues that customers are often directionally wrong because buying is a subconscious decision, especially for consumers, and conscious answers give misleading information even when people try; ask a Porsche owner why they bought it and they will give every reason except the real one. He contrasts hardcore enterprise, where a decision maker makes a mostly utilitarian choice, so customer development works. The 'faster horses' point is familiar, yet he says the bigger problem is being directionally wrong. Speed is not his argument, and he never claims customers lie deliberately.",
+    "sourceTitle": "Hard truths about building in the AI era",
+    "sourceAuthor": "Keith Rabois",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/hard-truths-about-building-in-the-ai-era"
+  },
+  {
+    "id": "lenny-problem-framing-07",
+    "topicId": "problem-framing",
+    "domain": "discovery-insight",
+    "level": "professional",
+    "question": "A classic venture capital essay weighs team, product and market. Which does it call most important to a start-up's success or failure?",
+    "options": [
+      "The team, because early on you know far more about the team than about the product or the market.",
+      "Funding, because enough capital can compensate for weaknesses in team, product and market.",
+      "The market.",
+      "The product, because start-ups invent products and customers buy and use them."
+    ],
+    "correctIndex": 2,
+    "explanation": "The essay's author acknowledges that many entrepreneurs and investors say team, partly because early on the team is what you know most about, and that engineers often say product; he takes the third position and asserts that market is the most important factor. Both distractors reproduce the views he sets out in order to disagree with them. Funding is not one of the three factors he compares.",
+    "sourceTitle": "Essential reading for product builders, part 1",
+    "sourceAuthor": "Lenny Rachitsky (excerpting Paul Buchheit and Marc Andreessen)",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/essential-reading-for-product-builders-part-1"
+  },
+  {
+    "id": "lenny-user-discovery-01",
+    "topicId": "user-discovery",
+    "domain": "discovery-insight",
+    "level": "newbie",
+    "question": "How seriously should founders take early customer research?",
+    "options": [
+      "Seriously, though survey data is more objective than visits, so surveys should come before any meetings.",
+      "Lightly, because the product itself will reveal what customers want once it has launched.",
+      "As if their life depended on it: go in person, and even do the job alongside potential customers.",
+      "Seriously enough to run about ten 30-minute video interviews, which give a statistically useful sample."
+    ],
+    "correctIndex": 2,
+    "explanation": "The guest says founders do not take this stage seriously enough: if your life depended on it, you would not do ten 30-minute Zoom interviews; you would go in person, and he describes founders who did the job with potential customers or rode along with them for days. Ten video calls is exactly the routine he contrasts with going all out. Surveys do not feature in his advice. Waiting for the launch defers the learning he puts first.",
+    "sourceTitle": "An 86-minute guide to finding PMF",
+    "sourceAuthor": "Rob Snyder",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/an-86-minute-guide-to-finding-pmf"
+  },
+  {
+    "id": "lenny-user-discovery-02",
+    "topicId": "user-discovery",
+    "domain": "discovery-insight",
+    "level": "beginner",
+    "question": "What is 'product scrapbooking'?",
+    "options": [
+      "Saving feedback, tickets, call links and threads into a lightly organised database by theme, so evidence exists early.",
+      "Keeping a detailed, carefully tagged research repository that the PM curates every week so it stays tidy and complete.",
+      "Running a dedicated research sprint at the start of each new initiative, so that all the customer evidence is gathered at once.",
+      "Collecting screenshots of competitors' products to copy their best features into the roadmap."
+    ],
+    "correctIndex": 0,
+    "explanation": "The author keeps a database of feedback screenshots, charts, support tickets, call links and Slack threads, organised by swim lanes, and adds to it whenever something comes up in the normal flow of work; he deliberately spends little time organising it, giving each scrap a good title. A research sprint at kick-off is the slow, blank-page start he is trying to avoid. A curated repository has value, but his method stays lightweight because he does not know which ideas will be prioritised. Copying competitors is not the point.",
+    "sourceTitle": "Product manager is an unfair role. So work unfairly.",
+    "sourceAuthor": "Tal Raviv",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/product-manager-is-an-unfair-role-so-work-unfairly"
+  },
+  {
+    "id": "lenny-user-discovery-03",
+    "topicId": "user-discovery",
+    "domain": "discovery-insight",
+    "level": "beginner",
+    "question": "How should you open a discovery call with a prospect who accepted your outreach?",
+    "options": [
+      "Thank them and give a short demo first, so they understand what the product does before discussing their needs.",
+      "Thank them and work through a prepared list of qualifying questions on budget, authority, need and timing.",
+      "Ask why they took the call with you today, which invites them to describe their situation in their own words.",
+      "Open with pricing, so that unqualified prospects drop out of the conversation as early as possible."
+    ],
+    "correctIndex": 2,
+    "explanation": "The guest opens by thanking the person and asking why they took the call; the answer, such as having been waiting for something on AI agents, tends to fill in the whole picture of their project, urgency, options and limitations. An early demo puts your product before their situation. A qualifying checklist gathers information, but it interrogates instead of inviting their story. Leading with price is not part of his approach.",
+    "sourceTitle": "An 86-minute guide to finding PMF",
+    "sourceAuthor": "Rob Snyder",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/an-86-minute-guide-to-finding-pmf"
+  },
+  {
+    "id": "lenny-user-discovery-04",
+    "topicId": "user-discovery",
+    "domain": "discovery-insight",
+    "level": "advanced",
+    "question": "Why might a founder be sceptical of recruiting design partners?",
+    "options": [
+      "Design partners demand too much engineering time, so start-ups should avoid all contact with customers before launch.",
+      "Design partners tend to give lots of feedback and never buy; people with urgent work just want it done.",
+      "Design partners help, but only if they sign a contract committing them to buy at the end of the programme.",
+      "Design partners are useful only for consumer products, where feedback from many users can be aggregated."
+    ],
+    "correctIndex": 1,
+    "explanation": "The guest says that almost every time he has seen design partners, they buy into the vision, give a lot of feedback and never buy; their input amounts to playing visionary product chief, and people who have something important to get done simply want it done. He describes his own start-up having daily design-partner usage and then failing to sell for two years. Restricting partners to consumer products is not his argument. A purchase commitment addresses the risk, yet he frames the problem as one of who volunteers. Avoiding customers contradicts everything else he advises.",
+    "sourceTitle": "An 86-minute guide to finding PMF",
+    "sourceAuthor": "Rob Snyder",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/an-86-minute-guide-to-finding-pmf"
+  },
+  {
+    "id": "lenny-user-discovery-05",
+    "topicId": "user-discovery",
+    "domain": "discovery-insight",
+    "level": "advanced",
+    "question": "A coffee-shop owner became a power user of Grok Bot. Why was this valuable to the team?",
+    "options": [
+      "The owner became the model for the product's main target market, so the team rebuilt it for coffee shops.",
+      "The owner reported so many bugs that the team no longer needed to test the product internally at all.",
+      "Running a small business was a different use case, so the feedback differed from internal dogfooding.",
+      "The owner was a friend of a friend, which made it easy for the team to collect quick and honest feedback."
+    ],
+    "correctIndex": 2,
+    "explanation": "The guest says the coffee-shop owner was both a power user and a rich source of feedback in a lively thread, bringing a completely different use case: running a small business, including issues with a Shopify integration and product copy. He stresses that this differed from the feedback the team got from dogfooding. The owner was a friend of a friend, but the value lay in the use case. Bugs were reported, yet the team continued to dogfood. Nothing suggests a pivot to coffee shops.",
+    "sourceTitle": "How we built Grok Bot in a month",
+    "sourceAuthor": "Roman Ugarte",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/how-we-built-grok-bot-in-a-month"
+  },
+  {
+    "id": "lenny-user-discovery-06",
+    "topicId": "user-discovery",
+    "domain": "discovery-insight",
+    "level": "professional",
+    "question": "An organisation is rolling out AI tools to its engineers. Beyond metrics, what should leaders do?",
+    "options": [
+      "Go on a listening tour, paying particular attention to senior engineers, to hear what works and what does not.",
+      "Mandate usage targets, since adoption will produce the feedback leaders need without any conversation.",
+      "Survey every engineer anonymously, since anonymous data tends to be more candid than any face-to-face conversation.",
+      "Listen mainly to the most enthusiastic early adopters, since they can spread good practice across teams fastest."
+    ],
+    "correctIndex": 0,
+    "explanation": "The guest advises leaders to go on a listening tour, and says she particularly likes to focus on senior engineers, hearing what is working and what is not, because they help multiply improvements across the organisation. Anonymous surveys are a reasonable instrument, but she describes direct listening. Early adopters are one group, yet she singles out senior engineers. Mandated targets run against her warning elsewhere about measuring activity in place of outcomes.",
+    "sourceTitle": "What happens after coding is solved?",
+    "sourceAuthor": "Fiona Fung",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/building-the-most-ai-pilled-engineering"
+  },
+  {
+    "id": "lenny-product-promise-01",
+    "topicId": "product-promise",
+    "domain": "strategy-positioning",
+    "level": "newbie",
+    "question": "How should a team define 'better' when improving an existing product?",
+    "options": [
+      "Something 10 out of 10 existing users of that product would enthusiastically welcome, usually a small increment.",
+      "Anything that a clear majority of existing users would welcome, even if a sizeable minority would not.",
+      "Any new feature at all, since adding features always makes a product better.",
+      "Whatever the team itself believes is a major improvement, provided it is ambitious enough to stand out in the market."
+    ],
+    "correctIndex": 0,
+    "explanation": "The guest says 'better' is usually a very small increment that 10 out of 10 existing users would greet enthusiastically, such as making a product free or removing the download; what the team thinks is better he calls 'new', and teams tend to be too ambitious on new. The first distractor describes his 'new'. A majority falls short of his ten-out-of-ten bar. Equating features with improvement ignores his distinction entirely.",
+    "sourceTitle": "The hidden pattern behind successful products",
+    "sourceAuthor": "Mark Pincus",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/the-common-pattern-behind-successful"
+  },
+  {
+    "id": "lenny-product-promise-02",
+    "topicId": "product-promise",
+    "domain": "strategy-positioning",
+    "level": "beginner",
+    "question": "How should ambitious consumer founders define their ambition?",
+    "options": [
+      "In the eyes of their consumer, such as FarmVille's nurses in Indiana, instead of peers' awards and respect.",
+      "By technical originality, since true innovators should never borrow ideas that other products have already used.",
+      "By revenue alone, since consumers' opinions matter only once a company is profitable.",
+      "By the respect of fellow founders and investors, since peer recognition is what attracts the best talent and capital."
+    ],
+    "correctIndex": 0,
+    "explanation": "The guest says founders should define their ambition in the eyes of their consumer, not their peers: for FarmVille that meant winning the hearts and minds of nurses in Indiana. Defined that way, you take the best ideas wherever you find them if they give her an experience she loves. Peer respect is the yardstick he rejects. Insisting on originality contradicts his willingness to borrow good ideas. Revenue alone is not his measure.",
+    "sourceTitle": "The hidden pattern behind successful products",
+    "sourceAuthor": "Mark Pincus",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/the-common-pattern-behind-successful"
+  },
+  {
+    "id": "lenny-product-promise-03",
+    "topicId": "product-promise",
+    "domain": "strategy-positioning",
+    "level": "advanced",
+    "question": "Apple's leadership held that the best marketing tells the truth. What does that sometimes require of a product team?",
+    "options": [
+      "Listing every specification openly, so that buyers can compare products on facts alone.",
+      "Telling some prospective customers that the product may not be for them.",
+      "Avoiding any mention of limitations, since truthful marketing means stressing strengths only.",
+      "Setting modest expectations for every customer, so that nobody is disappointed after buying."
+    ],
+    "correctIndex": 1,
+    "explanation": "The guest says good communication is sometimes more than setting expectations and telling a story; it can mean saying 'maybe I'm not for you', which is also the truth, and he links it to his view that the best marketing tells the truth with nice words around it. Specification lists are factual, yet he speaks of storytelling and fit. Expectation setting is part of it, but lowering everyone's expectations misses the point about fit. Hiding limitations is the reverse of his advice.",
+    "sourceTitle": "Father of the iPod and iPhone on building taste, judgment, and creativity in the AI era",
+    "sourceAuthor": "Tony Fadell",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/father-of-the-ipod-and-iphone-on"
+  },
+  {
+    "id": "lenny-product-promise-04",
+    "topicId": "product-promise",
+    "domain": "strategy-positioning",
+    "level": "professional",
+    "question": "Anthropic's head of growth names 'capability overhang' as one of the industry's biggest problems. What does it mean?",
+    "options": [
+      "Products promise more capability than the models really deliver, so teams should lower expectations in their marketing.",
+      "Companies have bought more computing capacity than they need, which inflates the cost of serving users.",
+      "Models are more capable than any product can safely expose, so features must be held back for safety reasons.",
+      "Models improve so quickly that the product challenge is getting those benefits to people, who are too busy to keep up."
+    ],
+    "correctIndex": 3,
+    "explanation": "The guest says models are getting better so quickly that the real challenge on the product side is how to diffuse those benefits to people, noting that even internally people are too busy to absorb each new model. That frames onboarding and helping users understand what the tool can do as central. Safety constraints exist, but they are not what he describes. Over-promising is the inverse of his point, since he describes capability running ahead of use. Computing capacity is unrelated.",
+    "sourceTitle": "Head of Growth (Anthropic): \"Claude is growing itself at this point\"",
+    "sourceAuthor": "Amol Avasare",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/anthropics-1b-to-19b-growth-run"
+  },
+  {
+    "id": "lenny-product-promise-05",
+    "topicId": "product-promise",
+    "domain": "strategy-positioning",
+    "level": "professional",
+    "question": "How has the pace of engineering change altered design vision work, according to a design lead on Anthropic's Cowork?",
+    "options": [
+      "Vision now looks three to six months ahead and is often a prototype that points people in the right direction.",
+      "Vision still spans two to ten years, but it is now presented as a working prototype instead of a deck.",
+      "Vision now looks three to six months ahead and is best expressed as a carefully crafted, story-led presentation deck.",
+      "Vision work has been abandoned, since teams now ship continuously without any shared direction."
+    ],
+    "correctIndex": 0,
+    "explanation": "The guest says designers used to produce two-, five- or even ten-year visions, but with technology changing so fast the vision usually becomes three to six months out, and it is often a prototype pointing people in the right direction, not a beautifully storytold deck. The first distractor keeps the prototype but the old horizon. The second keeps the horizon but the old format. Abandoning vision contradicts her description of how it continues in a new form.",
+    "sourceTitle": "The design process is dead. Here's what's replacing it.",
+    "sourceAuthor": "Jenny Wen",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/the-design-process-is-dead"
+  },
+  {
+    "id": "lenny-prototype-testing-01",
+    "topicId": "prototype-testing",
+    "domain": "execution-validation",
+    "level": "newbie",
+    "question": "AI prototyping tools fall into three types. Which type suits a one-page calculator with no complex design needs?",
+    "options": [
+      "None; prototypes of this kind must be hand-coded by an engineer.",
+      "A chatbot such as ChatGPT or Claude.",
+      "A cloud development environment such as Replit, Bolt, v0 or Lovable.",
+      "A local developer assistant such as Cursor or GitHub Copilot."
+    ],
+    "correctIndex": 1,
+    "explanation": "The author says chatbots are best for prototypes that are one page without complex design requirements, such as calculators, flip cards or data visualisations. Cloud development environments are his choice for prototypes with several features, specific design requirements or many pages, so they would work but are more than needed. Local assistants suit people who code and are building serious applications for production. Hand-coding ignores the point of his guide.",
+    "sourceTitle": "A guide to AI prototyping for product managers",
+    "sourceAuthor": "Colin Matthews",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/a-guide-to-ai-prototyping-for-product"
+  },
+  {
+    "id": "lenny-prototype-testing-02",
+    "topicId": "prototype-testing",
+    "domain": "execution-validation",
+    "level": "newbie",
+    "question": "Google's Gemini product team wants PMs who understand the 'vibes' of models. What does that involve?",
+    "options": [
+      "Rely on benchmark scores, which capture everything important about how a model behaves in practice.",
+      "Avoid personal opinions about models, since only aggregate metrics are trustworthy.",
+      "Play with models every day, form opinions and stress-test them on the things they are excited about.",
+      "Leave model evaluation to the research team and concentrate on the product features built around the model."
+    ],
+    "correctIndex": 2,
+    "explanation": "The guest says she wants PMs who have an opinion, who play with these models every day, and who stress-test the model on things they care about; beyond capability metrics, a PM needs to understand where a capability shines through and how it feels to work with. Benchmarks matter, and she describes metrics climbing during training, but she says they are not enough. Leaving evaluation to researchers abandons the hands-on understanding she asks for. Avoiding opinions contradicts her explicitly.",
+    "sourceTitle": "Why PMs are suddenly valuable again",
+    "sourceAuthor": "Tulsee Doshi",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/what-it-actually-takes-to-build-frontier"
+  },
+  {
+    "id": "lenny-prototype-testing-03",
+    "topicId": "prototype-testing",
+    "domain": "execution-validation",
+    "level": "beginner",
+    "question": "You want to turn an existing Figma design into a working prototype. What approach works?",
+    "options": [
+      "Use the tool with the strongest backend database, since data storage is usually the hardest part of any prototype.",
+      "Use a tool good at building from existing designs, attach a screenshot, and ask it to match the design exactly.",
+      "Describe the design in words in great detail, since tools follow written descriptions more closely than images.",
+      "Rebuild the design from scratch inside the AI tool, since importing designs never works."
+    ],
+    "correctIndex": 1,
+    "explanation": "The author chose Bolt for this task because it is better at building from a pre-existing design and the prototype did not need Replit's backend database; his prompt asks the tool to match the design exactly, with a screenshot attached. Written descriptions are useful elsewhere in his guide, but here the image does the work. A backend database was precisely what this task did not need. Rebuilding from scratch ignores the workflow he recommends.",
+    "sourceTitle": "A guide to AI prototyping for product managers",
+    "sourceAuthor": "Colin Matthews",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/a-guide-to-ai-prototyping-for-product"
+  },
+  {
+    "id": "lenny-prototype-testing-04",
+    "topicId": "prototype-testing",
+    "domain": "execution-validation",
+    "level": "beginner",
+    "question": "Which vibe-coding advice would engineers, PMs and designers rarely follow by habit?",
+    "options": [
+      "Build the same thing several times in parallel, letting AI try different approaches.",
+      "Avoid building until you can read and understand the code the AI will produce.",
+      "Build in parallel, but only once a full specification has been written and approved.",
+      "Build one careful version, since AI output is reliable when the first prompt is good enough."
+    ],
+    "correctIndex": 0,
+    "explanation": "In the conversation, the host highlights the guest's advice to build something five times in parallel and let AI try all kinds of things, noting that experienced builders would not approach it that way. One careful version is the conventional habit the advice departs from. Writing a specification first reintroduces the up-front process he skips, since his first version can be a brain dump. He says he cares about the agent's output, not the code syntax.",
+    "sourceTitle": "The rise of the professional vibe coder (a new AI-era job)",
+    "sourceAuthor": "Lazar Jovanovic",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/getting-paid-to-vibe-code"
+  },
+  {
+    "id": "lenny-prototype-testing-05",
+    "topicId": "prototype-testing",
+    "domain": "execution-validation",
+    "level": "beginner",
+    "question": "How did the team behind Anthropic's Cowork arrive at its interaction design?",
+    "options": [
+      "By prototyping small parts of the interaction, such as form factors for to-do lists and multiple-choice questions.",
+      "By prototyping the full product end to end, then testing it with users in one large round before launch.",
+      "By designing the whole product in a single detailed Figma file, then building it only once every screen was approved.",
+      "By copying the interaction patterns of existing chat products without testing alternatives."
+    ],
+    "correctIndex": 0,
+    "explanation": "The guest says Cowork drew on many internal explorations, and the team had prototyped small parts of the interactions that ended up in it, trying many form factors for how Claude shows a to-do list and presents multiple-choice questions. She does value Figma for fine visual and interaction details, but she does not describe designing everything up front there. A single end-to-end prototype is the opposite of testing small pieces. Copying without trying alternatives contradicts the many form factors she mentions.",
+    "sourceTitle": "The design process is dead. Here's what's replacing it.",
+    "sourceAuthor": "Jenny Wen",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/the-design-process-is-dead"
+  },
+  {
+    "id": "lenny-prototype-testing-06",
+    "topicId": "prototype-testing",
+    "domain": "execution-validation",
+    "level": "advanced",
+    "question": "An AI prototyping tool rewrote whole sections of your prototype and you lost hours of work. What usually causes this, and what helps?",
+    "options": [
+      "Bad luck; nothing can be done except to keep separate manual backups of every version.",
+      "Prompts that were too detailed, which confuse the tool; shorter, more general instructions work better.",
+      "A tool that is too weak for the task; switching to a more powerful model will stop it from rewriting your work.",
+      "Instructions that were not specific enough; roll back with checkpoints and focus the AI on what must change."
+    ],
+    "correctIndex": 3,
+    "explanation": "The author says losing context often happens when instructions are not specific enough and the AI cannot work out the correct change, so it rewrites everything; most tools have a checkpoint system for rolling back, and you can avoid the problem by focusing the AI on specific parts through reflection, batching and being specific. Changing tools is not his remedy. Shorter, vaguer prompts would make the problem worse. Manual backups are unnecessary given the checkpoints he describes.",
+    "sourceTitle": "A guide to AI prototyping for product managers",
+    "sourceAuthor": "Colin Matthews",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/a-guide-to-ai-prototyping-for-product"
+  },
+  {
+    "id": "lenny-prototype-testing-07",
+    "topicId": "prototype-testing",
+    "domain": "execution-validation",
+    "level": "advanced",
+    "question": "Testing for the original iPhone's keyboard measured typing speed and errors, but the data did not favour either option. What happened?",
+    "options": [
+      "The team kept testing until the data was conclusive, since a 1.0 product should never rest on anyone's opinion.",
+      "The team shipped both keyboard options and let customers choose between them after launch.",
+      "The decision went to a broad vote across the whole team, so that everyone would commit to the final outcome.",
+      "It became an opinion-based call; a 1.0 product with few analogues needs a very small group to make such calls."
+    ],
+    "correctIndex": 3,
+    "explanation": "The guest calls it a classic data-versus-opinion decision: the data showed pros and cons on both sides and was not clear, and Apple's chief executive chose a direction. He adds that a 1.0 in a new category has very few analogues for data-driven decisions, so one, two or a very small set of people must be charged with the opinion-based decisions. Testing indefinitely ignores that the data could not settle it. A broad vote contradicts his point about a small group. Shipping both options is not what happened.",
+    "sourceTitle": "Father of the iPod and iPhone on building taste, judgment, and creativity in the AI era",
+    "sourceAuthor": "Tony Fadell",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/father-of-the-ipod-and-iphone-on"
+  },
+  {
+    "id": "lenny-prototype-testing-08",
+    "topicId": "prototype-testing",
+    "domain": "execution-validation",
+    "level": "professional",
+    "question": "Anthropic sometimes ships overlapping features. What trade-off is this, and why do it?",
+    "options": [
+      "It sacrifices code quality, since quick parallel builds are cheaper than one carefully engineered feature.",
+      "It sacrifices consistency temporarily, since overlapping features create no cost for new users.",
+      "It sacrifices product consistency so external users can show which of two loved form factors is better.",
+      "It reflects poor coordination between teams, which leadership is working to eliminate."
+    ],
+    "correctIndex": 2,
+    "explanation": "The guest says the team is sacrificing product consistency: when code was expensive, products were planned carefully with one product per use case, but now there are many ideas to test, and overlap often arises because there are two form factors the team loves and it wants the external audience to say which is better. She acknowledges a real cost, since new users may not know the best path, which calls for more education. Code quality is not the trade-off she names. She presents the overlap as deliberate.",
+    "sourceTitle": "How Anthropic's product team moves faster than anyone else",
+    "sourceAuthor": "Cat Wu",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/how-anthropics-product-team-moves"
+  },
+  {
+    "id": "lenny-prototype-testing-09",
+    "topicId": "prototype-testing",
+    "domain": "execution-validation",
+    "level": "professional",
+    "question": "What is 'baby Codex' at OpenAI?",
+    "options": [
+      "A dramatically simplified code base that approximates the production app, so prototypes are quicker to build.",
+      "A junior version of the coding model, trained on less data to make internal experiments cheaper to run.",
+      "A children's education product built with the same technology as the main application.",
+      "A cut-down version of the product released early to a small group of trusted external users, so the team can gather feedback."
+    ],
+    "correctIndex": 0,
+    "explanation": "The guest says many companies keep a baby version of their product; at OpenAI, baby Codex is a dramatically simplified code base that approximates all the interactions of the production app and is therefore much quicker to vibe code over. A limited external release is a different practice, although he mentions A/B testing inside the real product as another route. It is not a smaller model. The children's product reading is unrelated.",
+    "sourceTitle": "OpenAI Codex lead on the new shape of product work",
+    "sourceAuthor": "Andrew Ambrosino",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/openai-codex-lead-on-the-new-shape"
+  },
+  {
+    "id": "lenny-prototype-testing-10",
+    "topicId": "prototype-testing",
+    "domain": "execution-validation",
+    "level": "professional",
+    "question": "What trait does the head of Google Labs now look for when hiring?",
+    "options": [
+      "Deep expertise in one technology, so that the person can defend a chosen direction through setbacks.",
+      "Long tenure at Google, since familiarity with internal systems speeds up every project.",
+      "A fast 'unlearning rate': how quickly someone learns something and then walks away from it after testing.",
+      "A fast learning rate, meaning a growth mindset and the ability to pick up new skills and tools quickly."
+    ],
+    "correctIndex": 2,
+    "explanation": "The guest says people often talk about learning rate and growth mindset, but he is looking for unlearning rate: how fast someone can learn something and then walk away from it, perhaps based on what they see when testing their product. Learning rate is the familiar trait he builds on, which makes it only half his point. Defending one direction through setbacks resembles the attachment he wants people to shed. Tenure is not mentioned.",
+    "sourceTitle": "Why every company now needs to think and operate like a lab team",
+    "sourceAuthor": "Josh Woodward",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/why-every-company-now-needs-to-think"
+  },
+  {
+    "id": "lenny-mvp-specification-01",
+    "topicId": "mvp-specification",
+    "domain": "execution-validation",
+    "level": "newbie",
+    "question": "A classic essay by Gmail's creator describes the right approach to a new product. What is it?",
+    "options": [
+      "Copy the feature set of the leading product and improve each feature slightly.",
+      "Pick the three most requested features, then add the secondary ones before launch to look complete.",
+      "Pick three key attributes or features, get them very right and forget about everything else.",
+      "Ship as many features as possible in version one, since more features make the product better."
+    ],
+    "correctIndex": 2,
+    "explanation": "The essay's author says the 'more features = better' mindset causes misjudgement, and that the right approach is to pick three key attributes or features, get them very right and forget the rest; Gmail launched fast, with lots of storage and a conversation-based interface, while secondary features were minimal. The first distractor states the mindset he criticises. Picking three is right, but adding secondary features before launch undoes the focus. Copying a leader is what he calls copying a failed product's mistakes when the essentials are wrong.",
+    "sourceTitle": "Essential reading for product builders, part 1",
+    "sourceAuthor": "Lenny Rachitsky (excerpting Paul Buchheit and Marc Andreessen)",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/essential-reading-for-product-builders-part-1"
+  },
+  {
+    "id": "lenny-mvp-specification-02",
+    "topicId": "mvp-specification",
+    "domain": "execution-validation",
+    "level": "newbie",
+    "question": "You have only a vague idea for an app. What is a good first step with an AI building tool?",
+    "options": [
+      "Let a dictated brain-dump prompt be the first version, then start a fresh project once the idea becomes clearer.",
+      "Brain-dump into the tool, then keep iterating on that same first project, refining it step by step until it becomes the final product.",
+      "Hire a developer to scope the idea before touching any AI tool.",
+      "Wait until the idea is fully specified, since AI tools need complete requirements to produce anything useful."
+    ],
+    "correctIndex": 0,
+    "explanation": "The guest says that if you have only a vague idea, it should be your first version: open the tool, input a brain-dump prompt, even by voice, and then, without waiting, open a new project with more clarity about the features and pages you want. Waiting for a full specification is the mindset he wants to shift. Brain-dumping is right, but he starts a new project once a good thread emerges. Hiring a developer first is not part of his advice.",
+    "sourceTitle": "The rise of the professional vibe coder (a new AI-era job)",
+    "sourceAuthor": "Lazar Jovanovic",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/getting-paid-to-vibe-code"
+  },
+  {
+    "id": "lenny-mvp-specification-03",
+    "topicId": "mvp-specification",
+    "domain": "execution-validation",
+    "level": "beginner",
+    "question": "When does Anthropic's Claude Code team write a one-pager, and when a full PRD?",
+    "options": [
+      "Neither; the team builds directly from GitHub issues without any written planning.",
+      "A one-pager on goals, delightful use cases and failure modes for ambiguous features; PRDs for months-long infrastructure work.",
+      "A full PRD for every ambiguous feature, since uncertainty calls for the most detailed and complete documentation the team can possibly write.",
+      "A one-pager for every feature without exception, since full PRDs are no longer useful when building AI products."
+    ],
+    "correctIndex": 1,
+    "explanation": "The guest says that for particularly ambiguous features it helps to write a one-pager on goals, delightful use cases and the failure modes to fix, while projects needing heavy infrastructure that take many months still get PRDs. Saying PRDs are never written contradicts her. Matching ambiguity with a full PRD reverses her pairing. Building straight from issues ignores the documents she describes.",
+    "sourceTitle": "How Anthropic's product team moves faster than anyone else",
+    "sourceAuthor": "Cat Wu",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/how-anthropics-product-team-moves"
+  },
+  {
+    "id": "lenny-mvp-specification-04",
+    "topicId": "mvp-specification",
+    "domain": "execution-validation",
+    "level": "beginner",
+    "question": "The story of Aladdin's genie is used to explain working with AI. What lesson does it carry?",
+    "options": [
+      "Avoid AI for important work, since it often ignores the user's instructions.",
+      "Expect surprises, because AI output is random and specificity makes little difference.",
+      "Ask for only a few things at a time, because AI tools grant exactly three requests in each working session.",
+      "Be specific, since a wish for 'taller' can produce a 13-foot person; AI cannot guess what you mean."
+    ],
+    "correctIndex": 3,
+    "explanation": "The guest tells the story of wishing to be taller and being made 13 feet tall because the wish was not specific; AI does not understand 'you know what I mean'. He also uses the genie to explain the limited context window, three wishes at a time, so the first distractor touches a real point but turns it into a literal quota. Treating output as random dismisses the specificity he stresses. Avoiding AI contradicts his whole approach.",
+    "sourceTitle": "The rise of the professional vibe coder (a new AI-era job)",
+    "sourceAuthor": "Lazar Jovanovic",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/getting-paid-to-vibe-code"
+  },
+  {
+    "id": "lenny-mvp-specification-05",
+    "topicId": "mvp-specification",
+    "domain": "execution-validation",
+    "level": "beginner",
+    "question": "A PM's engineering lead showed how GPT-4o could write a batch of Jira tickets. What made it work?",
+    "options": [
+      "Letting the model read every document and meeting transcript, so that it could decide on its own what to build.",
+      "Giving the model roughly the same context the engineers would get in a kickoff, then lightly editing the output.",
+      "Giving the model a short, one-line summary of each ticket, so that it had the freedom to fill in the details itself.",
+      "Using a specialised ticket-writing tool, since general models cannot produce usable tickets."
+    ],
+    "correctIndex": 1,
+    "explanation": "The author says GPT-4o could write the tickets as long as he provided roughly the same amount of context given to engineers in a kickoff, after which he lightly edited the results; more context means less hallucination and editing later. One-line prompts starve the model of the context he stresses. Reading everything and deciding resembles letting AI 'read for you', which his section title warns against. A specialised tool is not what he used.",
+    "sourceTitle": "Product manager is an unfair role. So work unfairly.",
+    "sourceAuthor": "Tal Raviv",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/product-manager-is-an-unfair-role-so-work-unfairly"
+  },
+  {
+    "id": "lenny-mvp-specification-06",
+    "topicId": "mvp-specification",
+    "domain": "execution-validation",
+    "level": "advanced",
+    "question": "Every great LLM-as-judge eval has four parts. Which list is it?",
+    "options": [
+      "Setting the role, providing the context, and a score from 1 to 10, with no label definitions needed.",
+      "Providing the goal and the label, plus a large human-labelled dataset that replaces the judge's role.",
+      "Setting the role, providing the context, providing the goal, and defining the terminology and label.",
+      "A single instruction telling the judge to rate the answer as good or bad."
+    ],
+    "correctIndex": 2,
+    "explanation": "The author's formula has four parts: give the judge a role, provide the context to grade, state the goal clearly by defining success and failure, and define the terminology and label, since terms such as toxicity mean different things in different contexts. The first distractor keeps two parts but drops the goal and the label definitions. The second keeps two parts, and while datasets matter in his workflow they do not replace the role. A bare good-or-bad instruction lacks the grounding he says the judge needs.",
+    "sourceTitle": "Beyond vibe checks: A PM's complete guide to evals",
+    "sourceAuthor": "Aman Khan",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/beyond-vibe-checks-a-pms-complete"
+  },
+  {
+    "id": "lenny-mvp-specification-07",
+    "topicId": "mvp-specification",
+    "domain": "execution-validation",
+    "level": "professional",
+    "question": "A team adopting evals sees noisy results and is losing trust in them. Which common mistakes are likely at play?",
+    "options": [
+      "Evals made too complex too quickly, no good and bad examples in the prompt, and no check against real user feedback.",
+      "Making evals too simple, since a single narrow output cannot tell the team anything useful about overall quality.",
+      "Using too many examples in the judge prompt, which overfits the judge to particular cases and hides wider failures.",
+      "Running evals on real user interactions, which should be avoided because they contain noise."
+    ],
+    "correctIndex": 0,
+    "explanation": "The author lists three common mistakes: making evals too complex too quickly, which creates noisy signals and erodes trust; not testing edge cases, where one or two good and bad examples in the prompt (few-shot prompting) help; and forgetting to validate eval results against real user feedback. Simplicity is his remedy, which reverses the first distractor. He recommends adding examples, so warning against them contradicts him. He tells teams to gather real user interactions.",
+    "sourceTitle": "Beyond vibe checks: A PM's complete guide to evals",
+    "sourceAuthor": "Aman Khan",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/beyond-vibe-checks-a-pms-complete"
+  },
+  {
+    "id": "lenny-mvp-specification-08",
+    "topicId": "mvp-specification",
+    "domain": "execution-validation",
+    "level": "professional",
+    "question": "While deciding which cases an AI system handles and which go to a human, what should a team log, and why?",
+    "options": [
+      "Nothing; logging slows the system down and is unnecessary once the AI performs well.",
+      "Only the AI's errors, since cases the system handles successfully teach it nothing it does not already know.",
+      "What the humans do, so that the team builds a flywheel for improving the system without eroding user trust.",
+      "Users' satisfaction ratings, since they show directly and reliably where the AI should take over next."
+    ],
+    "correctIndex": 2,
+    "explanation": "They describe deciding which use cases go through a human-in-the-loop layer and which AI can handle, while logging what the human is doing in order to build a flywheel that improves the system, all without eroding trust. They also say the race is about having the right flywheels in place to improve over time. Logging only errors misses the human decisions that teach the system. Ratings are a different signal from what humans actually do. Not logging abandons the flywheel.",
+    "sourceTitle": "Why most AI products fail: Lessons from 50+ AI deployments at OpenAI, Google, and Amazon",
+    "sourceAuthor": "Aishwarya Naresh Reganti and Kiriti Badam",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/what-openai-and-google-engineers-learned"
+  },
+  {
+    "id": "lenny-build-planning-01",
+    "topicId": "build-planning",
+    "domain": "prioritization-delivery",
+    "level": "newbie",
+    "question": "Meetings leave a PM with a pile of small action items. What can they do instead of adding them to a to-do list?",
+    "options": [
+      "Records the meeting and lets an AI tool produce the action items and summary afterwards, then forwards them.",
+      "Assigns every action item to a named attendee before the meeting ends, so that the work leaves the PM's own to-do list entirely.",
+      "Ignores small action items, since only large decisions from meetings need follow-up.",
+      "Does them live in the meeting, for example drafting the summary while screen-sharing and confirming it before sending."
+    ],
+    "correctIndex": 3,
+    "explanation": "The author's tactic is to do the action items live in the meeting: he screen-shares the initiative's Slack channel, drafts the summary and action items while people watch, asks them to check it, and sends it once they agree. Assigning items is useful, but it still leaves follow-up work after the meeting. AI summaries are not the tactic he describes here. Ignoring small items contradicts his concern about urgent and important tasks.",
+    "sourceTitle": "Product manager is an unfair role. So work unfairly.",
+    "sourceAuthor": "Tal Raviv",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/product-manager-is-an-unfair-role-so-work-unfairly"
+  },
+  {
+    "id": "lenny-build-planning-02",
+    "topicId": "build-planning",
+    "domain": "prioritization-delivery",
+    "level": "newbie",
+    "question": "A non-technical PM uses a saved '/create issue' command in his AI coding set-up. What is it for?",
+    "options": [
+      "Writing a full PRD for each idea, so that issues are always fully specified.",
+      "Deleting duplicate issues from the tracker automatically.",
+      "Building the feature immediately, so that no idea waits in a backlog.",
+      "Capturing a bug or feature idea quickly, in a set format, so he can keep working."
+    ],
+    "correctIndex": 3,
+    "explanation": "The guest explains that slash commands are reusable prompts saved in the code base; his create-issue command tells Claude that the user is mid-development and has thought of a bug, feature or improvement, and should capture it fast so they can keep working, in a specified format. Building immediately defeats the purpose of capture. Planning comes later in his workflow, after exploration. Deduplication is not mentioned.",
+    "sourceTitle": "The non-technical PM's guide to building with Cursor",
+    "sourceAuthor": "Zevi Arnovitz",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/the-non-technical-pms-guide-to-building-with-cursor"
+  },
+  {
+    "id": "lenny-build-planning-03",
+    "topicId": "build-planning",
+    "domain": "execution-validation",
+    "level": "beginner",
+    "question": "A non-technical PM finds it hard to catch mistakes in AI-written code. How does he review it?",
+    "options": [
+      "Claude reviews its own code alone, since a second model adds noise to the review without catching extra errors.",
+      "An engineer reviews every change before it is merged, since AI reviewers cannot yet be trusted to catch the mistakes that matter.",
+      "Claude reviews its own code, Codex and Cursor review it too, and a peer-review command works through their findings.",
+      "Skips review and relies on users to report problems after release."
+    ],
+    "correctIndex": 2,
+    "explanation": "The guest runs a review command so Claude reviews its own code, then has Codex and Cursor review it as well, and uses a peer-review command to work through their findings. Self-review is the first step, but he adds other models. Engineer review is not part of the workflow he describes. Skipping review contradicts his stated difficulty in catching mistakes.",
+    "sourceTitle": "The non-technical PM's guide to building with Cursor",
+    "sourceAuthor": "Zevi Arnovitz",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/the-non-technical-pms-guide-to-building-with-cursor"
+  },
+  {
+    "id": "lenny-build-planning-04",
+    "topicId": "build-planning",
+    "domain": "prioritization-delivery",
+    "level": "beginner",
+    "question": "A prospect says they would need to be live by Q1 next year. How should a founder use that date?",
+    "options": [
+      "As a reason to begin a free design partnership now, building the product together until Q1.",
+      "As the date to send the contract, leaving the steps to the prospect.",
+      "As a soft target, since enterprise dates usually slip and should not shape the sales process.",
+      "As a forcing function: work backwards to the steps needed to be deployed and showing results by then."
+    ],
+    "correctIndex": 3,
+    "explanation": "The guest says a date like Q1 is a forcing function: you work backwards to the steps that must happen to be deployed and showing results by then, which drives every step of the sales process. Treating it as soft discards that force. He notes that many founders turn to free design partnerships at this point and says he is not interested in that. Leaving the steps to the prospect abandons the planning he describes.",
+    "sourceTitle": "An 86-minute guide to finding PMF",
+    "sourceAuthor": "Rob Snyder",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/an-86-minute-guide-to-finding-pmf"
+  },
+  {
+    "id": "lenny-build-planning-05",
+    "topicId": "build-planning",
+    "domain": "prioritization-delivery",
+    "level": "advanced",
+    "question": "Why does an engineering background help a PM prioritise, at least for now, according to Anthropic's Claude Code team?",
+    "options": [
+      "It makes the PM more persuasive with engineers, so that disagreements about the roadmap end much sooner.",
+      "It lets the PM write the code for most features personally, which removes most of the need to prioritise work across the engineering team.",
+      "It matters little, since taste is irrelevant once code becomes cheap to write.",
+      "It gives a sense of difficulty: easy things can be built in an hour instead of debated, and hard ones are known to be costly."
+    ],
+    "correctIndex": 3,
+    "explanation": "The guest says product taste matters most, deciding what to build, and that an engineering background helps because you sense how hard something should be: if it is easy, you can spend an hour building instead of debating, and if it is hard, you know it will cost more. Building personally is a stretch of the first case, and prioritisation remains. Persuasiveness is not her argument. She says taste becomes more valuable as code gets cheaper.",
+    "sourceTitle": "How Anthropic's product team moves faster than anyone else",
+    "sourceAuthor": "Cat Wu",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/how-anthropics-product-team-moves"
+  },
+  {
+    "id": "lenny-build-planning-06",
+    "topicId": "build-planning",
+    "domain": "execution-validation",
+    "level": "advanced",
+    "question": "How does a non-technical PM end each AI build cycle and learn from it?",
+    "options": [
+      "Discards the plan and documentation, since every new feature starts from a blank slate.",
+      "Updates the documentation, and uses a 'learning opportunity' command to have concepts he finds difficult explained.",
+      "Updates the documentation and then moves on, since understanding the code is unnecessary once an AI is writing all of it for him.",
+      "Asks an engineer colleague to explain the code after each release, avoiding AI explanations."
+    ],
+    "correctIndex": 1,
+    "explanation": "The guest's workflow runs from planning and execution through review and peer review to updating the docs, and he uses a learning-opportunity command whenever something is difficult to understand, spending a lot of time going back and forth to understand how things work. Updating docs is right, yet he values understanding, which the first distractor dismisses. Engineer explanations are not what he describes. Discarding documentation reverses his final step.",
+    "sourceTitle": "The non-technical PM's guide to building with Cursor",
+    "sourceAuthor": "Zevi Arnovitz",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/the-non-technical-pms-guide-to-building-with-cursor"
+  },
+  {
+    "id": "lenny-build-planning-07",
+    "topicId": "build-planning",
+    "domain": "prioritization-delivery",
+    "level": "professional",
+    "question": "A large company plans to start a labs team for new bets. What warning does the head of Google Labs give?",
+    "options": [
+      "Labs always succeed when well funded, so budget is the only real design decision.",
+      "Labs succeed when nestled inside the largest business unit, which gives them both resources and distribution.",
+      "Labs need independence, but only during their first year, after which they should merge into a core product team.",
+      "Most corporate labs fizzle out within three to four years or fail to commercialise, so the lab needs independence."
+    ],
+    "correctIndex": 3,
+    "explanation": "The guest says that, looking at the history, a large company's lab is usually ineffective and fizzles out after about three to four years, or the company cannot commercialise what comes out of it; you cannot just nestle it under an existing business unit, and it needs its own independence. The first distractor proposes the arrangement he rejects. Granting independence for a year is not something he describes. Funding alone does not address the failure pattern he cites.",
+    "sourceTitle": "Why every company now needs to think and operate like a lab team",
+    "sourceAuthor": "Josh Woodward",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/why-every-company-now-needs-to-think"
+  },
+  {
+    "id": "lenny-business-model-01",
+    "topicId": "business-model",
+    "domain": "strategy-positioning",
+    "level": "newbie",
+    "question": "How does Snap and Discord's former product chief summarise the economics of subscription products?",
+    "options": [
+      "Time is your enemy: penetration grows slowly, roughly linearly, so the maths is brutal.",
+      "Time is your friend, because subscribers compound quickly once the product launches.",
+      "Subscriptions should be avoided by consumer apps altogether.",
+      "Subscriptions are easy money for any popular app, since loyal users convert on day one."
+    ],
+    "correctIndex": 0,
+    "explanation": "The guest says subscription products are tough because the maths is brutal; time is your enemy, since impact takes a long time to materialise and penetration grows slowly, usually linearly. The first distractor reverses the claim. The second ignores his point that users see the subscription's value only after becoming used to the product. He calls Snapchat+ quite successful, so he does not advise avoidance.",
+    "sourceTitle": "90 minutes of unfiltered product advice from Snap and Discord's product chief",
+    "sourceAuthor": "Peter Sellis",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/90-minutes-of-unfiltered-product"
+  },
+  {
+    "id": "lenny-business-model-02",
+    "topicId": "business-model",
+    "domain": "strategy-positioning",
+    "level": "beginner",
+    "question": "How does the way a price is structured, for example per seat, per site or per usage, affect buyers?",
+    "options": [
+      "Structure matters less than the headline number, which decides whether buyers see the price as fair.",
+      "Structure has no effect, as long as the total cost to the customer stays the same.",
+      "The same price can feel fair and good, or unfair and too expensive, depending on how it is structured.",
+      "Structure matters only for enterprise buyers, who compare structures; consumers notice only the total."
+    ],
+    "correctIndex": 2,
+    "explanation": "The guest says per-site, per-usage and per-seat choices are all part of pricing, and that even with the same price or product, the structure can make it seem fair and good or unfair and too expensive. Limiting the effect to enterprise is not in his account. Treating the headline number as decisive ignores his point. Saying structure has no effect contradicts him outright.",
+    "sourceTitle": "5 questions to ask when your product stops growing",
+    "sourceAuthor": "Jason Cohen",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/why-your-product-stopped-growing"
+  },
+  {
+    "id": "lenny-business-model-03",
+    "topicId": "business-model",
+    "domain": "strategy-positioning",
+    "level": "beginner",
+    "question": "Enterprise buyers usually approach pricing in one of two ways. What are they?",
+    "options": [
+      "Paying premium prices for any AI product at all, since organisations now hold new AI budgets that they are expected to spend in full.",
+      "Seeking the lowest cost for every purchase, since all enterprise buyers are measured on the savings they achieve.",
+      "Lowest cost for a low-priority job, or paying to remove a high-risk problem, such as legal, with $250K to $500K lands.",
+      "Choosing whichever vendor offers the longest free trial."
+    ],
+    "correctIndex": 2,
+    "explanation": "The guest describes two motions: a buyer who needs the lowest-cost way to do something low on the totem pole, where 60% of the way there is acceptable, and a high-risk problem, such as legal, where you can charge $250K to $500K for a land. She adds that functions differ, with numbers driving marketing and sales and risk driving legal. Universal cost-cutting captures only one motion. Assuming premium budgets everywhere ignores the low-priority case. Free trials are not discussed.",
+    "sourceTitle": "How to close $100K+ enterprise deals, step by step",
+    "sourceAuthor": "Jen Abel",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/how-to-close-100k-1m-deals-step-by"
+  },
+  {
+    "id": "lenny-business-model-04",
+    "topicId": "business-model",
+    "domain": "strategy-positioning",
+    "level": "advanced",
+    "question": "Why might Snapchat+ have done better had it launched four years earlier?",
+    "options": [
+      "Utilities show subscription value only after daily use builds up; an earlier start would have eased pressure on ads.",
+      "Earlier launch would have let Snap abandon advertising entirely.",
+      "An earlier launch would have let Snap charge higher prices, since users then held fewer subscriptions.",
+      "Content products such as Netflix show that subscriptions sell best at first launch, so Snap should have started immediately."
+    ],
+    "correctIndex": 0,
+    "explanation": "The guest says messaging utilities, like Discord with Nitro, differ from content products such as Spotify or Netflix: users first become used to the product daily, and only then see the subscription's value, so penetration grows slowly. Launching four years earlier might have eased pressure on the ads business to scale and given more freedom on content. Pricing is not his argument. The second distractor reverses his contrast between utilities and content products. He speaks of less pressure on ads, not abandoning them.",
+    "sourceTitle": "90 minutes of unfiltered product advice from Snap and Discord's product chief",
+    "sourceAuthor": "Peter Sellis",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/90-minutes-of-unfiltered-product"
+  },
+  {
+    "id": "lenny-business-model-05",
+    "topicId": "business-model",
+    "domain": "strategy-positioning",
+    "level": "advanced",
+    "question": "A team wants to raise prices sharply by moving upmarket. What is the caution?",
+    "options": [
+      "Moving upmarket requires lowering prices first, to win the larger customers' trust.",
+      "New customers bring new demands, such as SOC 2, governance, integrations or services, so price cannot change alone.",
+      "Raising prices always cuts sign-ups sharply, so the move should be avoided whatever the target market looks like.",
+      "The new customers will simply pay more for the same product, so no other part of the company's strategy needs to change at all."
+    ],
+    "correctIndex": 1,
+    "explanation": "The guest warns that you cannot just raise prices and change market: these new customers have different demands, so you may need SOC 2, other governance, integrations you did not know about, or professional services, and the decision is tied to the rest of the strategy. He does not say price rises always reduce sign-ups; elsewhere he encourages testing higher prices. Assuming nothing else changes is the error he is warning about. Lowering prices first is not his advice.",
+    "sourceTitle": "5 questions to ask when your product stops growing",
+    "sourceAuthor": "Jason Cohen",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/why-your-product-stopped-growing"
+  },
+  {
+    "id": "lenny-business-model-06",
+    "topicId": "business-model",
+    "domain": "strategy-positioning",
+    "level": "professional",
+    "question": "Growth has stalled even though existing customers are happy. Which option relies on the current customer base?",
+    "options": [
+      "A second product for an entirely new segment, so the company is less dependent on current customers.",
+      "A price cut for existing customers, so they stay longer and the base grows over time.",
+      "A second product sold to the same segments, so existing customers can buy it.",
+      "Cutting marketing spend, so that the company's margins improve while growth is flat."
+    ],
+    "correctIndex": 2,
+    "explanation": "The guest lists a second product sold to the same segments you are in, so your existing customers can buy it, noting it works in consumer categories such as apparel. A new segment discards the advantage of the existing base. Cutting price for existing customers is not among his options. Cutting marketing addresses margins, not growth.",
+    "sourceTitle": "5 questions to ask when your product stops growing",
+    "sourceAuthor": "Jason Cohen",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/why-your-product-stopped-growing"
+  },
+  {
+    "id": "lenny-business-model-07",
+    "topicId": "business-model",
+    "domain": "strategy-positioning",
+    "level": "professional",
+    "question": "At Cloudflare, a junior engineer suggested giving away SSL encryption, the top driver of upgrades, for free. What did the company do?",
+    "options": [
+      "It gave encryption away to everyone immediately and accepted the losses, because the mission justified whatever it would end up costing.",
+      "It found a way to offer encryption sustainably by cutting its own costs, and kept it free when premium conversion fell.",
+      "It refused, because a strategy built on the most profitable product should not be disrupted by a junior engineer.",
+      "It raised the price of encryption to fund the rest of the free tier."
+    ],
+    "correctIndex": 1,
+    "explanation": "The guest says the CEO responded with 'let's figure it out', rallying the team to find a sustainable way, since bankrupting the company would not achieve the mission; they hand-rolled software and did business-development deals to cut costs, and when premium conversion dropped they stuck with it. Giving it away regardless of cost contradicts the sustainability condition. Refusing is the middle-manager response the guest says everyone expected and did not happen. Raising the price is the opposite of what occurred.",
+    "sourceTitle": "How to build a company that withstands any era",
+    "sourceAuthor": "Eric Ries",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/how-to-build-a-company-that-withstands"
+  },
+  {
+    "id": "lenny-go-to-market-01",
+    "topicId": "go-to-market",
+    "domain": "growth-measurement",
+    "level": "newbie",
+    "question": "What is the alternative to filling channels with AI-generated 'slop' ads?",
+    "options": [
+      "Stop advertising, since all ad channels are now saturated.",
+      "Focus on quantity, since the platforms reward advertisers who post most often.",
+      "Use AI for every ad but publish fewer of them, which gives the same result as quality work.",
+      "Focus on quality over quantity, which makes it easier to cut through the noise."
+    ],
+    "correctIndex": 3,
+    "explanation": "The guest says AI slop ads are unlikely to be well received amid so much noise, and that focusing on quality over quantity makes it easy to cut through. The first distractor reverses his advice. Publishing fewer AI ads addresses quantity only, not the quality he asks for. He continues to advertise, describing paid ads as a channel that worked.",
+    "sourceTitle": "How a 19-year-old intern built the growth engine behind this $2B AI company",
+    "sourceAuthor": "Hector Serrano",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/how-a-19-year-old-intern-built-the"
+  },
+  {
+    "id": "lenny-go-to-market-02",
+    "topicId": "go-to-market",
+    "domain": "growth-measurement",
+    "level": "newbie",
+    "question": "How might AI change the B2B buying funnel, according to HubSpot's co-founder?",
+    "options": [
+      "Buyers will research in AI assistants that already know your site and rivals, so the website matters less.",
+      "Buyers will still start with search results, but AI will write a better landing page for every individual visitor.",
+      "Buyers will skip research and go straight to sales reps, who will close deals much faster with the help of AI.",
+      "Nothing much will change, since the existing funnel has worked for two decades."
+    ],
+    "correctIndex": 0,
+    "explanation": "The guest says the old funnel, from a Google link to your website to contact sales, will be turned on its head: buyers will evaluate products in tools like Gemini or ChatGPT, which know everything on your website and your competitors, arriving well educated, so your website is much less important; he imagines landing on a knowledgeable avatar. Search-first buying is the model he says will change. Reps do remain, accompanied by avatars, but buyers research more, not less. He expects go-to-market, which has changed little so far, to change a lot over time.",
+    "sourceTitle": "Sequoia CEO coach: Why it's never been easier to start a company, and never been harder to scale one",
+    "sourceAuthor": "Brian Halligan",
+    "sourceUrl": "https://www.youtube.com/watch?v=3UyitfSbY6c"
+  },
+  {
+    "id": "lenny-go-to-market-03",
+    "topicId": "go-to-market",
+    "domain": "growth-measurement",
+    "level": "beginner",
+    "question": "A founder runs early outreach on LinkedIn by sending connection requests and messaging those who accept. What are healthy benchmarks?",
+    "options": [
+      "About 30 to 40% should accept the request, and 30 to 50% of those should reply.",
+      "About 30 to 40% should accept, and around 5% of those should reply, as in most cold outreach.",
+      "Benchmarks do not matter at this stage, since only the number of calls booked counts.",
+      "About 5% should accept, and 30 to 50% of those should reply, since few people accept strangers."
+    ],
+    "correctIndex": 0,
+    "explanation": "The guest's typical targets are 30 to 40% acceptance of connection requests, then 30 to 50% of those replying, with most of the rest agreeing to talk. Each distractor keeps one of his two numbers and replaces the other with a lower figure. He uses the benchmarks diagnostically: if acceptance is fine but replies are low, the message is not interesting enough.",
+    "sourceTitle": "An 86-minute guide to finding PMF",
+    "sourceAuthor": "Rob Snyder",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/an-86-minute-guide-to-finding-pmf"
+  },
+  {
+    "id": "lenny-go-to-market-04",
+    "topicId": "go-to-market",
+    "domain": "growth-measurement",
+    "level": "beginner",
+    "question": "Wispr Flow's organic creator programme reached about 500 million views in two and a half months. Why did the company end it?",
+    "options": [
+      "Organic creator content does not work for software products, so it should be avoided entirely.",
+      "The platform banned the content for breaking its rules on paid promotion.",
+      "The views were a vanity metric that did not lead to enough conversions for that product.",
+      "The cost per view was too high, so the programme could not be sustained."
+    ],
+    "correctIndex": 2,
+    "explanation": "The guest says the programme reached roughly 500 million views with very low CPMs and worked decently, but it ran at a time when everyone focused on vanity metrics that did not necessarily lead to conversions, so they ended it. Costs were low, so cost was not the reason. He says he is not against organic creator content, noting that someone else later cracked it at Polymarket. No platform ban is mentioned.",
+    "sourceTitle": "How a 19-year-old intern built the growth engine behind this $2B AI company",
+    "sourceAuthor": "Hector Serrano",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/how-a-19-year-old-intern-built-the"
+  },
+  {
+    "id": "lenny-go-to-market-05",
+    "topicId": "go-to-market",
+    "domain": "growth-measurement",
+    "level": "advanced",
+    "question": "Should early B2B outreach messages use AI personalisation?",
+    "options": [
+      "Yes, but only for senior executives, who expect any message they receive to be tailored closely to them.",
+      "Yes, as long as a human reviews the personalisation carefully before sending, so that obvious errors never reach any of the prospects.",
+      "Yes, since response rates rise in proportion to the amount of personal detail included.",
+      "No; it usually tells people what they already know and looks AI-written, while a short, interesting message works."
+    ],
+    "correctIndex": 3,
+    "explanation": "The guest says he has not seen AI personalisation work at this stage: it tends to tell recipients what they already know about themselves, and they recognise it as AI-written; he has not found personalisation important either, and a simple, interesting message can be good enough. The executive carve-out is not in his account. Human review does not address his finding that personalisation itself adds little. Proportional gains contradict his experience.",
+    "sourceTitle": "An 86-minute guide to finding PMF",
+    "sourceAuthor": "Rob Snyder",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/an-86-minute-guide-to-finding-pmf"
+  },
+  {
+    "id": "lenny-go-to-market-06",
+    "topicId": "go-to-market",
+    "domain": "growth-measurement",
+    "level": "advanced",
+    "question": "Brands often send creators long guidelines on hooks, wording and filming. What tends to happen, in Wispr Flow's experience?",
+    "options": [
+      "It protects the brand, so although the content is a little weaker, the trade-off is usually worthwhile.",
+      "It strips out the creativity that made the creator worth hiring and yields worse content than trusting them.",
+      "It suits established creators, who are used to receiving detailed briefs from brands, although it tends to stifle newer ones.",
+      "It produces the best content, because creators perform well with precise instructions."
+    ],
+    "correctIndex": 1,
+    "explanation": "The guest, himself a creator, says sending a ten-page guideline removes the creative aspect creators have, and that nothing is more demotivating; a brand that trusts the creator and opens the door to make content as they see fit gets better content. Brand protection is a real motive, but he judges the cost too high. Distinguishing established from new creators is not his argument. Claiming the best content contradicts him.",
+    "sourceTitle": "How a 19-year-old intern built the growth engine behind this $2B AI company",
+    "sourceAuthor": "Hector Serrano",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/how-a-19-year-old-intern-built-the"
+  },
+  {
+    "id": "lenny-go-to-market-07",
+    "topicId": "go-to-market",
+    "domain": "growth-measurement",
+    "level": "advanced",
+    "question": "Besides app stores and mobile distribution, what helped Snapchat grow in its early days?",
+    "options": [
+      "Heavy paid acquisition, which brought new users faster than organic growth could.",
+      "A different growth model built on connecting with close friends, as opposed to having the most friends.",
+      "Exclusive partnerships with phone makers, which pre-installed the app.",
+      "A network effect from adding as many contacts as possible, which made the service more valuable."
+    ],
+    "correctIndex": 1,
+    "explanation": "The guest says Snapchat benefited from the app store and mobile distribution, but also had a different way of growing that was not about having the most friends; it was about having your close friends. Maximising contacts is the model he contrasts. Paid acquisition is not what he describes. Pre-installation is not mentioned.",
+    "sourceTitle": "Snapchat CEO: Why distribution has become the most important moat",
+    "sourceAuthor": "Evan Spiegel",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/snapchat-ceo-why-distribution-is"
+  },
+  {
+    "id": "lenny-go-to-market-08",
+    "topicId": "go-to-market",
+    "domain": "growth-measurement",
+    "level": "professional",
+    "question": "A product targets an older, more serious audience that rarely uses Instagram. Which ads tend to perform best, in Wispr Flow's experience?",
+    "options": [
+      "No ads at all, since older audiences respond only to referrals.",
+      "Plain, even ugly ads, such as a simple screen recording of someone using the product.",
+      "Short, fast-paced creator videos, since these perform best across every platform.",
+      "Polished brand films, since an older audience associates production values with trust."
+    ],
+    "correctIndex": 1,
+    "explanation": "The guest says that for this older, more serious demographic, the more boring and uglier the ads, the better they perform, citing screen recordings with text on top that look terrible but are among his best ads. Polished films are the intuition he reports the data overturning. Fast-paced creator content is what he describes for other audiences. He advertises to this group successfully.",
+    "sourceTitle": "How a 19-year-old intern built the growth engine behind this $2B AI company",
+    "sourceAuthor": "Hector Serrano",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/how-a-19-year-old-intern-built-the"
+  },
+  {
+    "id": "lenny-go-to-market-09",
+    "topicId": "go-to-market",
+    "domain": "growth-measurement",
+    "level": "professional",
+    "question": "According to Snap's chief executive, when do the most exciting times in technology occur?",
+    "options": [
+      "When interest rates are low, since abundant capital is what makes most new consumer companies possible.",
+      "When incumbent platforms mature, since stable platforms reduce the risk faced by new consumer companies.",
+      "When regulation tightens, since rules reduce competition from smaller companies.",
+      "When new platforms are created, since much of the value comes from them, as mobile produced Uber and Snapchat."
+    ],
+    "correctIndex": 3,
+    "explanation": "The guest says the most exciting times are when new platforms are created, which tends to be where much of the value comes from, and points to companies born out of mobile, such as Uber and Snapchat. Mature platforms are the opposite condition. Capital and regulation are not part of this remark.",
+    "sourceTitle": "Snapchat CEO: Why distribution has become the most important moat",
+    "sourceAuthor": "Evan Spiegel",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/snapchat-ceo-why-distribution-is"
+  },
+  {
+    "id": "lenny-metrics-adoption-01",
+    "topicId": "metrics-adoption",
+    "domain": "growth-measurement",
+    "level": "newbie",
+    "question": "What happened to Duolingo's metrics after it launched leaderboards?",
+    "options": [
+      "Nothing measurable changed, so the feature was later removed.",
+      "Learning time rose by 17%, but highly engaged learners were unchanged, since only casual users joined in.",
+      "Highly engaged learners tripled, but overall learning time fell, since others felt discouraged.",
+      "Overall learning time rose by 17%, and the number of highly engaged learners tripled."
+    ],
+    "correctIndex": 3,
+    "explanation": "The author says leaderboards had a huge, almost immediate impact: overall learning time increased by 17% and highly engaged learners, defined as those spending at least an hour a day five days a week, tripled; traditional retention metrics also improved significantly. Each half-truth keeps one result and invents a contrary second. He calls it the Retention Team's first breakthrough, and teams kept optimising it.",
+    "sourceTitle": "How Duolingo reignited user growth",
+    "sourceAuthor": "Jorge Mazal",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/how-duolingo-reignited-user-growth"
+  },
+  {
+    "id": "lenny-metrics-adoption-02",
+    "topicId": "metrics-adoption",
+    "domain": "growth-measurement",
+    "level": "newbie",
+    "question": "Once evals run on live traffic, what extra role can eval dashboards play?",
+    "options": [
+      "Communicating AI metrics to stakeholders, linking them to business outcomes and acting as proxy leading metrics.",
+      "Replacing user feedback entirely, since automated evals now judge the quality of AI output more reliably than users themselves can.",
+      "None; evals are a testing tool and should be switched off in production.",
+      "Reporting on engineering cost alone, since quality metrics belong in a separate tool owned by another team."
+    ],
+    "correctIndex": 0,
+    "explanation": "The author says eval dashboards help communicate AI metrics across the team, can be tied to business outcomes, and serve as proxy leading metrics for changes to the system. He also says to compare eval results with actual user outcomes, so replacing user feedback contradicts him. Cost reporting is not mentioned. Switching evals off in production reverses his fourth phase, continuous evaluation.",
+    "sourceTitle": "Beyond vibe checks: A PM's complete guide to evals",
+    "sourceAuthor": "Aman Khan",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/beyond-vibe-checks-a-pms-complete"
+  },
+  {
+    "id": "lenny-metrics-adoption-03",
+    "topicId": "metrics-adoption",
+    "domain": "growth-measurement",
+    "level": "beginner",
+    "question": "If you do not know where to start on reducing cancellations, what should you focus on?",
+    "options": [
+      "Onboarding, since cancellations concentrate in the first period and small onboarding changes can have large effects.",
+      "Long-standing customers, since they generate most of the revenue and their departures hurt the business far more than early churn.",
+      "Exit surveys, since the reasons customers give when cancelling show exactly what the team should fix.",
+      "Pricing discounts at the cancellation screen, since money is the main reason people leave."
+    ],
+    "correctIndex": 0,
+    "explanation": "The guest says that, all else being equal, focus on onboarding: almost every company sees far more cancellation in the first day, 30 days or 90 days than over the rest of the customer's life, and small onboarding changes can have large effects. Long-standing customers matter, but they are not where cancellation concentrates. He is sceptical of stated cancellation reasons. Discounts at the exit are not his recommendation.",
+    "sourceTitle": "5 questions to ask when your product stops growing",
+    "sourceAuthor": "Jason Cohen",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/why-your-product-stopped-growing"
+  },
+  {
+    "id": "lenny-metrics-adoption-04",
+    "topicId": "metrics-adoption",
+    "domain": "growth-measurement",
+    "level": "beginner",
+    "question": "A 'bad versus sad' concept is used to judge product quality. What does it distinguish?",
+    "options": [
+      "Bad is a severe error that matters; sad is a minor annoyance that the team can safely ignore for now.",
+      "Bad is a severe, unrecoverable error; sad is a recoverable pain point, though stacked sads can add up to bad.",
+      "Bad describes reliability failures; sad describes users' emotions, which are measured through surveys.",
+      "They are two names for the same category of bug, used interchangeably."
+    ],
+    "correctIndex": 1,
+    "explanation": "The guest defines bad as a very bad, irrecoverable error and sad as a recoverable pain point, and notes that when sads stack up they can turn into bad, so the team watches both. Ignoring sads misses her warning. Sad is a kind of experience problem, not a survey of emotions. The terms are not interchangeable.",
+    "sourceTitle": "What happens after coding is solved?",
+    "sourceAuthor": "Fiona Fung",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/building-the-most-ai-pilled-engineering"
+  },
+  {
+    "id": "lenny-metrics-adoption-05",
+    "topicId": "metrics-adoption",
+    "domain": "growth-measurement",
+    "level": "beginner",
+    "question": "Anthropic's Claude Code team notes a cost of shipping features very frequently. What is it, and what would they like to change?",
+    "options": [
+      "Users find it hard to keep up, so the team should slow down and return to shipping on a monthly or quarterly release cycle.",
+      "Users find it hard to keep up; she would like the tools themselves to educate users so they feel brought along.",
+      "There is no cost, since users enjoy checking for new features every day.",
+      "Engineers burn out from the pace, so the team should ship fewer features until headcount grows."
+    ],
+    "correctIndex": 1,
+    "explanation": "The guest says users feel they must check social media daily to keep up with agentic tools, and she would like people to open the tools and be taught what they want to know, feeling less like they are on a treadmill. Slowing releases is not what she proposes, although she contrasts the old monthly or quarterly rhythm. Engineer burnout is not her point. The treadmill image contradicts the claim that there is no cost.",
+    "sourceTitle": "How Anthropic's product team moves faster than anyone else",
+    "sourceAuthor": "Cat Wu",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/how-anthropics-product-team-moves"
+  },
+  {
+    "id": "lenny-metrics-adoption-06",
+    "topicId": "metrics-adoption",
+    "domain": "growth-measurement",
+    "level": "advanced",
+    "question": "Customers will not explain why they cancel. When should you intervene?",
+    "options": [
+      "At the cancellation screen, where a well-designed exit survey finally captures the real reasons for leaving.",
+      "Only once enough data exists to prove which early signals reliably predict that a customer will cancel.",
+      "Never; customers who want to leave should not be contacted.",
+      "Earlier, when signals suggest a customer is off the happy path, acting on a theory and refining it with data."
+    ],
+    "correctIndex": 3,
+    "explanation": "The guest says that once customers cancel they have stopped investing in you, so it is better to catch them when they seem off the happy path and in trouble; guessing, forming a theory, acting on it and adjusting as data arrives is a wise way to proceed even without data. The cancellation screen is too late in his view. Waiting for proof contradicts his acceptance of acting on a theory. Never contacting customers abandons his advice.",
+    "sourceTitle": "5 questions to ask when your product stops growing",
+    "sourceAuthor": "Jason Cohen",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/why-your-product-stopped-growing"
+  },
+  {
+    "id": "lenny-metrics-adoption-07",
+    "topicId": "metrics-adoption",
+    "domain": "growth-measurement",
+    "level": "advanced",
+    "question": "A team measures how often engineers use a new AI tool. Which saying warns about this?",
+    "options": [
+      "'Don't forsake motion for progress', meaning teams should keep moving and stop measuring altogether.",
+      "'What gets measured gets managed': usage counts are enough, provided they rise each month.",
+      "'Don't forsake motion for progress': usage measures activity, so focus on the problem and the outcome.",
+      "'Move fast and break things', since speed of adoption is the outcome that matters."
+    ],
+    "correctIndex": 2,
+    "explanation": "The guest quotes 'don't forsake motion for progress': measuring tool usage measures the action, so she zooms out to the problem being solved and the outcome. The first saying endorses the usage metric she questions. The second keeps her saying but misreads it as abandoning measurement. The third is not her saying.",
+    "sourceTitle": "What happens after coding is solved?",
+    "sourceAuthor": "Fiona Fung",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/building-the-most-ai-pilled-engineering"
+  },
+  {
+    "id": "lenny-metrics-adoption-08",
+    "topicId": "metrics-adoption",
+    "domain": "growth-measurement",
+    "level": "advanced",
+    "question": "Why did Anthropic build a way to import memory from ChatGPT?",
+    "options": [
+      "To reduce storage costs by moving user data from another provider.",
+      "To copy a competitor's popular feature, so that users would stop comparing the two products on how much each one remembers.",
+      "To grow sign-ups by riding a trend, with no particular connection to the experience of new users.",
+      "To ease the cold-start problem, since activation is a big challenge in AI and new users need to feel understood."
+    ],
+    "correctIndex": 3,
+    "explanation": "The guest says the team was thinking about the cold-start problem and the new-user experience, calling activation a really big challenge in AI; more broadly the aim is to make it easier for people signing up to have Claude understand who they are and how it can help. Feature parity is not the reason he gives. The launch did fit a moment, yet he links it to activation, not marketing alone. Storage costs are unrelated.",
+    "sourceTitle": "Head of Growth (Anthropic): \"Claude is growing itself at this point\"",
+    "sourceAuthor": "Amol Avasare",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/anthropics-1b-to-19b-growth-run"
+  },
+  {
+    "id": "lenny-metrics-adoption-09",
+    "topicId": "metrics-adoption",
+    "domain": "growth-measurement",
+    "level": "professional",
+    "question": "How should a B2B start-up think about retention after the sale?",
+    "options": [
+      "Retention is secured by a high NPS, so the team should survey customers often and fix every low score as quickly as it possibly can.",
+      "Every buyer will churn until reaching some X that makes churning weird; find X, rarely usage or NPS, and build a route to it.",
+      "Retention is secured once customers use the product regularly, so product usage is the metric to manage closely.",
+      "Retention is outside a founder's control once the contract is signed."
+    ],
+    "correctIndex": 1,
+    "explanation": "The guest says everybody who buys is guaranteed to churn until X, after which it is weird for them to churn, and the work is to find X and design a bullet train so every customer gets there; he notes X is almost never product usage or NPS. The two half-truths name the metrics he says rarely turn out to be X. Treating retention as uncontrollable contradicts his whole framing.",
+    "sourceTitle": "An 86-minute guide to finding PMF",
+    "sourceAuthor": "Rob Snyder",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/an-86-minute-guide-to-finding-pmf"
+  },
+  {
+    "id": "lenny-metrics-adoption-10",
+    "topicId": "metrics-adoption",
+    "domain": "growth-measurement",
+    "level": "professional",
+    "question": "A horizontal workflow product had massive churn and low prices. What did the company do?",
+    "options": [
+      "It studied who retained, found freight forwarders using one workflow, and pivoted into a premium product for them.",
+      "It raised prices for all of its customers, which cut churn sharply by removing the low-value accounts that were most likely to leave.",
+      "It shut down, since high churn proves there is no market.",
+      "It added features for every segment, so that more kinds of users would find a reason to stay longer."
+    ],
+    "correctIndex": 0,
+    "explanation": "The guest says the company asked who actually had pull it could sell, deliver and retain, found that freight forwarders used the product for one specific workflow, and pivoted entirely, going from a horizontal, high-churn, low-price product to a premium product for freight forwarders. A blanket price rise skips the analysis of who stays. Adding features broadens the product further. The company did not shut down.",
+    "sourceTitle": "An 86-minute guide to finding PMF",
+    "sourceAuthor": "Rob Snyder",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/an-86-minute-guide-to-finding-pmf"
+  },
+  {
+    "id": "lenny-demo-prioritization-01",
+    "topicId": "demo-prioritization",
+    "domain": "communication-influence",
+    "level": "newbie",
+    "question": "What is one of the biggest things a product leader can do to build trust with executives?",
+    "options": [
+      "Agree with executive priorities, so there is no friction in reviews.",
+      "Avoid executive meetings, so attention stays on the team.",
+      "Kill or deprioritise things.",
+      "Ship more things, so executives see a steady stream of output."
+    ],
+    "correctIndex": 2,
+    "explanation": "The guest says one of the biggest ways to build trust is to kill things and deprioritise things, showing a leadership mindset and domain depth. Output volume is the opposite emphasis. Agreement without judgement contradicts her point that executives want you to be the deepest person in the room. Avoiding executives undermines influence.",
+    "sourceTitle": "The art of influence: The single most important skill that AI can't replace",
+    "sourceAuthor": "Jessica Fain",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/the-art-of-influence-jessica-fain"
+  },
+  {
+    "id": "lenny-demo-prioritization-02",
+    "topicId": "demo-prioritization",
+    "domain": "communication-influence",
+    "level": "newbie",
+    "question": "Before an enterprise demo, what should you ask the champion for?",
+    "options": [
+      "A full rehearsal of the demo, so that the champion can review and approve every slide in advance.",
+      "Nothing at all; asking for extra time risks annoying the champion just before the main event.",
+      "A signed letter of intent, so that the demo is a formality.",
+      "A short call, about 15 minutes, to confirm the right people will attend and that she demos the right things."
+    ],
+    "correctIndex": 3,
+    "explanation": "The guest asks for a 15-minute call before the demo to make sure the right people are in the room and she is demoing the right things, which also makes the champion feel part of the process and builds trust. A full rehearsal goes beyond the brief call she describes. She sees the extra step as valuable. A letter of intent before a demo is not part of her process.",
+    "sourceTitle": "How to close $100K+ enterprise deals, step by step",
+    "sourceAuthor": "Jen Abel",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/how-to-close-100k-1m-deals-step-by"
+  },
+  {
+    "id": "lenny-demo-prioritization-03",
+    "topicId": "demo-prioritization",
+    "domain": "communication-influence",
+    "level": "beginner",
+    "question": "An enterprise you have not spoken to asks you to demo to four or five people as part of due diligence. What should you do?",
+    "options": [
+      "Decline: you are likely a checkbox, and you would demo with no context about what matters to them.",
+      "Accept and offer a steep discount to stand out from other vendors.",
+      "Accept, but send a recorded demo, so that the request costs your team almost nothing to fulfil.",
+      "Accept, since any demo to a large enterprise is worth the time, whatever the reason for the request."
+    ],
+    "correctIndex": 0,
+    "explanation": "The guest calls a cold due-diligence demo one of the worst moves: either you are a checkbox and should remove yourself from that role, or you would be demoing with no context. Accepting assumes every demo helps. A recording reduces your cost but keeps both problems. Discounting is not her advice.",
+    "sourceTitle": "How to close $100K+ enterprise deals, step by step",
+    "sourceAuthor": "Jen Abel",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/how-to-close-100k-1m-deals-step-by"
+  },
+  {
+    "id": "lenny-demo-prioritization-04",
+    "topicId": "demo-prioritization",
+    "domain": "communication-influence",
+    "level": "advanced",
+    "question": "An enterprise demo has just ended. What should you do immediately?",
+    "options": [
+      "Sends a thank-you email to every attendee and then waits about a week, giving the group enough time to reach a considered decision.",
+      "Sends the contract straight away, while enthusiasm is high.",
+      "Calls the most senior attendee directly, bypassing the champion to get a more candid, unfiltered view.",
+      "Texts the champion asking how it went and for a call within minutes, to get a fresh debrief before views harden."
+    ],
+    "correctIndex": 3,
+    "explanation": "The guest texts the champion as soon as the demo closes, asking how it went and whether she can call in five minutes for a fresh debrief, to get the raw reaction before anyone solidifies what was said. A thank-you email is courteous, but waiting a week loses the moment. Bypassing the champion undercuts the relationship she builds throughout. Sending the contract skips the debrief and the pricing conversation.",
+    "sourceTitle": "How to close $100K+ enterprise deals, step by step",
+    "sourceAuthor": "Jen Abel",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/how-to-close-100k-1m-deals-step-by"
+  },
+  {
+    "id": "lenny-demo-prioritization-05",
+    "topicId": "demo-prioritization",
+    "domain": "prioritization-delivery",
+    "level": "advanced",
+    "question": "At Mercury, a growth team faced a complex onboarding flow. What did they prioritise for a whole quarter, and what happened?",
+    "options": [
+      "Quality, while still gating every single change on a conversion metric, which slowed the team's progress considerably.",
+      "Growth experiments, testing many variants of the flow, which produced steady small wins.",
+      "New features for the onboarding flow, which added capabilities for advanced users.",
+      "Quality alone, setting metrics aside; it became the most impactful quarter of his career as a growth PM."
+    ],
+    "correctIndex": 3,
+    "explanation": "The guest says the team decided to forget metrics and growth and spend a whole quarter fixing quality in the flow; it was the most impactful quarter he had had as a growth PM, with a significant uplift in onboarding completion. Experimentation is the usual growth playbook he deliberately set aside. Gating every change on metrics contradicts his 'forget the metrics' choice. New features were not the focus.",
+    "sourceTitle": "Head of Growth (Anthropic): \"Claude is growing itself at this point\"",
+    "sourceAuthor": "Amol Avasare",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/anthropics-1b-to-19b-growth-run"
+  },
+  {
+    "id": "lenny-demo-prioritization-06",
+    "topicId": "demo-prioritization",
+    "domain": "communication-influence",
+    "level": "professional",
+    "question": "Several people you have never met join an enterprise demo. How should you bring them in?",
+    "options": [
+      "Gives them the full product tour, since they lack the context of earlier calls.",
+      "Asks them to leave, since unprepared attendees derail demos.",
+      "Asks them directly what they want to get out of the demo, so she can focus on them.",
+      "Ignores them politely and focuses on the champion, who has shaped the narrative."
+    ],
+    "correctIndex": 2,
+    "explanation": "The guest lets the net-new attendees talk, saying she has not had a chance to speak with them and asking what they want to get out of the demo so she can focus for them, which helps them feel looked after. Focusing only on the champion leaves the newcomers unengaged. A full tour contradicts her narrow, tailored demos. Asking people to leave is not her advice.",
+    "sourceTitle": "How to close $100K+ enterprise deals, step by step",
+    "sourceAuthor": "Jen Abel",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/how-to-close-100k-1m-deals-step-by"
+  },
+  {
+    "id": "lenny-demo-prioritization-07",
+    "topicId": "demo-prioritization",
+    "domain": "prioritization-delivery",
+    "level": "professional",
+    "question": "An executive gives you feedback that would change your team's plan. What should you ask?",
+    "options": [
+      "Whether someone else could decide instead, since executives lack context.",
+      "Whether they could put the feedback in writing, so that the team can review it properly later.",
+      "How strongly they feel about it, or whether it trumps the priorities the team is working on now.",
+      "Nothing; executive feedback should always be implemented immediately, whatever the team is working on."
+    ],
+    "correctIndex": 2,
+    "explanation": "The guest suggests asking how strongly they feel, how urgent it is, or, after showing what the team is working on, whether it trumps those priorities. Immediate implementation skips that calibration. Written feedback can help, but it does not establish relative priority. Asking someone else to decide disregards the executive.",
+    "sourceTitle": "The art of influence: The single most important skill that AI can't replace",
+    "sourceAuthor": "Jessica Fain",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/the-art-of-influence-jessica-fain"
+  },
+  {
+    "id": "lenny-commercial-case-01",
+    "topicId": "commercial-case",
+    "domain": "strategy-positioning",
+    "level": "newbie",
+    "question": "What is a healthy enterprise win rate, and what does a higher one suggest?",
+    "options": [
+      "Roughly 25 to 35%; a higher rate suggests the price is too low.",
+      "Above 80%, since qualified opportunities should almost always close.",
+      "About 50%, since a healthy pipeline should close half of its opportunities.",
+      "About 30%; a higher rate shows the sales team is outstanding, so nothing should change."
+    ],
+    "correctIndex": 0,
+    "explanation": "The guest says a healthy enterprise win rate is typically 25 to 35%, often put at 30 to 35%, not 50%, and that if your win rate is higher, your price is too low. Fifty per cent is the figure she says people wrongly expect. The second distractor has the right range but misreads a higher rate. An 80% rate would, by her logic, show severe underpricing.",
+    "sourceTitle": "How to close $100K+ enterprise deals, step by step",
+    "sourceAuthor": "Jen Abel",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/how-to-close-100k-1m-deals-step-by"
+  },
+  {
+    "id": "lenny-commercial-case-02",
+    "topicId": "commercial-case",
+    "domain": "strategy-positioning",
+    "level": "beginner",
+    "question": "Why is it risky to charge one customer $50K and another $500K for similar work?",
+    "options": [
+      "Large price differences for similar work are illegal in most enterprise markets and invite regulatory action.",
+      "Higher prices always lose deals, so everyone should get the lower price.",
+      "The market talks, especially among corporate executives, so inconsistent pricing will become known.",
+      "Customers never compare notes, but internal finance teams dislike inconsistent records across accounts."
+    ],
+    "correctIndex": 2,
+    "explanation": "The guest says the worst thing is charging someone's friend $50K and someone else $500K, because people talk: the market talks, especially at the corporate executive level, and you should assume so. Legality is not her concern. Saying customers never compare notes contradicts her point. She argues elsewhere that low prices can mean underpricing.",
+    "sourceTitle": "How to close $100K+ enterprise deals, step by step",
+    "sourceAuthor": "Jen Abel",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/how-to-close-100k-1m-deals-step-by"
+  },
+  {
+    "id": "lenny-commercial-case-03",
+    "topicId": "commercial-case",
+    "domain": "strategy-positioning",
+    "level": "beginner",
+    "question": "An enterprise deal you lost last year goes quiet. What is typical of lost deals?",
+    "options": [
+      "Roughly another 25% of lost deals boomerang back about a year later, so not advancing is normal.",
+      "Lost deals indicate the product failed, so it should be redesigned.",
+      "Lost deals rarely come back, so the time is better spent entirely on new prospects instead.",
+      "Most lost deals return within a month, so you should follow up with them every single week."
+    ],
+    "correctIndex": 0,
+    "explanation": "The guest says some buyers are simply not ready, and that deals that boomerang a year later among those lost are probably another 25%, so it is normal for deals not to advance. Writing off lost deals ignores that return rate. A one-month return is not what she describes. A loss is not, in her framing, proof that the product failed.",
+    "sourceTitle": "How to close $100K+ enterprise deals, step by step",
+    "sourceAuthor": "Jen Abel",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/how-to-close-100k-1m-deals-step-by"
+  },
+  {
+    "id": "lenny-commercial-case-04",
+    "topicId": "commercial-case",
+    "domain": "strategy-positioning",
+    "level": "advanced",
+    "question": "A technical integration needs a pilot of one or two months. How should payment be handled?",
+    "options": [
+      "Ask for the full annual contract value before the pilot begins.",
+      "Charge for the pilot and credit the fee back if they move forward; willingness to pay is a strong signal.",
+      "Run it free, since charging anything for a pilot discourages the customer from starting it at all.",
+      "Charge for the pilot and keep the fee whatever the outcome, to cover the integration effort involved."
+    ],
+    "correctIndex": 1,
+    "explanation": "The guest recommends running such a pilot for a month or two, charging for it and crediting the fee back if the customer moves forward; willingness to pay is a huge signal, especially before you put in the work. A free pilot loses that signal. Keeping the fee regardless is not her structure. Requiring the full annual contract up front is not what she describes.",
+    "sourceTitle": "How to close $100K+ enterprise deals, step by step",
+    "sourceAuthor": "Jen Abel",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/how-to-close-100k-1m-deals-step-by"
+  },
+  {
+    "id": "lenny-commercial-case-05",
+    "topicId": "commercial-case",
+    "domain": "strategy-positioning",
+    "level": "advanced",
+    "question": "How many people should go into an enterprise pilot, and whom?",
+    "options": [
+      "Three to four senior executives, since their approval matters most for the purchase decision.",
+      "Three to four daily power users, including the champion who has been giving you intelligence.",
+      "One person, the buyer, to keep the pilot simple.",
+      "Everyone who might eventually use the product, to show the buyer evidence of broad adoption."
+    ],
+    "correctIndex": 1,
+    "explanation": "The guest says three to four: very small and tight, made up of the power users who will use it daily, and including the champion who has been giving you intelligence so they can prepare you. Executives are not her pilot users. A broad rollout is what she says you do not want. A single buyer does not test daily use.",
+    "sourceTitle": "How to close $100K+ enterprise deals, step by step",
+    "sourceAuthor": "Jen Abel",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/how-to-close-100k-1m-deals-step-by"
+  },
+  {
+    "id": "lenny-commercial-case-06",
+    "topicId": "commercial-case",
+    "domain": "strategy-positioning",
+    "level": "professional",
+    "question": "Before a pilot, you ask how far the customer would be from a commitment if it succeeds. What if the answer is another quarter?",
+    "options": [
+      "Start the pilot immediately anyway, since any pilot is better than none.",
+      "Drop the deal, since a quarter's delay means the customer is not serious.",
+      "Consider pushing the pilot out, so its momentum is not lost waiting for the commitment.",
+      "Extend the pilot to last the full quarter, so users stay engaged until the decision."
+    ],
+    "correctIndex": 2,
+    "explanation": "The guest says to ask this before putting everyone into the pilot, because you might want to push the pilot out; you need momentum, so the steps after a successful pilot should follow promptly. Starting immediately risks losing momentum during the wait. Stretching the pilot is not her advice. A delay alone is not a reason to walk away.",
+    "sourceTitle": "How to close $100K+ enterprise deals, step by step",
+    "sourceAuthor": "Jen Abel",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/how-to-close-100k-1m-deals-step-by"
+  },
+  {
+    "id": "lenny-pitch-build-01",
+    "topicId": "pitch-build",
+    "domain": "communication-influence",
+    "level": "newbie",
+    "question": "A two-slide deck is recommended for early sales conversations. What is on each slide?",
+    "options": [
+      "Both slides should show customer logos, since social proof matters most early on.",
+      "First, the product's main features; second, the pricing options for the prospect to choose between.",
+      "First, your company's story and team; second, a summary of their situation as you understand it.",
+      "First, your reading of their situation, checked with them; second, an overview of how you can help."
+    ],
+    "correctIndex": 3,
+    "explanation": "The guest's first slide restates what you heard, that they are trying to do X because of Y and their options fall short, followed by asking whether that is roughly right; the second is a conceptual overview of how you can help. The first distractor keeps their situation but opens with your story. The second jumps to features and pricing. Logos are not part of his deck.",
+    "sourceTitle": "An 86-minute guide to finding PMF",
+    "sourceAuthor": "Rob Snyder",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/an-86-minute-guide-to-finding-pmf"
+  },
+  {
+    "id": "lenny-pitch-build-02",
+    "topicId": "pitch-build",
+    "domain": "communication-influence",
+    "level": "newbie",
+    "question": "A leader says something that contradicts your data. Which phrase helps?",
+    "options": [
+      "'You're wrong', since directness saves everyone time.",
+      "'I understand, but the data shows otherwise', followed by the chart.",
+      "'Let's take that offline', to avoid disagreement in the meeting.",
+      "'That's so interesting. What led you to believe that?'"
+    ],
+    "correctIndex": 3,
+    "explanation": "The guest describes a colleague who, on hearing something that contradicts his data and experience, says that is interesting and asks what led them to believe it; curiosity uncovers the reasoning. Leading with a rebuttal skips that curiosity, even though data still matters. Taking it offline postpones without learning. Bluntly saying they are wrong closes the conversation.",
+    "sourceTitle": "The art of influence: The single most important skill that AI can't replace",
+    "sourceAuthor": "Jessica Fain",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/the-art-of-influence-jessica-fain"
+  },
+  {
+    "id": "lenny-pitch-build-03",
+    "topicId": "pitch-build",
+    "domain": "communication-influence",
+    "level": "beginner",
+    "question": "Should a founder follow a sales script, such as asking about budget, authority, need and timing?",
+    "options": [
+      "Yes, and read it word for word, since consistency builds trust.",
+      "No; a script is the fastest way to commoditise yourself, so keep such checklists in mind but never ask them outright.",
+      "Yes, but only on the first call, where structure matters most, after which the conversation can be allowed to flow more freely.",
+      "Yes, since structure is what makes trained salespeople outperform founders, who tend to improvise too much."
+    ],
+    "correctIndex": 1,
+    "explanation": "The guest says the most successful salespeople are not trained salespeople, and the fastest way to commoditise yourself is to go into a script such as budget, authority, need and timing; that belongs in the back of your mind and you never actually ask those questions. She praises founders for their curiosity and vision. A scripted first call contradicts her advice for that call. Reading verbatim is the extreme of what she warns against.",
+    "sourceTitle": "How to close $100K+ enterprise deals, step by step",
+    "sourceAuthor": "Jen Abel",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/how-to-close-100k-1m-deals-step-by"
+  },
+  {
+    "id": "lenny-pitch-build-04",
+    "topicId": "pitch-build",
+    "domain": "communication-influence",
+    "level": "beginner",
+    "question": "You are about to pitch an idea to a senior executive. Whom should you ask first?",
+    "options": [
+      "Nobody; asking around before a pitch looks political and can undermine the executive's trust in you.",
+      "Those around them, such as their assistant, chief of staff or past successful pitchers, about what matters now.",
+      "Your peers on the product team, since they share your view of the idea and can help you sharpen its strengths before the meeting.",
+      "The executive's competitors at other companies."
+    ],
+    "correctIndex": 1,
+    "explanation": "The guest says to use the people around the executive, including their EA, their chief of staff and those who have pitched successfully, asking what worked and what the executive is worried about; she notes AI tools make this easier. She separates influence from politics, so asking is not political in her framing. Peers share your perspective, not the executive's. Competitors are irrelevant.",
+    "sourceTitle": "The art of influence: The single most important skill that AI can't replace",
+    "sourceAuthor": "Jessica Fain",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/the-art-of-influence-jessica-fain"
+  },
+  {
+    "id": "lenny-pitch-build-05",
+    "topicId": "pitch-build",
+    "domain": "communication-influence",
+    "level": "beginner",
+    "question": "Some meetings can be replaced with '59-second Looms'. What makes them work?",
+    "options": [
+      "Record full-length walkthroughs, since video lets people skip through at their own pace.",
+      "Keep each video under a minute, film at least two takes, and pitch its brevity to recipients.",
+      "Send videos without any accompanying message, to keep things light.",
+      "Keep videos short, but use them only for major announcements and bug reports."
+    ],
+    "correctIndex": 1,
+    "explanation": "The author recommends aiming for under a minute, filming two or more takes to get the message clear, and pitching the brevity and time saved in the accompanying message, treating the audience as an audience. Long walkthroughs contradict the under-a-minute aim. He says most PMs use Looms only for announcements or bug reports and urges treating them as a core communication skill. He recommends a message alongside the video.",
+    "sourceTitle": "Product manager is an unfair role. So work unfairly.",
+    "sourceAuthor": "Tal Raviv",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/product-manager-is-an-unfair-role-so-work-unfairly"
+  },
+  {
+    "id": "lenny-pitch-build-06",
+    "topicId": "pitch-build",
+    "domain": "communication-influence",
+    "level": "advanced",
+    "question": "How does influence differ from politics for a product leader?",
+    "options": [
+      "Politics manipulates outcomes and people for personal gain; influence increases the odds that good ideas survive.",
+      "Influence means agreeing with whoever is most senior.",
+      "They are the same skill under different names, and product leaders must simply accept doing both.",
+      "Influence is something executives use, while politics is what junior staff do to get themselves noticed."
+    ],
+    "correctIndex": 0,
+    "explanation": "The guest says those who frame influence as politics miss the point: politics is manipulating outcomes and people for your own gain, while influence is about increasing the odds that your good ideas survive. Treating them as the same contradicts her distinction. Seniority is not how she separates them. Deference to seniority is neither.",
+    "sourceTitle": "The art of influence: The single most important skill that AI can't replace",
+    "sourceAuthor": "Jessica Fain",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/the-art-of-influence-jessica-fain"
+  },
+  {
+    "id": "lenny-pitch-build-07",
+    "topicId": "pitch-build",
+    "domain": "communication-influence",
+    "level": "advanced",
+    "question": "Product leaders must be 'communication chameleons'. What does that involve?",
+    "options": [
+      "Avoiding executives whose style differs from yours.",
+      "Using one polished format for every audience, so that your message always stays consistent between them.",
+      "Learning what sparks each executive, whether a design, customer story, dashboard or experiment, and using it.",
+      "Changing your opinion to match each executive's view, so that your proposals never meet any resistance."
+    ],
+    "correctIndex": 2,
+    "explanation": "The guest says product leaders must speak executives' language and think about whether a design, customer story, dashboard or experiment sparks them, to bring out their best expertise. Changing your opinion confuses format with substance. One format for all is what the chameleon idea rejects. Avoidance is not influence.",
+    "sourceTitle": "The art of influence: The single most important skill that AI can't replace",
+    "sourceAuthor": "Jessica Fain",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/the-art-of-influence-jessica-fain"
+  },
+  {
+    "id": "lenny-pitch-build-08",
+    "topicId": "pitch-build",
+    "domain": "communication-influence",
+    "level": "advanced",
+    "question": "A monday.com PM uses a ChatGPT 'second brain' for tailored communications. How does it work?",
+    "options": [
+      "It writes and sends all stakeholder updates without any review, which removes the PM from routine communication with stakeholders altogether.",
+      "It replaces meetings entirely, since stakeholders now read only AI summaries.",
+      "He word-dumps the key points for each request, and it returns versions for each audience, while he still makes the calls.",
+      "It produces one generic update that every audience receives, which saves the effort of tailoring each one."
+    ],
+    "correctIndex": 2,
+    "explanation": "The author says PM work constantly requires communicating the same initiative differently, such as a blurb for marketing, three sentences for leadership or a user-testing script for a designer; he word-dumps what matters for each request and gets tailored versions in seconds, stressing that he is still the one making the calls. Sending without review contradicts that. A single generic update ignores the tailoring. Replacing meetings is not his claim.",
+    "sourceTitle": "How to build your PM second brain with ChatGPT",
+    "sourceAuthor": "Amir Klein",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/how-to-build-your-pm-second-brain"
+  },
+  {
+    "id": "lenny-pitch-build-09",
+    "topicId": "pitch-build",
+    "domain": "communication-influence",
+    "level": "professional",
+    "question": "Your idea was turned down by leadership. How should a product leader see this?",
+    "options": [
+      "As their own responsibility: if leaders did not buy in, you did not influence them well enough.",
+      "As a sign to stop proposing ideas.",
+      "As bad luck with timing, so the same pitch should simply be repeated unchanged next quarter.",
+      "As leadership's mistake, since a genuinely good idea should be recognised on its merits alone."
+    ],
+    "correctIndex": 0,
+    "explanation": "The guest tells her reports it is their fault if leaders did not buy into an idea, since they did not influence them, and quotes a former colleague's line: it is not my fault, but it is my problem. Blaming leadership is the reaction she rejects. Timing can matter, yet repeating the same pitch ignores the lesson. Giving up is not her advice.",
+    "sourceTitle": "The art of influence: The single most important skill that AI can't replace",
+    "sourceAuthor": "Jessica Fain",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/the-art-of-influence-jessica-fain"
+  },
+  {
+    "id": "lenny-pitch-build-10",
+    "topicId": "pitch-build",
+    "domain": "communication-influence",
+    "level": "professional",
+    "question": "A Slack leader often influenced executives who lacked a strong enterprise background. What did he always bring?",
+    "options": [
+      "A customer anecdote from a recent visit, bringing his domain expertise to bear.",
+      "A request for more headcount, since resourcing frames every decision.",
+      "A detailed dashboard, since executives trust data more than stories.",
+      "A competitor analysis, since executives respond most to threats."
+    ],
+    "correctIndex": 0,
+    "explanation": "The guest says this leader always had a customer anecdote ready, such as having been on site last week with a customer who said something specific, which brought his expertise to executives who lacked an enterprise background. Dashboards are among the formats she mentions, but they were not his signature. Competitor analysis and headcount are not part of the example.",
+    "sourceTitle": "The art of influence: The single most important skill that AI can't replace",
+    "sourceAuthor": "Jessica Fain",
+    "sourceUrl": "https://www.lennysnewsletter.com/p/the-art-of-influence-jessica-fain"
+  },
+  {
+    "id": "lenny-pitch-build-11",
+    "topicId": "pitch-build",
+    "domain": "communication-influence",
+    "level": "professional",
+    "question": "Good etiquette helps founders show up in a room with a 'low heart rate'. What mindset suits a high-stakes encounter?",
+    "options": [
+      "Calm self-confidence from abundance: this is not your one shot, and there will be other opportunities.",
+      "Calm, achieved by avoiding small talk entirely and moving straight on to the pitch itself.",
+      "Intensity, since investors reward founders who treat every meeting as the decisive one.",
+      "Deliberate abrasiveness, since being memorable matters more than being trusted."
+    ],
+    "correctIndex": 0,
+    "explanation": "The guest says that treating an encounter as your one shot projects the wrong vibe; you should show up with self-confidence and the calm of abundance, because you will have other opportunities. He describes etiquette as a skill for showing up with a low heart rate so people see you as someone they can work with and trust. Intensity is the high heart rate he warns against. Skipping small talk is not his advice; the conversation treats it as part of etiquette. He criticises the encouragement to be abrasive on purpose.",
+    "sourceTitle": "How to show up in any room with a low heart rate: Silicon Valley's missing etiquette playbook",
+    "sourceAuthor": "Sam Lessin",
+    "sourceUrl": "https://www.youtube.com/watch?v=KtKJ3A6DWTs"
+  }
+]

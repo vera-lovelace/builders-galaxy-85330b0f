@@ -34,3 +34,9 @@ cd <repository-name>
 npm i
 npm run dev
 ```
+
+---
+
+## Design prototype
+
+`prototype/` holds the original coded design prototype, its reference screenshots, the prompts sent to Lovable, and the ElevenLabs voice agent spec. It is reference only; the app and the documents at the root of this repository are the source of truth. See `prototype/README.md`.
