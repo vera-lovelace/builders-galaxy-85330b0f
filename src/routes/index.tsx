@@ -2,7 +2,10 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { BookOpen, Briefcase, Info, Mic, Play, ShieldCheck, Sparkles } from "lucide-react";
 import { Button } from "@/components/Button";
 import { WelcomeOrbit } from "@/components/WelcomeOrbit";
-import { BrandMark } from "@/components/Rocket";
+import { BrandMark, Rocket } from "@/components/Rocket";
+import { Planet } from "@/components/Planet";
+import { PLANETS } from "@/data/planets";
+import earth from "@/assets/earth-full.png";
 import { TriviaNote } from "@/components/TriviaNote";
 import { meta } from "@/lib/meta";
 
@@ -44,14 +47,20 @@ function Welcome() {
         </ul>
       </section>
 
-      <section aria-labelledby="how-h" className="relative z-10 mx-auto w-full max-w-4xl px-5 py-12">
-        <h2 id="how-h" className="text-center font-display text-3xl font-extrabold sm:text-4xl">How it works</h2>
-        <ol className="mt-8 grid gap-4 sm:grid-cols-3">
+      <section aria-labelledby="how-h" className="voyage-steps relative z-10 mx-auto w-full max-w-6xl px-5 py-16 sm:py-24">
+        <p className="text-center text-sm font-bold uppercase text-info">From curious to ready for your next step</p>
+        <h2 id="how-h" className="mt-3 text-center font-display text-4xl font-extrabold sm:text-5xl">How it works</h2>
+        <ol className="voyage-step-list mt-12 grid gap-12 md:grid-cols-3 md:gap-8">
           {STEPS.map((st, i) => (
-            <li key={st.title} className="rounded-2xl bg-surface p-6">
-              <span className="font-display text-4xl font-extrabold text-primary">{i + 1}</span>
-              <h3 className="mt-2 font-display text-lg font-bold">{st.title}</h3>
-              <p className="mt-1 text-sm text-muted-foreground">{st.body}</p>
+            <li key={st.title} className="voyage-step relative min-w-0 text-center">
+              <div className="step-art" aria-hidden="true">
+                {i === 0 && <><img src={earth} alt="" className="step-earth" /><div className="step-launch-rocket"><Rocket size={42} flame={false} /></div></>}
+                {i === 1 && <div className="step-planet-field">{PLANETS.slice(0, 4).map(planet => <div key={planet.id}><Planet color={planet.color} ring={planet.ring} size={76} /></div>)}</div>}
+                {i === 2 && <div className="step-destination"><Sparkles className="step-destination-star text-primary" /><Briefcase className="size-16 text-success" strokeWidth={1.3} /><div className="step-destination-lines"><i /><i /><i /></div></div>}
+              </div>
+              <span className="step-number mx-auto flex size-10 items-center justify-center rounded-full border font-display text-sm font-bold">0{i + 1}</span>
+              <h3 className="mt-5 font-display text-3xl font-extrabold">{st.title}</h3>
+              <p className="mx-auto mt-3 max-w-64 text-base leading-relaxed text-muted-foreground">{st.body}</p>
             </li>
           ))}
         </ol>

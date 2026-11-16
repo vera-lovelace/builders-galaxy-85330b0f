@@ -179,6 +179,29 @@
   position: absolute; inset: 0;
   background: radial-gradient(ellipse 42% 42% at 50% 32%, var(--background) 25%, color-mix(in oklab, var(--background) 92%, transparent) 60%, transparent 100%);
 }
+.voyage-steps { border-top: 1px solid var(--border); }
+.voyage-step-list { position: relative; }
+.step-art { position: relative; height: 190px; width: 240px; margin: 0 auto 24px; }
+.step-art::before { content: ''; position: absolute; inset: 22px 8px; border: 1px solid color-mix(in oklab, var(--info) 28%, transparent); border-radius: 50%; transform: rotate(-25deg); }
+.step-earth { position: absolute; width: 128px; height: 128px; top: 40px; left: 28px; }
+.step-launch-rocket { position: absolute; top: 8px; right: 38px; transform: rotate(28deg); }
+.step-planet-field { position: absolute; inset: 0; }
+.step-planet-field > div { position: absolute; }
+.step-planet-field > div:nth-child(1) { top: 35px; left: 6px; transform: scale(.85); }
+.step-planet-field > div:nth-child(2) { top: -5px; right: 5px; transform: scale(.65); }
+.step-planet-field > div:nth-child(3) { bottom: -12px; left: 95px; transform: scale(.8); }
+.step-planet-field > div:nth-child(4) { top: -10px; left: 50px; transform: scale(.4); }
+.step-destination { position: absolute; top: 35px; left: 55px; width: 132px; height: 135px; border: 1px solid var(--success); border-radius: 8px; background: var(--surface); transform: rotate(-9deg); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; box-shadow: var(--shadow-raised); }
+.step-destination-star { position: absolute; top: -18px; right: -18px; width: 40px; height: 40px; }
+.step-destination-lines { display: grid; gap: 5px; width: 66px; }
+.step-destination-lines i { height: 3px; background: var(--muted-foreground); border-radius: 2px; }
+.step-destination-lines i:last-child { width: 65%; background: var(--success); }
+.step-number { position: relative; background: var(--background); color: var(--primary); border-color: var(--primary); }
+.voyage-step:nth-child(2) .step-number { color: var(--info); border-color: var(--info); }
+.voyage-step:nth-child(3) .step-number { color: var(--success); border-color: var(--success); }
+@media (min-width: 768px) {
+  .voyage-step-list::before { content: ''; position: absolute; top: 234px; left: 16.66%; right: 16.66%; border-top: 1px dashed var(--border); }
+}
 @media (max-width: 640px) {
   .welcome-intro { min-height: 760px; }
   .welcome-cosmos { height: 1010px; }
