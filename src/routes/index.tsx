@@ -1,7 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { BookOpen, Briefcase, Info, Mic, Play, ShieldCheck, Sparkles } from "lucide-react";
 import { Button } from "@/components/Button";
-import { Earth } from "@/components/Earth";
 import { WelcomeOrbit } from "@/components/WelcomeOrbit";
 import { BrandMark } from "@/components/Rocket";
 import { TriviaNote } from "@/components/TriviaNote";
@@ -31,10 +30,7 @@ function Welcome() {
         </Button>
         <p className="mt-4 text-sm text-muted-foreground">12 planets · 24 trivia questions · free, no sign-up, nothing stored</p>
       </section>
-      <div className="relative h-[37rem] shrink-0">
-        <Earth size={200} className="bottom-2" />
-        <WelcomeOrbit />
-      </div>
+      <WelcomeOrbit />
 
       <section aria-labelledby="get-h" className="relative z-10 mx-auto w-full max-w-6xl px-5 py-16">
         <h2 id="get-h" className="text-center font-display text-3xl font-extrabold sm:text-5xl">One voyage. Everything you need for the next step.</h2>
