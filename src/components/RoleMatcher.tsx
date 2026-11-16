@@ -3,6 +3,7 @@ import { useServerFn } from "@tanstack/react-start";
 import { ShieldCheck, Sparkles } from "lucide-react";
 import { Button } from "@/components/Button";
 import { suggestJobSearch, type JobSuggestion } from "@/lib/jobSuggest.functions";
+import { AiLabel } from "@/components/AiLabel";
 
 type Apply = { keyword: string; location: string; remoteOnly: boolean; datePosted: JobSuggestion["datePosted"] };
 const DAYS: Record<JobSuggestion["datePosted"], string> = { all: "Any time", today: "Today", "3days": "Last 3 days", week: "Last week", month: "Last month" };
@@ -26,6 +27,7 @@ export function RoleMatcher({ onApply, mission }: { onApply: (a: Apply) => void;
   return (
     <section aria-labelledby="matcher-h" className="mt-6 rounded-2xl bg-surface p-4">
       <h2 id="matcher-h" className="flex items-center gap-2 font-display text-xl font-bold"><Sparkles aria-hidden className="size-5 text-primary" /> Describe what you're looking for</h2>
+      <div className="mt-2"><AiLabel /></div>
       <div role="group" aria-label="What to describe" className="mt-3 flex flex-wrap gap-2">
         <Button type="button" size="md" variant={mode === "role" ? "secondary" : "ghost"} aria-pressed={mode === "role"} onClick={() => setMode("role")}>Target role</Button>
         <Button type="button" size="md" variant={mode === "background" ? "secondary" : "ghost"} aria-pressed={mode === "background"} onClick={() => setMode("background")}>My background</Button>
@@ -44,6 +46,7 @@ export function RoleMatcher({ onApply, mission }: { onApply: (a: Apply) => void;
         {error && <p className="mt-3 text-sm text-destructive">{error}</p>}
         {s && !error && (
           <div className="mt-4">
+            <AiLabel />
             <p className="text-sm text-muted-foreground">{s.reason}</p>
             <p className="mt-2 text-sm">Filters: {s.location || "Any location"} · {s.remoteOnly ? "Remote only" : "Remote or on-site"} · {DAYS[s.datePosted]}</p>
             <ul className="mt-3 flex flex-wrap gap-2" aria-label="Suggested keywords">

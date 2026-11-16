@@ -3,6 +3,7 @@ import { Mic, MicOff } from "lucide-react";
 import { useEffect, useRef, type MutableRefObject } from "react";
 import { Button } from "./Button";
 import { ELEVENLABS_AGENT_ID } from "./VoiceAgent";
+import { AiLabel } from "./AiLabel";
 
 export const VOICE_SESSION_MS = 10 * 60_000;
 
@@ -44,9 +45,12 @@ function Inner({ handlers, context }: { handlers: MutableRefObject<JobVoiceHandl
     } catch { alert("Microphone access is needed for the voice guide."); }
   };
   return (
+    <div className="grid gap-2">
     <Button variant="secondary" size="md" aria-pressed={live} onClick={toggle} disabled={conv.status === "connecting"}>
       {live ? <><MicOff aria-hidden /> Stop voice</> : <><Mic aria-hidden /> {conv.status === "connecting" ? "Connecting…" : "Voice search guide"}</>}
     </Button>
+    <AiLabel voice />
+    </div>
   );
 }
 

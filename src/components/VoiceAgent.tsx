@@ -2,6 +2,7 @@ import { ConversationProvider, useConversation } from "@elevenlabs/react";
 import { Mic, MicOff } from "lucide-react";
 import { useEffect, useRef, type MutableRefObject } from "react";
 import { Button } from "./Button";
+import { AiLabel } from "./AiLabel";
 
 export const ELEVENLABS_AGENT_ID = "agent_9101m7gm0xw6e59sjgm71sxkfhrf";
 
@@ -38,9 +39,12 @@ function Inner({ handlers, context }: { handlers: MutableRefObject<VoiceHandlers
     } catch { alert("Microphone access is needed for the voice guide."); }
   };
   return (
+    <div className="grid gap-2">
     <Button variant="secondary" size="md" aria-pressed={live} onClick={toggle} disabled={conv.status === "connecting"}>
       {live ? <><MicOff aria-hidden /> Stop voice</> : <><Mic aria-hidden /> {conv.status === "connecting" ? "Connecting…" : "Voice guide"}</>}
     </Button>
+    <AiLabel voice />
+    </div>
   );
 }
 

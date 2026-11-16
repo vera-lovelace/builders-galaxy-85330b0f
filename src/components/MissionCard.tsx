@@ -7,13 +7,15 @@ import { archetypeFor } from "@/game/archetype";
 import { missionStore, useMission } from "@/game/missionStore";
 import { copyText } from "@/lib/clipboard";
 import { writeMission } from "@/lib/mission.functions";
+import { AiLabel } from "@/components/AiLabel";
 
 type Score = { planetId: string; correct: number; total: number; planet: { name: string } };
 const SITE = "https://builders-galaxy.lovable.app";
 
 function drawCard(name: string, archetype: string, statement: string, pct: number): HTMLCanvasElement {
   const c = document.createElement("canvas"); c.width = 1200; c.height = 630;
-  const g = c.getContext("2d")!;
+   const g = c.getContext("2d");
+   if (!g) return c;
   const css = getComputedStyle(document.documentElement);
   const v = (n: string, f: string) => css.getPropertyValue(n).trim() || f;
   g.fillStyle = v("--background", "#0b1020"); g.fillRect(0, 0, 1200, 630);
@@ -24,7 +26,7 @@ function drawCard(name: string, archetype: string, statement: string, pct: numbe
   const words = statement.split(" "); let line = "", y = 340;
   for (const w of words) { if (g.measureText(line + w).width > 1060) { g.fillText(line, 70, y); line = ""; y += 42; if (y > 560) break; } line += w + " "; }
   if (y <= 560) g.fillText(line, 70, y);
-  g.fillStyle = v("--primary", "#f5c542"); g.font = "600 24px sans-serif"; g.fillText(SITE.replace("https://", ""), 70, 600);
+   g.fillStyle = v("--primary", "#f5c542"); g.font = "600 24px sans-serif"; g.fillText(`${SITE.replace("https://", "")} · AI-generated mission text`, 70, 600);
   return c;
 }
 
@@ -46,7 +48,7 @@ export function MissionCard({ nickname, level, pct, scores, weak }: { nickname: 
   useEffect(() => { if (mission === null && !started.current) { started.current = true; generate(); } /* eslint-disable-next-line react-hooks/exhaustive-deps */ }, [mission]);
 
   const text = mission?.statement ?? "";
-  const shareText = `I'm a ${a.name} in Builder's Galaxy. ${text}`.slice(0, 260);
+   const shareText = `I'm a ${a.name} in Builder's Galaxy. AI-generated mission: ${text}`.slice(0, 260);
   const pngBlob = () => new Promise<Blob | null>((res) => drawCard(nickname, a.name, text, pct).toBlob(res, "image/png"));
   const download = async () => { const b = await pngBlob(); if (!b) return; const u = URL.createObjectURL(b); const l = document.createElement("a"); l.href = u; l.download = "builder-card.png"; l.click(); URL.revokeObjectURL(u); setStatus("Card downloaded."); };
   const share = async () => {
@@ -65,6 +67,7 @@ export function MissionCard({ nickname, level, pct, scores, weak }: { nickname: 
       <p className="text-sm font-semibold uppercase tracking-wide text-primary">Your builder type</p>
       <h2 id="mission-h" className="font-display text-3xl font-extrabold">{a.name}</h2>
       <h3 className="mt-4 flex items-center gap-2 font-display text-lg font-bold"><Sparkles aria-hidden className="size-5 text-primary" /> Mission statement</h3>
+       <div className="mt-2"><AiLabel /></div>
       <p className="mt-1 leading-relaxed">{text || (busy ? "Writing…" : "Not written yet.")}</p>
       <p className="mt-1 text-xs text-muted-foreground">Written by AI from your planet scores only. No name or personal details are sent.</p>
       <p className="sr-only" aria-live="polite">{status}</p>

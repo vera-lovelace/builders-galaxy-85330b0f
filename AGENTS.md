@@ -47,6 +47,7 @@ use the editor.
 - Job search AI suggestions run only in `src/lib/jobSuggest.functions.ts` via the AI Gateway SDK and only prefill search keywords/filters; they never invent demand stats.
 - Builder type comes from fixed planet groups in `src/game/archetype.ts` (never AI); mission text lives in `src/game/missionStore.ts` (sessionStorage) and AI writing only in `src/lib/mission.functions.ts`, so nothing personal is stored server-side.
 - Sound cues live in `src/game/sound.ts` (Web Audio, off by default); screens call `play()` only.
+- AI text and voice disclosures use the shared AiLabel with the official EU icon at the point of use; fixed-rule archetypes and live job listings are not AI-labelled.
 
 ## The `prototype/` folder
 

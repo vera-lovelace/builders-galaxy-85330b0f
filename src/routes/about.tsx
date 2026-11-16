@@ -173,6 +173,7 @@ function About() {
         </Section>
 
         <Section title="Credits">
+          <p className="font-semibold text-foreground">Proudly developed in the EU.</p>
           <p>Fonts: Bricolage Grotesque and Figtree (SIL Open Font License). Icons: Lucide (ISC licence). Built with React, Vite and Tailwind, and in Lovable.</p>
           <Button asChild variant="secondary" size="md" className="mt-2">
             <a href="https://buymeacoffee.com/caldaily" target="_blank" rel="noopener noreferrer">
