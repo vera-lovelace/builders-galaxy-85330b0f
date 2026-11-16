@@ -1,6 +1,6 @@
 {
-  "name": "tanstack_start_ts",
-  "private": true,
+  "name": "builders-galaxy",
+  "license": "MIT",
   "sideEffects": false,
   "type": "module",
   "scripts": {
