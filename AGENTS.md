@@ -39,7 +39,7 @@ use the editor.
 - Native dialogs share Modal for focus containment and opener restoration; exports are generated only in the browser to avoid uploading results.
 - Results and Leaderboard share WhatsNext; keep its trigger visible independently of voyage completion, and disable exports when no local run exists so sample scores are never exported as personal results.
 
-- WelcomeOrbit renders a decorative preview from the shared planet list; RouteProgress renders semantic voyage progress on Questions and the Galaxy mission bar so stop identities stay consistent.
+- WelcomeOrbit renders an aria-hidden, noninteractive homepage background with repeated shared planets; RouteProgress alone represents semantic voyage progress so decorative duplication cannot imply extra stops.
 - About page lists sources via src/data/sources.ts, grouped from the data files; never hand-type source lists.
 - ElevenLabs voice guide lives in src/components/VoiceAgent.tsx, lazy-loaded client-only on Question; game actions go through a handlers ref so tools always see current state.
 - Job search beta calls JSearch (RapidAPI) only from `src/lib/jobs.functions.ts` with the server-side RAPIDAPI_KEY; keyword ranking is live session result counts, never invented demand stats.

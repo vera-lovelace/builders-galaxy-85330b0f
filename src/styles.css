@@ -134,3 +134,60 @@
 .mission-dock { padding-bottom: max(16px, env(safe-area-inset-bottom)); }
 .planet-locked { filter: saturate(0.3); opacity: 0.6; }
 .earth-glow { filter: drop-shadow(0 0 40px color-mix(in oklab, var(--earth) 55%, transparent)); }
+
+/* Impossible orbits: artwork stays behind readable, interactive content. */
+.welcome-intro { min-height: 740px; }
+.welcome-cosmos {
+  position: absolute; inset: 0 0 auto; height: 1080px;
+  overflow: hidden; pointer-events: none; isolation: isolate;
+  mask-image: linear-gradient(to bottom, var(--foreground) 78%, transparent);
+}
+.cosmos-orbits { position: absolute; inset: 0; transform: rotate(-24deg) skewX(-18deg); }
+.cosmos-orbits i {
+  position: absolute; left: 50%; top: 48%; width: 1150px; height: 370px;
+  border: 1px solid color-mix(in oklab, var(--info) 24%, transparent);
+  border-radius: 50%; transform: translate(-50%, -50%);
+}
+.cosmos-orbits i:nth-child(2) { width: 1500px; height: 620px; transform: translate(-50%, -50%) rotate(18deg); }
+.cosmos-orbits i:nth-child(3) { width: 850px; height: 950px; transform: translate(-50%, -50%) rotate(-35deg); border-color: color-mix(in oklab, var(--primary) 18%, transparent); }
+.cosmos-orbits i:nth-child(4) { width: 1750px; height: 830px; filter: blur(2px); }
+.cosmos-orbits i:nth-child(5) { width: 1050px; height: 470px; transform: translate(-50%, -50%) rotate(40deg); }
+.cosmos-earth { position: absolute; width: 230px; height: 230px; left: 7%; top: 590px; transform: rotate(-22deg); }
+.cosmos-rocket { position: absolute; left: 30%; top: 700px; transform: rotate(58deg); }
+.cosmos-planets { position: absolute; inset: 0; }
+.cosmos-planet { position: absolute; width: 120px; aspect-ratio: 1; }
+.cosmos-planet > div { width: 100% !important; height: 100% !important; }
+.cosmos-planet:nth-child(1) { left: -4%; top: 160px; width: 240px; transform: rotate(24deg) scaleX(1.12); }
+.cosmos-planet:nth-child(2) { right: 4%; top: 90px; width: 155px; }
+.cosmos-planet:nth-child(3) { right: -8%; top: 410px; width: 320px; transform: rotate(-35deg) scaleY(.85); }
+.cosmos-planet:nth-child(4) { left: 20%; top: 30px; width: 65px; filter: blur(2px); opacity: .65; }
+.cosmos-planet:nth-child(5) { left: 2%; top: 450px; width: 85px; }
+.cosmos-planet:nth-child(6) { right: 23%; top: 675px; width: 155px; transform: rotate(40deg); }
+.cosmos-planet:nth-child(7) { left: 43%; top: 745px; width: 65px; }
+.cosmos-planet:nth-child(8) { right: 12%; top: 835px; width: 105px; filter: blur(3px); opacity: .7; }
+.cosmos-planet:nth-child(9) { left: -4%; top: 840px; width: 165px; filter: blur(5px); opacity: .6; }
+.cosmos-planet:nth-child(10) { right: 31%; top: 15px; width: 45px; }
+.cosmos-planet:nth-child(11) { left: 28%; top: 865px; width: 48px; }
+.cosmos-planet:nth-child(12) { right: -2%; top: 710px; width: 90px; }
+.cosmos-planet:nth-child(13) { left: 11%; top: 90px; width: 55px; filter: blur(4px); opacity: .55; }
+.cosmos-planet:nth-child(14) { right: 17%; top: 340px; width: 55px; filter: blur(2px); }
+.cosmos-planet:nth-child(15) { left: 31%; top: 585px; width: 90px; transform: rotate(65deg) scaleX(1.3); opacity: .5; }
+.cosmos-planet:nth-child(16) { right: 40%; top: 930px; width: 130px; filter: blur(5px); opacity: .5; }
+.cosmos-planet:nth-child(17) { left: 16%; top: 380px; width: 38px; opacity: .6; }
+.cosmos-planet:nth-child(18) { right: 7%; top: 245px; width: 60px; transform: rotate(-45deg); }
+.cosmos-veil {
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 42% 42% at 50% 32%, var(--background) 25%, color-mix(in oklab, var(--background) 92%, transparent) 60%, transparent 100%);
+}
+@media (max-width: 640px) {
+  .welcome-intro { min-height: 760px; }
+  .welcome-cosmos { height: 1010px; }
+  .cosmos-earth { width: 150px; height: 150px; left: 3%; top: 650px; }
+  .cosmos-rocket { left: 45%; top: 720px; }
+  .cosmos-planet:nth-child(1) { left: -27%; top: 110px; width: 190px; }
+  .cosmos-planet:nth-child(2) { right: -9%; top: 25px; width: 135px; }
+  .cosmos-planet:nth-child(3) { right: -32%; top: 585px; width: 240px; }
+  .cosmos-planet:nth-child(6) { right: 15%; top: 805px; width: 125px; }
+  .cosmos-planet:nth-child(15) { left: 28%; top: 850px; }
+  .cosmos-veil { background: radial-gradient(ellipse 75% 48% at 50% 32%, var(--background) 22%, color-mix(in oklab, var(--background) 94%, transparent) 65%, transparent 100%); }
+}

@@ -14,11 +14,12 @@ export const Route = createFileRoute("/")({
 function Welcome() {
   return (
     <main className="relative flex min-h-dvh flex-col overflow-hidden bg-space">
+      <WelcomeOrbit />
       <header className="relative z-10 mx-auto flex w-full max-w-6xl items-center justify-between px-5 pt-6">
         <BrandMark />
         <Button asChild variant="ghost" size="md"><Link to="/about"><Info /> About</Link></Button>
       </header>
-      <section className="relative z-10 mx-auto flex w-full max-w-3xl flex-col items-center px-5 pt-12 pb-6 text-center sm:pt-20">
+      <section className="welcome-intro relative z-10 mx-auto flex w-full max-w-3xl flex-col items-center px-5 pt-12 pb-6 text-center sm:pt-20">
         <p className="mb-4 font-display text-lg font-semibold text-foreground sm:text-xl">Every great product starts with a builder.</p>
         <h1 className="font-display text-5xl font-extrabold leading-[0.95] tracking-tight sm:text-8xl">
           The Builder's <span className="text-primary">Galaxy</span>
@@ -30,8 +31,6 @@ function Welcome() {
         </Button>
         <p className="mt-4 text-sm text-muted-foreground">12 planets · 24 trivia questions · free, no sign-up, nothing stored</p>
       </section>
-      <WelcomeOrbit />
-
       <section aria-labelledby="get-h" className="relative z-10 mx-auto w-full max-w-6xl px-5 py-16">
         <h2 id="get-h" className="text-center font-display text-3xl font-extrabold sm:text-5xl">One voyage. Everything you need for the next step.</h2>
         <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
