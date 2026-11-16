@@ -123,7 +123,7 @@ function About() {
         <Section title="Credits">
           <p>Fonts: Bricolage Grotesque and Figtree (SIL Open Font License). Icons: Lucide (ISC licence). Built with React, Vite and Tailwind, and in Lovable.</p>
           <Button asChild variant="secondary" size="md" className="mt-2">
-            <a href="https://buymeacoffee.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://buymeacoffee.com/caldaily" target="_blank" rel="noopener noreferrer">
               <Coffee aria-hidden /> Buy the developers a coffee<span className="sr-only"> (opens in a new tab)</span>
             </a>
           </Button>
