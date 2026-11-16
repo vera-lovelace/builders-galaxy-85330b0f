@@ -66,7 +66,9 @@ function Welcome() {
         </ol>
       </section>
 
-      <div className="relative z-10 mx-auto w-full max-w-xl px-5 pt-6 pb-20"><TriviaNote /></div>
+      <div className="relative z-10 mx-auto w-full max-w-3xl px-5 pt-6 pb-20">
+        <TriviaNote className="rounded-lg border-primary/40 bg-surface-raised p-6 text-base leading-relaxed text-foreground shadow-raised sm:p-8 [&>p+p]:mt-5 [&_svg]:size-5" />
+      </div>
     </main>
   );
 }
