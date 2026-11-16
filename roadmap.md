@@ -31,3 +31,6 @@
 - [x] Trivia disclaimers: call it trivia everywhere, a fun game and motivation for aspiring PMs, not a skills assessment
 - [x] Data-secure note: nothing is stored
 - [x] Promo video, max 30 s, app screens only (no person), standalone file outside the app
+- [x] Review public GitHub access and consolidate the root README with current features, setup, privacy, licensing, and verification limits
+- [x] Review European Commission AI-labelling guidance and add accurately scoped AI disclosures to About
+- [x] Clarify About privacy, external AI processing, and Supabase RLS without claiming unverified legal compliance
