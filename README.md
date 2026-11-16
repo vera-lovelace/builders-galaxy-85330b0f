@@ -16,14 +16,6 @@ This project was built with [Lovable](https://lovable.dev).
 
 **Live app**: https://builders-galaxy.lovable.app
 
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/eb1b10bb-8e9d-4ce1-8b3f-deb21bf5fa55).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
 ## Development
 
 Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
@@ -35,8 +27,4 @@ npm i
 npm run dev
 ```
 
----
 
-## Design prototype
-
-`prototype/` holds the original coded design prototype, its reference screenshots, the prompts sent to Lovable, and the ElevenLabs voice agent spec. It is reference only; the app and the documents at the root of this repository are the source of truth. See `prototype/README.md`.
