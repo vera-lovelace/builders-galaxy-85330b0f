@@ -146,7 +146,7 @@ function QuestionScreen() {
       <p className="sr-only" aria-live="polite" aria-atomic="true">{announcement}</p>
       <div className="mt-6 grid gap-6 lg:grid-cols-[240px_minmax(0,1fr)] lg:gap-x-14">
         <div className="flex items-center gap-2 lg:gap-3 lg:flex-col lg:text-center lg:row-span-2">
-          <OrbitTimer seconds={answer ? SECONDS_PER_QUESTION - answer.ms / 1000 : left} paused={paused} color={planet.color} ring={planet.ring} />
+          <OrbitTimer seconds={answer ? SECONDS_PER_QUESTION - answer.ms / 1000 : left} color={planet.color} ring={planet.ring} />
           <div className="min-w-0 flex-1 lg:flex-none">
             <p className="font-display text-xl font-bold">{planet.name}</p>
             <p className="mt-1 text-sm text-muted-foreground">Stop {run.current + 1} · Question {qi + 1} of {ids.length}</p>

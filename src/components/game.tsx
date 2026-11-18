@@ -1,4 +1,4 @@
-import { Check, X, Pause, Clock, Sparkles } from "lucide-react";
+import { Check, X, Sparkles } from "lucide-react";
 import { PLANETS } from "@/data/planets";
 import { cn } from "@/lib/utils";
 import { SECONDS_PER_QUESTION, isLowTime } from "@/game/rules";
@@ -53,7 +53,7 @@ export function RouteProgress({ current }: { current: number }) {
   );
 }
 
-export function OrbitTimer({ seconds, paused, color, ring }: { seconds: number; paused: boolean; color: string; ring?: boolean | undefined }) {
+export function OrbitTimer({ seconds, color, ring }: { seconds: number; color: string; ring?: boolean | undefined }) {
   const low = isLowTime(seconds);
   const circumference = 2 * Math.PI * 88;
   return (
@@ -67,12 +67,6 @@ export function OrbitTimer({ seconds, paused, color, ring }: { seconds: number; 
         </svg>
         <div className="absolute inset-0 flex items-center justify-center" aria-hidden><Planet color={color} ring={ring} size={ring ? 96 : 129} className="scale-[0.46] lg:scale-100 shrink-0" /></div>
       </div>
-      <span className={cn("absolute bottom-0 left-1/2 -translate-x-1/2 inline-flex min-h-6 lg:min-h-8 items-center gap-1 rounded-full border border-border bg-surface px-2 font-display text-sm lg:text-xl font-bold tabular-nums", low && "text-danger")}>
-        {paused ? <Pause className="size-3 lg:size-4" aria-hidden /> : <Clock className="size-3 lg:size-4" aria-hidden />}
-        <span aria-hidden>{Math.ceil(seconds)}</span>
-        <span className="sr-only">{Math.ceil(seconds)} seconds left</span>
-        {paused && <span className="hidden lg:inline" aria-hidden>Paused</span>}
-      </span>
     </div>
   );
 }
