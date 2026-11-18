@@ -36,3 +36,5 @@
 - [x] Clarify About privacy, external AI processing, and Supabase RLS without claiming unverified legal compliance
 - [x] Add point-of-use EU AI labels for mission text, search suggestions, pitches and synthetic voice
 - [x] Add the user's EU development credit to About
+- [x] Remove the homepage trivia callout box
+- [x] Fix the voice guide: send the nickname the agent asks for, use the transport that connects, and show the real reason when it fails

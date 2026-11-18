@@ -42,6 +42,7 @@ use the editor.
 - WelcomeOrbit renders an aria-hidden, noninteractive homepage background with repeated shared planets; RouteProgress alone represents semantic voyage progress so decorative duplication cannot imply extra stops.
 - About page lists sources via src/data/sources.ts, grouped from the data files; never hand-type source lists.
 - ElevenLabs voice guide lives in src/components/VoiceAgent.tsx, lazy-loaded client-only on Question; game actions go through a handlers ref so tools always see current state.
+- ElevenLabs sessions must start over the WebSocket transport and pass the agent's required dynamic variables (nickname); the agent rejects sessions without them and the WebRTC transport does not complete a peer connection here.
 - Job search beta calls JSearch (RapidAPI) only from `src/lib/jobs.functions.ts` with the server-side RAPIDAPI_KEY; keyword ranking is live session result counts, never invented demand stats.
 - Shared leaderboard backend is prepared but dormant: `src/game/sharedLeaderboard.ts` activates only when VITE_SUPABASE_* env exists, writes via anonymous sign-in, and relies on RLS in `supabase/setup/001_shared_leaderboard.sql`; the mock in leaderboard.ts stays the fallback so the game works unconnected.
 - Job search AI suggestions run only in `src/lib/jobSuggest.functions.ts` via the AI Gateway SDK and only prefill search keywords/filters; they never invent demand stats.

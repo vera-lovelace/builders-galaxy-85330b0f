@@ -156,7 +156,7 @@ function QuestionScreen() {
           {!answer && <Button variant="secondary" size="md" className="shrink-0 px-2 lg:px-5" onClick={togglePause}>
             {paused ? <><Play aria-hidden /> Resume</> : <><Pause aria-hidden /> Pause</>}
           </Button>}
-          <ClientOnly fallback={null}><Suspense fallback={null}><VoiceAgent handlers={voice} context={voiceContext} /></Suspense></ClientOnly>
+          <ClientOnly fallback={null}><Suspense fallback={null}><VoiceAgent handlers={voice} context={voiceContext} nickname={run.player.nickname} /></Suspense></ClientOnly>
           </div>
         </div>
         <div role="group" aria-labelledby="question-heading" onKeyDown={event => {

@@ -41,7 +41,8 @@ function Jobs() {
   const [open, setOpen] = useState<string | null>(null);
   const [stats, setStats] = useState<Record<string, number>>({});
   const [status, setStatus] = useState("");
-  const hasRun = Boolean(useRun());
+  const activeRun = useRun();
+  const hasRun = Boolean(activeRun);
   const mission = useMission();
   const { from } = Route.useSearch();
   const auto = useRef(false);
@@ -76,7 +77,7 @@ function Jobs() {
   const context = searched ? `Results for "${searched}", page ${page}: ` + jobs.slice(0, 10).map((j, i) => `${i + 1}. ${j.title} at ${j.company}`).join("; ") : "No search yet. Suggest keywords: " + KEYWORD_GROUPS.flatMap((g) => g.keywords).join(", ");
 
   return (
-    <Shell wide className="max-w-5xl" right={<ClientOnly fallback={null}><Suspense fallback={null}><JobsVoiceAgent handlers={voice} context={context} /></Suspense></ClientOnly>}>
+    <Shell wide className="max-w-5xl" right={<ClientOnly fallback={null}><Suspense fallback={null}><JobsVoiceAgent handlers={voice} context={context} nickname={activeRun?.player.nickname ?? "Builder"} /></Suspense></ClientOnly>}>
       {hasRun && <Button asChild variant="ghost" size="md" className="mb-4 self-start"><Link to="/results"><ArrowLeft aria-hidden /> Back to results</Link></Button>}
       <p className="text-sm font-semibold uppercase tracking-wide text-primary">Beta</p>
       <h1 className="font-display text-3xl font-extrabold sm:text-4xl">Find your next mission</h1>

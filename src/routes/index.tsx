@@ -6,7 +6,6 @@ import { BrandMark, Rocket } from "@/components/Rocket";
 import { Planet } from "@/components/Planet";
 import { PLANETS } from "@/data/planets";
 import earth from "@/assets/earth-full.png";
-import { TriviaNote } from "@/components/TriviaNote";
 import { meta } from "@/lib/meta";
 
 export const Route = createFileRoute("/")({
@@ -66,9 +65,7 @@ function Welcome() {
         </ol>
       </section>
 
-      <div className="relative z-10 mx-auto w-full max-w-3xl px-5 pt-6 pb-20">
-        <TriviaNote className="rounded-lg border-primary/40 bg-surface-raised p-6 text-base leading-relaxed text-foreground shadow-raised sm:p-8 [&>p+p]:mt-5 [&_svg]:size-5" />
-      </div>
+      <div className="relative z-10 mx-auto w-full max-w-3xl px-5 pt-6 pb-20" />
     </main>
   );
 }
